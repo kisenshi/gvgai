@@ -1,0 +1,3 @@
+Manifest-Version: 5.0
+Main-Class: valFunctionExperiment
+

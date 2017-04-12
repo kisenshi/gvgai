@@ -1,0 +1,1571 @@
+Reading data for KnowledgeDiscoveryHeuristic
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_aliens.txt
+
+Results aliens
+
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.85 (0.08)
+curiosity_collision: 0.85 (0.08)
+curiosity_actiononto: 56.05 (0.62)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 919.75 (73.65)
+curiosityColl_ticks: 898.40 (84.91)
+curiosityAct_ticks: 633.95 (46.83)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.80 (0.09)
+curiosity_collision: 0.80 (0.09)
+curiosity_actiononto: 56.65 (0.97)
+acknowledge_ticks: 1.25 (0.39)
+interactions_ticks: 856.30 (83.16)
+curiosityColl_ticks: 832.40 (93.62)
+curiosityAct_ticks: 588.90 (39.90)
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.70 (0.10)
+curiosity_collision: 0.70 (0.10)
+curiosity_actiononto: 36.85 (2.27)
+acknowledge_ticks: 1.05 (0.32)
+interactions_ticks: 440.35 (74.93)
+curiosityColl_ticks: 409.90 (82.13)
+curiosityAct_ticks: 587.80 (55.12)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.65 (0.11)
+curiosity_collision: 0.65 (0.11)
+curiosity_actiononto: 46.50 (1.43)
+acknowledge_ticks: 0.65 (0.23)
+interactions_ticks: 681.85 (96.05)
+curiosityColl_ticks: 646.00 (106.84)
+curiosityAct_ticks: 717.25 (26.33)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.45 (0.11)
+curiosity_collision: 0.45 (0.11)
+curiosity_actiononto: 40.50 (1.21)
+acknowledge_ticks: 38.45 (6.01)
+interactions_ticks: 453.75 (89.50)
+curiosityColl_ticks: 400.75 (99.80)
+curiosityAct_ticks: 753.15 (20.05)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 25
+2)sampleOLMCTS 18
+3)sampleRHEA 15
+4)olets 12
+5)sampleonesteplookahead 10
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_bait.txt
+
+Results bait
+
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.35 (0.11)
+curiosity_collision: 10.45 (0.17)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 47.60 (12.83)
+curiosityColl_ticks: 124.85 (18.74)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.30 (0.10)
+curiosity_collision: 10.50 (0.18)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 6.40 (0.91)
+curiosityColl_ticks: 395.80 (142.20)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.15 (0.08)
+curiosity_collision: 10.30 (0.16)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 5.60 (0.62)
+curiosityColl_ticks: 242.95 (117.80)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 10.00 (0.00)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 4.45 (0.15)
+curiosityColl_ticks: 22.60 (0.45)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 10.00 (0.00)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 5.15 (0.54)
+curiosityColl_ticks: 53.05 (6.06)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 40
+2)sampleRHEA 40
+3)sampleOLMCTS 36
+4)olets 24
+5)sampleonesteplookahead 20
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_butterflies.txt
+
+Results butterflies
+
+sampleOLMCTS: 
+
+total_sprites_ack: 3.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 112.95 (5.52)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 26.35 (6.73)
+curiosityColl_ticks: 896.30 (91.31)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 3.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 111.55 (5.10)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 16.90 (2.53)
+curiosityColl_ticks: 892.15 (95.91)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+olets: 
+
+total_sprites_ack: 3.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 103.55 (4.84)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 34.40 (8.19)
+curiosityColl_ticks: 870.35 (94.15)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 3.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 97.75 (7.00)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 23.80 (5.57)
+curiosityColl_ticks: 705.85 (80.25)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 3.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 81.85 (5.76)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 38.65 (5.09)
+curiosityColl_ticks: 1040.65 (92.57)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 61
+2)sampleRS 58
+3)sampleRHEA 52
+4)olets 39
+5)sampleonesteplookahead 30
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_camelRace.txt
+
+Results camelRace
+
+olets: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 1.00 (0.00)
+curiosity_collision: 24.55 (0.23)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 68.75 (0.26)
+interactions_ticks: 0.00 (0.00)
+curiosityColl_ticks: 73.40 (0.39)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 1.00 (0.00)
+curiosity_collision: 23.25 (1.02)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 70.00 (0.00)
+interactions_ticks: 0.60 (0.16)
+curiosityColl_ticks: 76.30 (1.14)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleRS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 1.00 (0.00)
+curiosity_collision: 14.35 (0.55)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 70.00 (0.00)
+interactions_ticks: 1.60 (0.43)
+curiosityColl_ticks: 76.30 (0.64)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 1.00 (0.00)
+curiosity_collision: 14.25 (0.55)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 70.00 (0.00)
+interactions_ticks: 1.90 (0.59)
+curiosityColl_ticks: 69.20 (1.76)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 1.00 (0.00)
+curiosity_collision: 8.95 (0.51)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 79.00 (0.00)
+interactions_ticks: 0.00 (0.00)
+curiosityColl_ticks: 58.60 (3.39)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 79
+2)sampleRS 73
+3)sampleRHEA 64
+4)olets 64
+5)sampleonesteplookahead 40
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_chase.txt
+
+Results chase
+
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 83.20 (4.97)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 194.35 (32.63)
+interactions_ticks: 567.90 (78.53)
+curiosityColl_ticks: 567.90 (78.53)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.95 (0.05)
+curiosity_collision: 75.05 (4.56)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 244.30 (23.83)
+interactions_ticks: 421.20 (42.29)
+curiosityColl_ticks: 456.90 (47.31)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.90 (0.07)
+curiosity_collision: 87.15 (5.01)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 159.35 (21.25)
+interactions_ticks: 647.00 (87.29)
+curiosityColl_ticks: 680.60 (80.76)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.85 (0.08)
+curiosity_collision: 88.05 (3.71)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 298.55 (36.96)
+interactions_ticks: 761.50 (84.10)
+curiosityColl_ticks: 830.25 (75.27)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 3.60 (0.15)
+total_interactions: 2.50 (0.15)
+curiosity_collision: 66.30 (3.89)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 622.45 (96.71)
+interactions_ticks: 661.05 (98.02)
+curiosityColl_ticks: 1008.35 (92.47)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 98
+2)sampleOLMCTS 94
+3)sampleRHEA 82
+4)olets 76
+5)sampleonesteplookahead 50
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_chopper.txt
+
+Results chopper
+
+sampleRS: 
+
+total_sprites_ack: 9.00 (0.00)
+total_interactions: 6.05 (0.09)
+curiosity_collision: 110.85 (2.49)
+curiosity_actiononto: 26.30 (0.95)
+acknowledge_ticks: 83.40 (5.27)
+interactions_ticks: 556.05 (85.18)
+curiosityColl_ticks: 1332.35 (44.21)
+curiosityAct_ticks: 1346.25 (35.70)
+
+POINTS: 25
+-------------
+olets: 
+
+total_sprites_ack: 9.00 (0.00)
+total_interactions: 5.95 (0.05)
+curiosity_collision: 106.20 (2.16)
+curiosity_actiononto: 19.70 (0.99)
+acknowledge_ticks: 92.55 (7.36)
+interactions_ticks: 443.45 (34.65)
+curiosityColl_ticks: 1153.00 (55.32)
+curiosityAct_ticks: 1233.40 (42.84)
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 9.00 (0.00)
+total_interactions: 5.45 (0.11)
+curiosity_collision: 63.80 (4.33)
+curiosity_actiononto: 16.95 (1.05)
+acknowledge_ticks: 140.15 (11.19)
+interactions_ticks: 567.00 (56.62)
+curiosityColl_ticks: 1124.10 (52.07)
+curiosityAct_ticks: 1122.30 (46.50)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 8.95 (0.05)
+total_interactions: 6.40 (0.20)
+curiosity_collision: 69.65 (5.24)
+curiosity_actiononto: 9.30 (1.34)
+acknowledge_ticks: 89.30 (9.96)
+interactions_ticks: 636.20 (55.14)
+curiosityColl_ticks: 670.20 (56.74)
+curiosityAct_ticks: 596.65 (60.92)
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 8.95 (0.05)
+total_interactions: 6.05 (0.19)
+curiosity_collision: 109.20 (5.65)
+curiosity_actiononto: 22.55 (1.57)
+acknowledge_ticks: 64.20 (5.79)
+interactions_ticks: 641.30 (97.75)
+curiosityColl_ticks: 1238.60 (82.23)
+curiosityAct_ticks: 1240.85 (83.18)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 123
+2)sampleOLMCTS 104
+3)sampleRHEA 94
+4)olets 94
+5)sampleonesteplookahead 65
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_crossfire.txt
+
+Results crossfire
+
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 47.40 (6.29)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 333.90 (51.72)
+curiosityColl_ticks: 333.90 (51.72)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 34.30 (4.24)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 427.20 (69.87)
+curiosityColl_ticks: 427.20 (69.87)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 27.75 (2.47)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 260.50 (38.31)
+curiosityColl_ticks: 260.50 (38.31)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 21.90 (2.17)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 134.05 (17.69)
+curiosityColl_ticks: 134.05 (17.69)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 1.30 (0.10)
+curiosity_collision: 106.20 (5.72)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 300.80 (121.59)
+curiosityColl_ticks: 1258.35 (78.49)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 148
+2)sampleOLMCTS 119
+3)sampleRHEA 106
+4)olets 104
+5)sampleonesteplookahead 83
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_digdug.txt
+
+Results digdug
+
+sampleRHEA: 
+
+total_sprites_ack: 8.95 (0.05)
+total_interactions: 8.25 (0.20)
+curiosity_collision: 53.10 (6.48)
+curiosity_actiononto: 156.70 (22.24)
+acknowledge_ticks: 249.60 (32.39)
+interactions_ticks: 574.80 (86.25)
+curiosityColl_ticks: 800.15 (112.20)
+curiosityAct_ticks: 799.10 (112.92)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 8.95 (0.05)
+total_interactions: 8.05 (0.18)
+curiosity_collision: 81.95 (5.11)
+curiosity_actiononto: 250.45 (16.24)
+acknowledge_ticks: 192.40 (21.38)
+interactions_ticks: 640.60 (105.05)
+curiosityColl_ticks: 1316.55 (81.76)
+curiosityAct_ticks: 1313.50 (82.58)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 8.95 (0.05)
+total_interactions: 7.90 (0.17)
+curiosity_collision: 113.75 (6.96)
+curiosity_actiononto: 336.25 (21.82)
+acknowledge_ticks: 137.60 (15.73)
+interactions_ticks: 641.45 (104.18)
+curiosityColl_ticks: 1291.55 (85.03)
+curiosityAct_ticks: 1297.10 (86.54)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 8.80 (0.09)
+total_interactions: 7.60 (0.13)
+curiosity_collision: 203.50 (5.41)
+curiosity_actiononto: 427.90 (7.59)
+acknowledge_ticks: 215.05 (35.03)
+interactions_ticks: 590.20 (100.27)
+curiosityColl_ticks: 1452.65 (11.51)
+curiosityAct_ticks: 1480.05 (10.90)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 7.55 (0.17)
+total_interactions: 6.20 (0.22)
+curiosity_collision: 103.60 (10.23)
+curiosity_actiononto: 180.95 (19.38)
+acknowledge_ticks: 226.50 (70.77)
+interactions_ticks: 582.55 (85.59)
+curiosityColl_ticks: 912.20 (113.71)
+curiosityAct_ticks: 910.30 (117.08)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 166
+2)sampleOLMCTS 134
+3)sampleRHEA 131
+4)olets 116
+5)sampleonesteplookahead 93
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_escape.txt
+
+Results escape
+
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 19.30 (3.15)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 140.45 (39.45)
+curiosityColl_ticks: 140.45 (39.45)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.60 (0.11)
+curiosity_collision: 61.05 (1.22)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 598.75 (108.31)
+curiosityColl_ticks: 712.75 (79.62)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.55 (0.11)
+curiosity_collision: 18.85 (2.23)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 553.50 (109.55)
+curiosityColl_ticks: 958.65 (27.95)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.10 (0.07)
+curiosity_collision: 58.70 (1.19)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 104.85 (66.73)
+curiosityColl_ticks: 693.20 (41.57)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 54.40 (1.38)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 3.75 (0.20)
+curiosityColl_ticks: 436.75 (46.07)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 184
+2)sampleRHEA 156
+3)sampleOLMCTS 149
+4)olets 126
+5)sampleonesteplookahead 105
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_hungrybirds.txt
+
+Results hungrybirds
+
+sampleRHEA: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 3.15 (0.16)
+curiosity_collision: 58.70 (2.12)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 123.05 (22.14)
+curiosityColl_ticks: 240.80 (6.61)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.75 (0.10)
+curiosity_collision: 63.20 (1.45)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 49.00 (11.74)
+curiosityColl_ticks: 302.60 (40.68)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.70 (0.10)
+curiosity_collision: 56.05 (2.61)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 58.25 (16.42)
+curiosityColl_ticks: 239.90 (15.91)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.30 (0.10)
+curiosity_collision: 71.65 (0.94)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 21.45 (6.03)
+curiosityColl_ticks: 250.35 (3.37)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 4.00 (0.00)
+total_interactions: 2.05 (0.05)
+curiosity_collision: 18.45 (1.73)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 14.95 (11.85)
+curiosityColl_ticks: 245.30 (17.07)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 202
+2)sampleRHEA 181
+3)sampleOLMCTS 164
+4)olets 138
+5)sampleonesteplookahead 115
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_infection.txt
+
+Results infection
+
+sampleRHEA: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 5.25 (0.16)
+curiosity_collision: 59.25 (3.75)
+curiosity_actiononto: 5.60 (0.55)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 369.25 (70.37)
+curiosityColl_ticks: 994.05 (71.52)
+curiosityAct_ticks: 659.75 (77.10)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 4.90 (0.16)
+curiosity_collision: 57.65 (3.37)
+curiosity_actiononto: 5.20 (0.56)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 431.45 (77.25)
+curiosityColl_ticks: 1015.30 (61.12)
+curiosityAct_ticks: 592.25 (78.18)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 4.75 (0.21)
+curiosity_collision: 62.60 (3.82)
+curiosity_actiononto: 6.60 (0.57)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 459.60 (96.45)
+curiosityColl_ticks: 860.90 (73.18)
+curiosityAct_ticks: 645.75 (68.26)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 4.65 (0.22)
+curiosity_collision: 57.40 (3.42)
+curiosity_actiononto: 6.80 (0.39)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 655.55 (78.54)
+curiosityColl_ticks: 1012.35 (76.66)
+curiosityAct_ticks: 797.15 (65.27)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 4.45 (0.24)
+curiosity_collision: 34.35 (2.01)
+curiosity_actiononto: 4.30 (0.50)
+acknowledge_ticks: 1.80 (0.35)
+interactions_ticks: 553.85 (79.83)
+curiosityColl_ticks: 1102.30 (70.18)
+curiosityAct_ticks: 742.00 (81.36)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 220
+2)sampleRHEA 206
+3)sampleOLMCTS 179
+4)olets 150
+5)sampleonesteplookahead 125
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_intersection.txt
+
+Results intersection
+
+sampleRS: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 5.60 (0.11)
+curiosity_collision: 87.30 (4.15)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 317.60 (59.30)
+curiosityColl_ticks: 783.30 (40.30)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+olets: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 5.40 (0.15)
+curiosity_collision: 74.20 (3.58)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 303.30 (67.48)
+curiosityColl_ticks: 856.50 (30.22)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 4.90 (0.17)
+curiosity_collision: 65.25 (2.88)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 325.05 (69.06)
+curiosityColl_ticks: 947.70 (15.49)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 4.90 (0.07)
+curiosity_collision: 35.60 (1.42)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 79.95 (18.18)
+curiosityColl_ticks: 191.40 (15.71)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 4.90 (0.07)
+curiosity_collision: 35.35 (1.01)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 46.65 (7.28)
+curiosityColl_ticks: 658.60 (64.02)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 245
+2)sampleRHEA 218
+3)sampleOLMCTS 189
+4)olets 168
+5)sampleonesteplookahead 140
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_lemmings.txt
+
+Results lemmings
+
+sampleRHEA: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 2.65 (0.11)
+curiosity_collision: 60.50 (5.46)
+curiosity_actiononto: 71.50 (6.58)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 450.95 (103.82)
+curiosityColl_ticks: 926.55 (104.78)
+curiosityAct_ticks: 918.85 (106.27)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 2.25 (0.10)
+curiosity_collision: 86.85 (3.03)
+curiosity_actiononto: 97.50 (2.82)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 378.65 (144.10)
+curiosityColl_ticks: 1281.75 (45.33)
+curiosityAct_ticks: 1235.45 (44.34)
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 2.20 (0.09)
+curiosity_collision: 85.30 (1.77)
+curiosity_actiononto: 105.45 (2.12)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 301.85 (133.29)
+curiosityColl_ticks: 1101.75 (63.60)
+curiosityAct_ticks: 1078.70 (47.40)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 100.65 (2.02)
+curiosity_actiononto: 110.85 (2.13)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 4.25 (0.17)
+curiosityColl_ticks: 998.20 (48.19)
+curiosityAct_ticks: 1010.20 (47.07)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 2.00 (0.00)
+curiosity_collision: 47.00 (2.40)
+curiosity_actiononto: 57.90 (3.15)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 7.90 (1.85)
+curiosityColl_ticks: 1317.30 (39.57)
+curiosityAct_ticks: 1319.95 (39.87)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 263
+2)sampleRHEA 243
+3)sampleOLMCTS 204
+4)olets 180
+5)sampleonesteplookahead 150
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_missilecommand.txt
+
+Results missilecommand
+
+sampleOLMCTS: 
+
+total_sprites_ack: 5.00 (0.00)
+total_interactions: 1.65 (0.11)
+curiosity_collision: 7.15 (1.29)
+curiosity_actiononto: 1.50 (0.21)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 74.75 (8.73)
+curiosityColl_ticks: 134.10 (18.91)
+curiosityAct_ticks: 67.10 (12.62)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 5.00 (0.00)
+total_interactions: 1.65 (0.13)
+curiosity_collision: 5.40 (1.04)
+curiosity_actiononto: 1.35 (0.18)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 82.50 (11.13)
+curiosityColl_ticks: 120.65 (19.30)
+curiosityAct_ticks: 73.05 (12.13)
+
+POINTS: 18
+-------------
+olets: 
+
+total_sprites_ack: 5.00 (0.00)
+total_interactions: 1.55 (0.11)
+curiosity_collision: 3.90 (0.77)
+curiosity_actiononto: 0.95 (0.11)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 72.15 (7.92)
+curiosityColl_ticks: 100.10 (19.27)
+curiosityAct_ticks: 57.10 (8.97)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 5.00 (0.00)
+total_interactions: 1.50 (0.11)
+curiosity_collision: 3.60 (0.82)
+curiosity_actiononto: 1.00 (0.12)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 78.15 (12.10)
+curiosityColl_ticks: 97.35 (19.11)
+curiosityAct_ticks: 57.00 (9.19)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 5.00 (0.00)
+total_interactions: 1.10 (0.14)
+curiosity_collision: 0.90 (0.28)
+curiosity_actiononto: 0.75 (0.12)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 77.25 (15.69)
+curiosityColl_ticks: 61.05 (20.08)
+curiosityAct_ticks: 39.75 (7.24)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 281
+2)sampleRHEA 255
+3)sampleOLMCTS 229
+4)olets 195
+5)sampleonesteplookahead 160
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_modality.txt
+
+Results modality
+
+sampleRS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 5.00 (0.00)
+curiosity_collision: 23.10 (0.07)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 10.50 (0.89)
+curiosityColl_ticks: 62.25 (2.31)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 5.00 (0.00)
+curiosity_collision: 23.00 (0.00)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 1.30 (0.32)
+interactions_ticks: 27.70 (5.08)
+curiosityColl_ticks: 147.90 (56.72)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 5.00 (0.00)
+curiosity_collision: 20.60 (0.94)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 3.55 (0.78)
+interactions_ticks: 81.65 (10.91)
+curiosityColl_ticks: 283.45 (33.38)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 6.95 (0.05)
+total_interactions: 5.00 (0.00)
+curiosity_collision: 23.25 (0.10)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 9.90 (1.70)
+interactions_ticks: 7.20 (0.94)
+curiosityColl_ticks: 57.30 (1.04)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 6.70 (0.10)
+total_interactions: 5.00 (0.00)
+curiosity_collision: 23.70 (0.10)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 53.55 (12.63)
+interactions_ticks: 23.35 (3.49)
+curiosityColl_ticks: 288.20 (47.55)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 306
+2)sampleRHEA 270
+3)sampleOLMCTS 247
+4)olets 207
+5)sampleonesteplookahead 170
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_plaqueattack.txt
+
+Results plaqueattack
+
+sampleRS: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 3.40 (0.11)
+curiosity_collision: 16.45 (1.05)
+curiosity_actiononto: 46.15 (2.66)
+acknowledge_ticks: 217.95 (5.59)
+interactions_ticks: 224.75 (34.38)
+curiosityColl_ticks: 466.65 (37.69)
+curiosityAct_ticks: 501.70 (38.25)
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 3.35 (0.11)
+curiosity_collision: 5.65 (0.67)
+curiosity_actiononto: 38.65 (2.08)
+acknowledge_ticks: 247.65 (10.09)
+interactions_ticks: 222.15 (26.86)
+curiosityColl_ticks: 371.45 (41.65)
+curiosityAct_ticks: 478.80 (36.81)
+
+POINTS: 18
+-------------
+olets: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 3.30 (0.10)
+curiosity_collision: 16.15 (0.83)
+curiosity_actiononto: 45.60 (2.67)
+acknowledge_ticks: 234.40 (13.94)
+interactions_ticks: 206.75 (30.50)
+curiosityColl_ticks: 481.80 (33.55)
+curiosityAct_ticks: 514.50 (34.65)
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 3.30 (0.10)
+curiosity_collision: 14.15 (0.83)
+curiosity_actiononto: 45.25 (1.85)
+acknowledge_ticks: 230.50 (6.54)
+interactions_ticks: 206.15 (30.63)
+curiosityColl_ticks: 461.45 (23.40)
+curiosityAct_ticks: 511.60 (24.61)
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 6.00 (0.00)
+total_interactions: 3.15 (0.08)
+curiosity_collision: 20.00 (1.66)
+curiosity_actiononto: 48.70 (2.67)
+acknowledge_ticks: 219.50 (5.16)
+interactions_ticks: 135.65 (17.68)
+curiosityColl_ticks: 435.90 (34.62)
+curiosityAct_ticks: 476.60 (33.30)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 331
+2)sampleRHEA 282
+3)sampleOLMCTS 257
+4)olets 222
+5)sampleonesteplookahead 188
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_roguelike.txt
+
+Results roguelike
+
+sampleOLMCTS: 
+
+total_sprites_ack: 10.05 (0.05)
+total_interactions: 3.05 (0.15)
+curiosity_collision: 16.80 (1.60)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 40.10 (39.08)
+interactions_ticks: 462.35 (80.56)
+curiosityColl_ticks: 462.35 (80.56)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleRS: 
+
+total_sprites_ack: 10.05 (0.05)
+total_interactions: 3.00 (0.27)
+curiosity_collision: 15.40 (1.62)
+curiosity_actiononto: 0.30 (0.29)
+acknowledge_ticks: 9.85 (9.60)
+interactions_ticks: 428.85 (71.06)
+curiosityColl_ticks: 428.85 (71.06)
+curiosityAct_ticks: 48.55 (47.32)
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 3.00 (0.12)
+curiosity_collision: 14.15 (0.83)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 330.90 (56.10)
+curiosityColl_ticks: 330.90 (56.10)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 2.85 (0.18)
+curiosity_collision: 15.50 (1.91)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 397.80 (45.78)
+curiosityColl_ticks: 397.80 (45.78)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 2.20 (0.09)
+curiosity_collision: 9.25 (0.56)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 354.55 (29.34)
+curiosityColl_ticks: 354.60 (29.32)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 349
+2)sampleRHEA 297
+3)sampleOLMCTS 282
+4)olets 234
+5)sampleonesteplookahead 198
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_seaquest.txt
+
+Results seaquest
+
+sampleRS: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 5.05 (0.09)
+curiosity_collision: 21.30 (1.25)
+curiosity_actiononto: 29.55 (2.49)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 360.90 (35.93)
+curiosityColl_ticks: 678.90 (51.71)
+curiosityAct_ticks: 716.30 (58.39)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 4.90 (0.17)
+curiosity_collision: 23.60 (1.61)
+curiosity_actiononto: 36.90 (2.82)
+acknowledge_ticks: 2.15 (0.51)
+interactions_ticks: 314.75 (41.03)
+curiosityColl_ticks: 678.70 (56.08)
+curiosityAct_ticks: 788.00 (55.86)
+
+POINTS: 18
+-------------
+olets: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 4.90 (0.12)
+curiosity_collision: 23.55 (1.57)
+curiosity_actiononto: 31.00 (2.63)
+acknowledge_ticks: 4.05 (1.07)
+interactions_ticks: 340.40 (35.91)
+curiosityColl_ticks: 809.70 (53.23)
+curiosityAct_ticks: 854.60 (59.24)
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 4.75 (0.16)
+curiosity_collision: 12.25 (1.98)
+curiosity_actiononto: 15.75 (1.12)
+acknowledge_ticks: 92.40 (16.31)
+interactions_ticks: 397.15 (35.63)
+curiosityColl_ticks: 545.45 (52.77)
+curiosityAct_ticks: 590.20 (45.10)
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 10.00 (0.00)
+total_interactions: 4.35 (0.37)
+curiosity_collision: 12.15 (2.34)
+curiosity_actiononto: 17.15 (3.09)
+acknowledge_ticks: 3.05 (0.92)
+interactions_ticks: 340.45 (50.25)
+curiosityColl_ticks: 431.30 (68.97)
+curiosityAct_ticks: 437.90 (74.13)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 374
+2)sampleRHEA 307
+3)sampleOLMCTS 300
+4)olets 249
+5)sampleonesteplookahead 210
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_survivezombies.txt
+
+Results survivezombies
+
+sampleRHEA: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 3.45 (0.11)
+curiosity_collision: 74.25 (7.77)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 150.85 (44.64)
+curiosityColl_ticks: 436.70 (72.82)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 3.05 (0.05)
+curiosity_collision: 107.65 (4.23)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 45.10 (8.97)
+curiosityColl_ticks: 783.45 (57.27)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleRS: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 113.05 (6.83)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 29.85 (3.89)
+curiosityColl_ticks: 803.00 (66.91)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+olets: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 105.45 (5.60)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 0.00 (0.00)
+interactions_ticks: 99.85 (13.99)
+curiosityColl_ticks: 711.55 (62.98)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 7.00 (0.00)
+total_interactions: 3.00 (0.00)
+curiosity_collision: 83.45 (5.07)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 4.25 (0.99)
+interactions_ticks: 149.95 (24.81)
+curiosityColl_ticks: 769.70 (47.88)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 389
+2)sampleRHEA 332
+3)sampleOLMCTS 318
+4)olets 261
+5)sampleonesteplookahead 220
+
+Reading experiment3/results/ExperimentValFunction_results_KnowledgeDiscoveryHeuristic_waitforbreakfast.txt
+
+Results waitforbreakfast
+
+sampleRS: 
+
+total_sprites_ack: 14.00 (0.00)
+total_interactions: 4.15 (0.15)
+curiosity_collision: 62.65 (9.70)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 180.15 (52.60)
+interactions_ticks: 778.55 (77.10)
+curiosityColl_ticks: 1154.35 (51.46)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 25
+-------------
+olets: 
+
+total_sprites_ack: 14.00 (0.00)
+total_interactions: 3.45 (0.21)
+curiosity_collision: 62.50 (10.76)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 101.90 (32.52)
+interactions_ticks: 222.05 (89.65)
+curiosityColl_ticks: 445.50 (87.29)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+total_sprites_ack: 14.00 (0.00)
+total_interactions: 3.30 (0.24)
+curiosity_collision: 30.45 (1.32)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 110.10 (36.89)
+interactions_ticks: 461.10 (139.12)
+curiosityColl_ticks: 573.30 (139.72)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+total_sprites_ack: 13.50 (0.19)
+total_interactions: 3.20 (0.26)
+curiosity_collision: 88.45 (12.39)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 209.15 (44.07)
+interactions_ticks: 543.80 (126.52)
+curiosityColl_ticks: 895.85 (138.08)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+total_sprites_ack: 13.20 (0.21)
+total_interactions: 2.35 (0.25)
+curiosity_collision: 8.65 (2.70)
+curiosity_actiononto: 0.00 (0.00)
+acknowledge_ticks: 22.65 (5.32)
+interactions_ticks: 132.65 (47.31)
+curiosityColl_ticks: 204.35 (81.53)
+curiosityAct_ticks: 0.00 (0.00)
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 414
+2)sampleRHEA 342
+3)sampleOLMCTS 330
+4)olets 279
+5)sampleonesteplookahead 235
+
+
+RANKING
+
+1)sampleRS 414
+2)sampleRHEA 342
+3)sampleOLMCTS 330
+4)olets 279
+5)sampleonesteplookahead 235
+

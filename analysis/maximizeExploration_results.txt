@@ -1,0 +1,971 @@
+Reading data for MaximizeExplorationHeuristic
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_aliens.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 1.0
+last discovery: 98.1
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 1.0
+last discovery: 184.35
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 1.0
+last discovery: 202.45
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.973333333333
+last discovery: 216.25
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.64
+last discovery: 395.0
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 25
+2)olets 18
+3)sampleOLMCTS 15
+4)sampleonesteplookahead 12
+5)sampleRHEA 10
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_bait.txt
+
+RESULTS
+
+olets: 
+
+perc explored: 0.666666666667
+last discovery: 5.25
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.666666666667
+last discovery: 6.35
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.666666666667
+last discovery: 7.8
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.666666666667
+last discovery: 9.75
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.666666666667
+last discovery: 44.95
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 43
+2)olets 43
+3)sampleOLMCTS 27
+4)sampleonesteplookahead 27
+5)sampleRHEA 20
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_butterflies.txt
+
+RESULTS
+
+olets: 
+
+perc explored: 0.968689320388
+last discovery: 632.3
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.952669902913
+last discovery: 746.3
+
+POINTS: 18
+-------------
+sampleRS: 
+
+perc explored: 0.939077669903
+last discovery: 626.35
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.736650485437
+last discovery: 621.9
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.425970873786
+last discovery: 589.15
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 68
+2)sampleRS 58
+3)sampleOLMCTS 45
+4)sampleonesteplookahead 39
+5)sampleRHEA 30
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_camelRace.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.237111801242
+last discovery: 78.9
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.228726708075
+last discovery: 78.8
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.206055900621
+last discovery: 76.45
+
+POINTS: 15
+-------------
+olets: 
+
+perc explored: 0.198291925466
+last discovery: 77.95
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0782608695652
+last discovery: 65.15
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 83
+2)olets 80
+3)sampleOLMCTS 63
+4)sampleonesteplookahead 54
+5)sampleRHEA 40
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_chase.txt
+
+RESULTS
+
+olets: 
+
+perc explored: 0.982592592593
+last discovery: 613.25
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.932962962963
+last discovery: 611.2
+
+POINTS: 18
+-------------
+sampleRS: 
+
+perc explored: 0.885925925926
+last discovery: 269.4
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.841851851852
+last discovery: 451.25
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.637037037037
+last discovery: 1282.05
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 105
+2)sampleRS 98
+3)sampleOLMCTS 81
+4)sampleonesteplookahead 66
+5)sampleRHEA 50
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_chopper.txt
+
+RESULTS
+
+sampleOLMCTS: 
+
+perc explored: 0.995923913043
+last discovery: 549.2
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.995380434783
+last discovery: 567.65
+
+POINTS: 18
+-------------
+olets: 
+
+perc explored: 0.983967391304
+last discovery: 502.05
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.922010869565
+last discovery: 605.75
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.355434782609
+last discovery: 369.5
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 120
+2)sampleRS 116
+3)sampleOLMCTS 106
+4)sampleonesteplookahead 78
+5)sampleRHEA 60
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_crossfire.txt
+
+RESULTS
+
+olets: 
+
+perc explored: 0.811261261261
+last discovery: 1260.75
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.378078078078
+last discovery: 197.8
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.266366366366
+last discovery: 136.4
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.137537537538
+last discovery: 962.95
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0584084084084
+last discovery: 113.35
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 145
+2)sampleRS 134
+3)sampleOLMCTS 118
+4)sampleonesteplookahead 93
+5)sampleRHEA 70
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_digdug.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.965555555556
+last discovery: 1448.9
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.904074074074
+last discovery: 1457.5
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.641851851852
+last discovery: 1453.1
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.208271604938
+last discovery: 702.05
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0711111111111
+last discovery: 515.95
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 163
+2)sampleRS 159
+3)sampleOLMCTS 133
+4)sampleonesteplookahead 105
+5)sampleRHEA 80
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_escape.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.516216216216
+last discovery: 113.6
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.491891891892
+last discovery: 173.1
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.47972972973
+last discovery: 239.9
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+perc explored: 0.160135135135
+last discovery: 118.3
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.143243243243
+last discovery: 886.2
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 184
+2)olets 181
+3)sampleOLMCTS 143
+4)sampleonesteplookahead 120
+5)sampleRHEA 92
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_hungrybirds.txt
+
+RESULTS
+
+sampleonesteplookahead: 
+
+perc explored: 0.881012658228
+last discovery: 113.95
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.879113924051
+last discovery: 112.45
+
+POINTS: 18
+-------------
+olets: 
+
+perc explored: 0.840506329114
+last discovery: 101.35
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.814556962025
+last discovery: 116.3
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.163924050633
+last discovery: 212.3
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 202
+2)olets 196
+3)sampleOLMCTS 155
+4)sampleonesteplookahead 145
+5)sampleRHEA 102
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_infection.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.856417112299
+last discovery: 434.75
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.854278074866
+last discovery: 661.95
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.79064171123
+last discovery: 753.3
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+perc explored: 0.245989304813
+last discovery: 1095.1
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.227540106952
+last discovery: 385.5
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 227
+2)olets 214
+3)sampleOLMCTS 170
+4)sampleonesteplookahead 155
+5)sampleRHEA 114
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_intersection.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.93683127572
+last discovery: 630.7
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.897942386831
+last discovery: 567.95
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.74341563786
+last discovery: 739.45
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.535390946502
+last discovery: 333.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.17695473251
+last discovery: 410.3
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 252
+2)olets 232
+3)sampleOLMCTS 182
+4)sampleonesteplookahead 170
+5)sampleRHEA 124
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_lemmings.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.981756756757
+last discovery: 928.9
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.977477477477
+last discovery: 1142.55
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.713063063063
+last discovery: 1435.65
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.515765765766
+last discovery: 1451.85
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0713963963964
+last discovery: 309.5
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 277
+2)olets 250
+3)sampleOLMCTS 197
+4)sampleonesteplookahead 182
+5)sampleRHEA 134
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_missilecommand.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.614462809917
+last discovery: 174.05
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.407644628099
+last discovery: 148.7
+
+POINTS: 18
+-------------
+olets: 
+
+perc explored: 0.361570247934
+last discovery: 126.2
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.240702479339
+last discovery: 92.3
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0690082644628
+last discovery: 149.05
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 302
+2)olets 265
+3)sampleOLMCTS 215
+4)sampleonesteplookahead 194
+5)sampleRHEA 144
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_modality.txt
+
+RESULTS
+
+sampleonesteplookahead: 
+
+perc explored: 0.96
+last discovery: 27.6
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.936666666667
+last discovery: 19.2
+
+POINTS: 18
+-------------
+olets: 
+
+perc explored: 0.933333333333
+last discovery: 22.85
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.933333333333
+last discovery: 185.5
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.88
+last discovery: 123.85
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 320
+2)olets 280
+3)sampleOLMCTS 227
+4)sampleonesteplookahead 219
+5)sampleRHEA 154
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_plaqueattack.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.740483870968
+last discovery: 325.8
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.736612903226
+last discovery: 392.85
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.675967741935
+last discovery: 346.95
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.248225806452
+last discovery: 190.3
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.135967741935
+last discovery: 411.75
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 345
+2)olets 298
+3)sampleOLMCTS 242
+4)sampleonesteplookahead 231
+5)sampleRHEA 164
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_roguelike.txt
+
+RESULTS
+
+olets: 
+
+perc explored: 0.422180451128
+last discovery: 551.7
+
+POINTS: 25
+-------------
+sampleRS: 
+
+perc explored: 0.207142857143
+last discovery: 109.9
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.176127819549
+last discovery: 268.2
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.141165413534
+last discovery: 112.7
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.0451127819549
+last discovery: 343.9
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 363
+2)olets 323
+3)sampleOLMCTS 257
+4)sampleonesteplookahead 243
+5)sampleRHEA 174
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_seaquest.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.997619047619
+last discovery: 306.8
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.910052910053
+last discovery: 462.6
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.866666666667
+last discovery: 762.55
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.422751322751
+last discovery: 499.25
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.117989417989
+last discovery: 257.6
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 388
+2)olets 341
+3)sampleOLMCTS 272
+4)sampleonesteplookahead 255
+5)sampleRHEA 184
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_survivezombies.txt
+
+RESULTS
+
+sampleRS: 
+
+perc explored: 0.976033057851
+last discovery: 426.65
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.927272727273
+last discovery: 439.65
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.909917355372
+last discovery: 508.95
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+perc explored: 0.834297520661
+last discovery: 813.15
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.436363636364
+last discovery: 494.3
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 413
+2)olets 359
+3)sampleOLMCTS 284
+4)sampleonesteplookahead 270
+5)sampleRHEA 194
+
+Reading experiment2/results/ExperimentValFunction_results_MaximizeExplorationHeuristic_waitforbreakfast.txt
+
+RESULTS
+
+sampleOLMCTS: 
+
+perc explored: 0.673
+last discovery: 850.1
+
+POINTS: 25
+-------------
+olets: 
+
+perc explored: 0.503
+last discovery: 220.0
+
+POINTS: 18
+-------------
+sampleRS: 
+
+perc explored: 0.277
+last discovery: 58.3
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+perc explored: 0.236
+last discovery: 151.85
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+perc explored: 0.077
+last discovery: 40.3
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 428
+2)olets 377
+3)sampleOLMCTS 309
+4)sampleonesteplookahead 282
+5)sampleRHEA 204
+
+
+RANKING
+
+1)sampleRS 428
+2)olets 377
+3)sampleOLMCTS 309
+4)sampleonesteplookahead 282
+5)sampleRHEA 204
+

@@ -1,0 +1,2849 @@
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{aliens sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{9} & -1 & -1 & 1 & 2 & -1.00 (0.00) & -0.88 (0.02) & 0.07 (0.00) & 1.98 (0.00) & 0.00E+00 & 1.36E-02 & 8.58E-01 & 3.47E-04
+ \\
+\hline
+\textbf{3} & - & - & 0 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 5.18E-09 & 6.92E-08
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.88 (0.07) & - & - & 0.00E+00 & 1.51E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game aliens, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{aliens sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{9} & -1 & -1 & 1 & 2 & -1.00 (0.00) & -0.92 (0.04) & 0.03 (0.01) & 2.00 (0.00) & 0.00E+00 & 6.70E-03 & 9.36E-01 & 8.22E-06
+ \\
+\hline
+\textbf{3} & - & - & 0 & 1 & - & - & -0.00 (0.00) & 1.00 (0.00) & - & - & 8.89E-09 & 8.89E-09
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.97 (0.02) & - & - & 0.00E+00 & 6.41E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game aliens, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{aliens sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{9} & -1 & -1 & 1 & 2 & -1.00 (0.00) & -0.89 (0.00) & 0.03 (0.01) & 2.00 (0.00) & 0.00E+00 & 1.19E-02 & 9.47E-01 & 2.24E-07
+ \\
+\hline
+\textbf{3} & - & - & 0 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 4.26E-07 & 4.93E-06
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.95 (0.02) & - & - & 0.00E+00 & 2.33E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game aliens, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{aliens sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{9} & -1 & -1 & 1 & 2 & -1.00 (0.00) & -0.93 (0.03) & 0.02 (0.01) & 2.00 (0.01) & 0.00E+00 & 5.45E-03 & 9.61E-01 & 1.14E-05
+ \\
+\hline
+\textbf{3} & - & - & 0 & 1 & - & - & -0.00 (0.00) & 1.00 (0.00) & - & - & 3.91E-07 & 3.91E-07
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.93 (0.09) & - & - & 0.00E+00 & 4.44E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game aliens, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{aliens olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{9} & -1 & -1 & 1 & 2 & -1.00 (0.00) & -0.81 (0.10) & 0.02 (0.01) & 1.99 (0.01) & 0.00E+00 & 3.68E-02 & 9.62E-01 & 1.14E-04
+ \\
+\hline
+\textbf{3} & - & - & 0 & 1 & - & - & -0.00 (0.00) & 1.00 (0.00) & - & - & 1.19E-09 & 1.19E-09
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -1.02 (0.02) & - & - & 0.00E+00 & 2.46E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game aliens, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{bait sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 8.90E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 5 & - & - & 0.21 (0.07) & 1.04 (0.35) & - & - & 6.28E-01 & 1.57E+01 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.40E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game bait, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{bait sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.01E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 5 & - & - & 0.13 (0.04) & 0.67 (0.21) & - & - & 7.49E-01 & 1.87E+01 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 7.07E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game bait, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{bait sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.78E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 5 & - & - & 0.12 (0.06) & 0.58 (0.31) & - & - & 7.81E-01 & 1.95E+01 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 8.88E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game bait, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{bait olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.11E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 5 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.00E+00 & 2.50E+01 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.18E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game bait, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{bait sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 6.12E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 5 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.00E+00 & 2.50E+01 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game bait, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{butterflies sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.01 (0.00) & - & - & 9.89E-06 & 5.23E-05 & - & -
+ \\
+\hline
+\textbf{5} & 1 & 2 & - & - & 0.03 (0.01) & 2.10 (0.01) & - & - & 9.43E-01 & 9.96E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game butterflies, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{butterflies sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.01 (0.00) & - & - & 1.25E-05 & 1.20E-04 & - & -
+ \\
+\hline
+\textbf{5} & 1 & 2 & - & - & 0.03 (0.02) & 2.14 (0.03) & - & - & 9.43E-01 & 1.97E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game butterflies, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{butterflies olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.02E-06 & 1.81E-05 & - & -
+ \\
+\hline
+\textbf{5} & 1 & 2 & - & - & 0.01 (0.01) & 2.13 (0.03) & - & - & 9.84E-01 & 1.60E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game butterflies, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{butterflies sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.95E-06 & 2.66E-06 & - & -
+ \\
+\hline
+\textbf{5} & 1 & 2 & - & - & -0.00 (0.00) & 2.05 (0.02) & - & - & 1.00E+00 & 2.62E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game butterflies, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{butterflies sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.01 (0.00) & - & - & 1.10E-05 & 2.73E-05 & - & -
+ \\
+\hline
+\textbf{5} & 1 & 2 & - & - & -0.00 (0.00) & 2.10 (0.02) & - & - & 1.00E+00 & 9.18E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game butterflies, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{camelRace olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 2.25E-05 & 2.25E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game camelRace, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{camelRace sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.01 (0.00) & -0.01 (0.00) & - & - & 6.15E-05 & 6.15E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game camelRace, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{camelRace sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.02 (0.00) & -0.02 (0.00) & - & - & 3.38E-04 & 3.38E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game camelRace, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{camelRace sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.02 (0.00) & -0.02 (0.00) & - & - & 4.66E-04 & 4.66E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game camelRace, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{camelRace sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.03 (0.00) & -0.03 (0.00) & - & - & 8.49E-04 & 8.49E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game camelRace, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chase sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 1.45E-06 & 1.81E-13 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 1 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 1.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chase, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chase sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 9.84E-07 & 1.33E-11 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 1 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 1.00E+00 & 9.25E-07 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chase, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chase sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 8.03E-07 & 5.00E-09 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 1 & 1 & - & - & 0.00 (0.00) & 1.01 (0.00) & - & - & 1.00E+00 & 4.19E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chase, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chase olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 4.55E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chase, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chase sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.08E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chase, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chopper sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 1.82E-08 & 7.54E-05 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.02 (0.01) & -0.00 (0.00) & - & - & 2.97E-04 & 1.74E-05 & - & -
+ \\
+\hline
+\textbf{8} & -1 & 0 & 0 & 0 & -1.00 (0.00) & -0.02 (0.00) & -0.11 (0.03) & -0.04 (0.01) & 0.00E+00 & 2.51E-04 & 1.17E-02 & 1.51E-03
+ \\
+\hline
+\textbf{15} & - & - & 1 & 1 & - & - & -0.00 (0.00) & 1.03 (0.03) & - & - & 1.00E+00 & 1.04E-03
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & -0.03 (0.02) & 0.00 (0.00) & - & - & 6.72E-04 & 2.33E-06 & - & -
+ \\
+\hline
+\textbf{19} & 0 & 0 & - & - & -0.01 (0.01) & -0.01 (0.00) & - & - & 2.12E-04 & 1.00E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chopper, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chopper sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 8.89E-07 & 1.14E-04 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.01 (0.00) & -0.00 (0.00) & - & - & 2.88E-05 & 2.50E-05 & - & -
+ \\
+\hline
+\textbf{8} & -1 & 0 & 0 & 0 & -1.00 (0.00) & -0.02 (0.01) & -0.04 (0.01) & -0.04 (0.01) & 0.00E+00 & 2.62E-04 & 2.02E-03 & 2.00E-03
+ \\
+\hline
+\textbf{15} & - & - & 1 & 1 & - & - & -0.00 (0.00) & 1.07 (0.02) & - & - & 1.01E+00 & 4.40E-03
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 2.33E-06 & 1.19E-04 & - & -
+ \\
+\hline
+\textbf{19} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 1.03E-05 & 1.34E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chopper, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chopper olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & -0.02 (0.00) & - & - & 1.67E-07 & 2.36E-04 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 5.42E-06 & 2.59E-05 & - & -
+ \\
+\hline
+\textbf{8} & -1 & 0 & 0 & 0 & -1.00 (0.00) & -0.04 (0.01) & -0.13 (0.07) & -0.05 (0.01) & 0.00E+00 & 1.48E-03 & 1.64E-02 & 2.21E-03
+ \\
+\hline
+\textbf{15} & - & - & 1 & 1 & - & - & -0.01 (0.01) & 1.04 (0.03) & - & - & 1.03E+00 & 1.87E-03
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 2.21E-06 & 2.26E-05 & - & -
+ \\
+\hline
+\textbf{19} & 0 & 0 & - & - & -0.00 (0.00) & -0.02 (0.00) & - & - & 1.35E-06 & 4.43E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chopper, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chopper sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & -0.01 (0.00) & - & - & 4.12E-06 & 1.35E-04 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.01 (0.00) & -0.01 (0.00) & - & - & 1.03E-04 & 9.77E-05 & - & -
+ \\
+\hline
+\textbf{8} & -1 & 0 & 0 & 0 & -1.00 (0.00) & -0.02 (0.00) & -0.11 (0.02) & -0.03 (0.01) & 0.00E+00 & 4.80E-04 & 1.12E-02 & 1.17E-03
+ \\
+\hline
+\textbf{15} & - & - & 1 & 1 & - & - & -0.02 (0.01) & 1.08 (0.03) & - & - & 1.03E+00 & 6.19E-03
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & -0.01 (0.00) & -0.01 (0.00) & - & - & 3.34E-05 & 7.15E-05 & - & -
+ \\
+\hline
+\textbf{19} & 0 & 0 & - & - & -0.01 (0.00) & -0.01 (0.00) & - & - & 5.61E-05 & 1.40E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chopper, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{chopper sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{8} & -1 & 0 & 0 & 0 & -1.00 (0.00) & -0.10 (0.05) & -0.15 (0.05) & -0.03 (0.01) & 0.00E+00 & 9.25E-03 & 2.15E-02 & 8.00E-04
+ \\
+\hline
+\textbf{19} & 0 & 0 & - & - & -0.01 (0.00) & -0.02 (0.00) & - & - & 1.38E-04 & 4.24E-04 & - & -
+ \\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & -0.02 (0.00) & - & - & 4.41E-06 & 3.35E-04 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.01 (0.00) & -0.02 (0.00) & - & - & 8.91E-05 & 2.43E-04 & - & -
+ \\
+\hline
+\textbf{15} & - & - & 1 & 1 & - & - & 0.00 (0.00) & 1.43 (0.17) & - & - & 1.00E+00 & 1.84E-01
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game chopper, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{crossfire sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 4.09E-06 & 1.01E-06 & - & -
+ \\
+\hline
+\textbf{4} & -1 & -1 & - & - & -1.00 (0.00) & -1.01 (0.00) & - & - & 0.00E+00 & 4.47E-05 & - & -
+ \\
+\hline
+\textbf{6} & 1 & 5 & - & - & 1.00 (0.00) & 5.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game crossfire, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{crossfire sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 3.73E-07 & 2.33E-08 & - & -
+ \\
+\hline
+\textbf{4} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game crossfire, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{crossfire sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.01 (0.00) & -0.00 (0.00) & - & - & 2.98E-05 & 2.30E-05 & - & -
+ \\
+\hline
+\textbf{4} & -1 & -1 & - & - & -1.00 (0.00) & -1.01 (0.00) & - & - & 0.00E+00 & 4.23E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game crossfire, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{crossfire sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.01 (0.00) & -0.01 (0.00) & - & - & 7.66E-05 & 7.66E-05 & - & -
+ \\
+\hline
+\textbf{4} & -1 & -1 & - & - & -1.00 (0.00) & -1.01 (0.00) & - & - & 0.00E+00 & 1.29E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game crossfire, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{crossfire olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 5.66E-08 & 8.37E-10 & - & -
+ \\
+\hline
+\textbf{4} & -1 & -1 & - & - & -1.00 (0.00) & -1.03 (0.03) & - & - & 0.00E+00 & 9.18E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game crossfire, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{digdug sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & 0.00 (0.00) & 0.00 (0.00) & 0.00 (0.00) & 0.00 (0.00) & 0.00E+00 & 0.00E+00 & 0.00E+00 & 0.00E+00
+ \\
+\hline
+\textbf{4} & 0 & 0 & 1 & 0 & 0.00 (0.00) & 0.00 (0.00) & 0.00 (0.00) & 0.00 (0.00) & 0.00E+00 & 0.00E+00 & 1.00E+00 & 0.00E+00
+ \\
+\hline
+\textbf{5} & 1 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 1.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & - & - & 0 & 0 & - & - & -0.01 (0.00) & -0.00 (0.00) & - & - & 4.07E-05 & 1.76E-05
+ \\
+\hline
+\textbf{8} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.86E-05 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{11} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{12} & 0 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 1.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game digdug, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{digdug olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & 0.00 (0.00) & -0.00 (0.00) & 0.00 (0.00) & 5.00E-08 & 3.03E-07 & 2.62E-07 & 7.92E-08
+ \\
+\hline
+\textbf{4} & 0 & 0 & 1 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 4.20E-09 & 3.09E-10 & 1.00E+00 & 3.45E-08
+ \\
+\hline
+\textbf{5} & 1 & 1 & - & - & -0.00 (0.00) & 1.00 (0.00) & - & - & 1.01E+00 & 1.05E-05 & - & -
+ \\
+\hline
+\textbf{6} & - & - & 0 & 0 & - & - & -0.00 (0.00) & 0.01 (0.00) & - & - & 8.68E-07 & 3.29E-05
+ \\
+\hline
+\textbf{8} & 0 & 0 & - & - & 0.00 (0.00) & 0.03 (0.03) & - & - & 0.00E+00 & 7.82E-04 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.95E-08 & 3.30E-10 & - & -
+ \\
+\hline
+\textbf{11} & -1 & -1 & - & - & -1.00 (0.00) & -1.03 (0.02) & - & - & 0.00E+00 & 8.57E-04 & - & -
+ \\
+\hline
+\textbf{12} & 0 & 0 & - & - & -1.00 (0.00) & -0.02 (0.01) & - & - & 1.00E+00 & 4.55E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game digdug, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{digdug sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 4.50E-06 & 1.05E-06 & 2.58E-06 & 2.65E-07
+ \\
+\hline
+\textbf{4} & 0 & 0 & 1 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 8.45E-07 & 2.70E-07 & 1.00E+00 & 4.19E-07
+ \\
+\hline
+\textbf{5} & 1 & 1 & - & - & -0.02 (0.00) & 0.98 (0.00) & - & - & 1.04E+00 & 3.63E-04 & - & -
+ \\
+\hline
+\textbf{6} & - & - & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.27E-05 & 1.93E-06
+ \\
+\hline
+\textbf{8} & 0 & 0 & - & - & -0.00 (0.00) & 0.04 (0.02) & - & - & 8.58E-06 & 2.02E-03 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.59E-06 & 8.87E-06 & - & -
+ \\
+\hline
+\textbf{11} & -1 & -1 & - & - & -1.00 (0.00) & -0.99 (0.01) & - & - & 0.00E+00 & 1.09E-04 & - & -
+ \\
+\hline
+\textbf{12} & 0 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 1.00E+00 & 4.06E-06 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game digdug, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{digdug sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 1.08E-05 & 9.25E-07 & 1.30E-05 & 6.57E-07
+ \\
+\hline
+\textbf{4} & 0 & 0 & 1 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.01 (0.00) & -0.01 (0.00) & 2.00E-05 & 1.14E-05 & 1.01E+00 & 2.70E-05
+ \\
+\hline
+\textbf{5} & 1 & 1 & - & - & -0.02 (0.01) & 0.98 (0.00) & - & - & 1.04E+00 & 3.75E-04 & - & -
+ \\
+\hline
+\textbf{6} & - & - & 0 & 0 & - & - & -0.01 (0.00) & -0.00 (0.00) & - & - & 6.12E-05 & 2.12E-06
+ \\
+\hline
+\textbf{8} & 0 & 0 & - & - & -0.00 (0.00) & 0.04 (0.03) & - & - & 5.60E-06 & 1.34E-03 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 7.51E-06 & 2.05E-05 & - & -
+ \\
+\hline
+\textbf{11} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.01) & - & - & 0.00E+00 & 9.37E-06 & - & -
+ \\
+\hline
+\textbf{12} & 0 & 0 & - & - & -1.00 (0.00) & -0.00 (0.00) & - & - & 1.00E+00 & 1.56E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game digdug, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{digdug sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 9.77E-06 & 7.12E-06 & 1.39E-05 & 9.13E-06
+ \\
+\hline
+\textbf{4} & 0 & 0 & 1 & 0 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & 0.00 (0.00) & 2.05E-05 & 7.54E-06 & 1.00E+00 & 1.71E-08
+ \\
+\hline
+\textbf{5} & 1 & 1 & - & - & -0.04 (0.01) & 0.96 (0.01) & - & - & 1.09E+00 & 1.91E-03 & - & -
+ \\
+\hline
+\textbf{6} & - & - & 0 & 0 & - & - & -0.01 (0.00) & 0.00 (0.00) & - & - & 3.22E-05 & 4.79E-07
+ \\
+\hline
+\textbf{8} & 0 & 0 & - & - & 0.00 (0.00) & 0.12 (0.08) & - & - & 0.00E+00 & 1.45E-02 & - & -
+ \\
+\hline
+\textbf{9} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 1.13E-05 & - & -
+ \\
+\hline
+\textbf{11} & -1 & -1 & - & - & -1.00 (0.00) & -0.97 (0.03) & - & - & 0.00E+00 & 1.20E-03 & - & -
+ \\
+\hline
+\textbf{12} & 0 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 1.00E+00 & 5.89E-08 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game digdug, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{escape sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game escape, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{escape olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.90E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.46E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game escape, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{escape sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.66E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.99E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game escape, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{escape sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.49E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 7.12E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & -1 & -1 & - & - & -1.00 (0.00) & -1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game escape, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{escape sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 7.50E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game escape, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{hungrybirds olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 5.61E-10 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game hungrybirds, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{hungrybirds sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 5.98E-10 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game hungrybirds, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{hungrybirds sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.31E-09 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game hungrybirds, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{hungrybirds sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.33E-09 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game hungrybirds, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{hungrybirds sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.01 (0.00) & 0.00 (0.00) & - & - & 2.99E-05 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game hungrybirds, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{infection sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 1.71E-09 & 1.14E-07 & - & -
+ \\
+\hline
+\textbf{10} & 1 & 2 & - & - & 0.03 (0.02) & 1.99 (0.00) & - & - & 9.43E-01 & 4.09E-05 & - & -
+ \\
+\hline
+\textbf{11} & 0 & 0 & - & - & 0.00 (0.00) & 0.02 (0.00) & - & - & 0.00E+00 & 2.43E-04 & - & -
+ \\
+\hline
+\textbf{12} & 0 & -1 & 0 & 2 & 0.00 (0.00) & -0.82 (0.03) & 0.00 (0.00) & 1.84 (0.05) & 0.00E+00 & 3.23E-02 & 2.39E-08 & 2.45E-02
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 1.31E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game infection, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{infection olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 5.36E-09 & 8.02E-09 & - & -
+ \\
+\hline
+\textbf{10} & 1 & 2 & - & - & 0.00 (0.00) & 2.03 (0.03) & - & - & 1.00E+00 & 1.06E-03 & - & -
+ \\
+\hline
+\textbf{11} & 0 & 0 & - & - & 0.00 (0.00) & 0.02 (0.01) & - & - & 0.00E+00 & 2.61E-04 & - & -
+ \\
+\hline
+\textbf{12} & 0 & -1 & 0 & 2 & 0.00 (0.00) & -0.86 (0.03) & 0.00 (0.00) & 1.90 (0.03) & 0.00E+00 & 2.02E-02 & 0.00E+00 & 9.98E-03
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 2.78E-06 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game infection, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{infection sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 6.47E-08 & 2.92E-07 & - & -
+ \\
+\hline
+\textbf{10} & 1 & 2 & - & - & 0.00 (0.00) & 2.03 (0.04) & - & - & 9.98E-01 & 7.86E-04 & - & -
+ \\
+\hline
+\textbf{11} & 0 & 0 & - & - & 0.00 (0.00) & 0.03 (0.01) & - & - & 6.99E-08 & 1.03E-03 & - & -
+ \\
+\hline
+\textbf{12} & 0 & -1 & 0 & 2 & 0.00 (0.00) & -0.87 (0.02) & 0.00 (0.00) & 1.80 (0.03) & 1.42E-06 & 1.79E-02 & 1.97E-06 & 4.06E-02
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.02 (0.01) & - & - & 0.00E+00 & 2.49E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game infection, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{infection sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 1.97E-07 & 9.97E-07 & - & -
+ \\
+\hline
+\textbf{10} & 1 & 2 & - & - & 0.00 (0.00) & 1.97 (0.04) & - & - & 1.00E+00 & 1.04E-03 & - & -
+ \\
+\hline
+\textbf{11} & 0 & 0 & - & - & 0.00 (0.00) & 0.04 (0.01) & - & - & 0.00E+00 & 1.50E-03 & - & -
+ \\
+\hline
+\textbf{12} & 0 & -1 & 0 & 2 & 0.00 (0.00) & -0.79 (0.01) & 0.00 (0.00) & 1.80 (0.04) & 0.00E+00 & 4.40E-02 & 7.97E-09 & 4.16E-02
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.01 (0.00) & - & - & 0.00E+00 & 3.93E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game infection, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{infection sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & -0.00 (0.00) & - & - & 1.07E-08 & 8.08E-08 & - & -
+ \\
+\hline
+\textbf{10} & 1 & 2 & - & - & 0.00 (0.00) & 2.00 (0.00) & - & - & 1.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{11} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{12} & 0 & -1 & 0 & 2 & 0.00 (0.00) & -0.75 (0.15) & 0.00 (0.00) & 1.81 (0.07) & 0.00E+00 & 6.21E-02 & 0.00E+00 & 3.43E-02
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game infection, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{intersection sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 4.12E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 10 & - & - & 0.00 (0.00) & 10.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 0 & 0 & - & - & -0.63 (0.04) & -5.01 (0.00) & - & - & 4.02E-01 & 2.51E+01 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -5 & - & - & -0.66 (0.04) & -5.01 (0.00) & - & - & 1.17E-01 & 1.79E-04 & - & -
+ \\
+\hline
+\textbf{12} & -1 & -5 & - & - & -0.38 (0.08) & -5.04 (0.01) & - & - & 3.85E-01 & 1.79E-03 & - & -
+ \\
+\hline
+\textbf{15} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 2.89E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game intersection, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{intersection sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 4.05E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 10 & - & - & 0.00 (0.00) & 10.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 0 & 0 & - & - & -0.28 (0.04) & -5.01 (0.01) & - & - & 7.73E-02 & 2.51E+01 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -5 & - & - & -0.32 (0.04) & -5.03 (0.01) & - & - & 4.65E-01 & 7.86E-04 & - & -
+ \\
+\hline
+\textbf{12} & -1 & -5 & - & - & -0.39 (0.09) & -5.05 (0.02) & - & - & 3.77E-01 & 2.04E-03 & - & -
+ \\
+\hline
+\textbf{15} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 2.90E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game intersection, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{intersection sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 10 & - & - & 0.00 (0.00) & 10.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 0 & 0 & - & - & -0.32 (0.04) & -5.01 (0.00) & - & - & 1.02E-01 & 2.51E+01 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -5 & - & - & -0.29 (0.05) & -5.02 (0.00) & - & - & 4.98E-01 & 3.14E-04 & - & -
+ \\
+\hline
+\textbf{12} & -1 & -5 & - & - & -0.26 (0.07) & -5.13 (0.06) & - & - & 5.50E-01 & 1.61E-02 & - & -
+ \\
+\hline
+\textbf{15} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game intersection, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{intersection olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 2.11E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -5 & - & - & -0.00 (0.00) & -5.00 (0.00) & - & - & 9.99E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{12} & -1 & -5 & - & - & -0.08 (0.07) & -5.00 (0.00) & - & - & 8.52E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 0 & 0 & - & - & -0.00 (0.00) & -5.00 (0.00) & - & - & 3.70E-07 & 2.50E+01 & - & -
+ \\
+\hline
+\textbf{15} & 0 & 0 & - & - & 0.06 (0.05) & 0.00 (0.00) & - & - & 3.11E-03 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game intersection, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{intersection sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 4.66E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{15} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 3.76E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game intersection, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{lemmings sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & -1 & -0.00 (0.00) & 0.00 (0.01) & 0.00 (0.00) & -1.00 (0.00) & 1.74E-07 & 2.27E-05 & 0.00E+00 & 2.08E-05
+ \\
+\hline
+\textbf{3} & -1 & -5 & - & - & -1.00 (0.00) & -5.00 (0.00) & - & - & 0.00E+00 & 2.08E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game lemmings, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{lemmings sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & -1 & -0.00 (0.00) & -0.00 (0.00) & -0.00 (0.00) & -1.00 (0.00) & 4.68E-08 & 5.31E-06 & 3.43E-08 & 1.66E-06
+ \\
+\hline
+\textbf{3} & -1 & -5 & - & - & -1.00 (0.00) & -4.99 (0.01) & - & - & 0.00E+00 & 7.15E-05 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game lemmings, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{lemmings sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & -1 & 0.00 (0.00) & -0.00 (0.00) & 0.00 (0.00) & -1.00 (0.00) & 1.12E-07 & 1.51E-06 & 9.39E-08 & 4.37E-09
+ \\
+\hline
+\textbf{3} & -1 & -5 & - & - & -1.00 (0.00) & -4.99 (0.01) & - & - & 0.00E+00 & 1.89E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game lemmings, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{lemmings sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & -1 & 0.00 (0.00) & 0.01 (0.00) & 0.00 (0.00) & -0.99 (0.00) & 8.11E-08 & 4.96E-05 & 2.84E-08 & 2.72E-05
+ \\
+\hline
+\textbf{3} & -1 & -5 & - & - & -1.00 (0.00) & -4.98 (0.01) & - & - & 0.00E+00 & 2.83E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game lemmings, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{lemmings olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & -1 & 0.00 (0.00) & 0.01 (0.00) & 0.00 (0.00) & -0.99 (0.01) & 3.49E-10 & 6.36E-05 & 3.17E-10 & 1.52E-04
+ \\
+\hline
+\textbf{3} & -1 & -5 & - & - & -1.00 (0.00) & -4.98 (0.01) & - & - & 0.00E+00 & 3.57E-04 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game lemmings, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{missilecommand sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.01) & -0.04 (0.02) & - & - & 1.49E-05 & 1.70E-03 & - & -
+ \\
+\hline
+\textbf{7} & - & - & 1 & 2 & - & - & 0.18 (0.06) & 1.94 (0.03) & - & - & 6.75E-01 & 3.39E-03
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game missilecommand, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{missilecommand sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.01 (0.01) & -0.04 (0.01) & - & - & 1.93E-04 & 1.72E-03 & - & -
+ \\
+\hline
+\textbf{7} & - & - & 1 & 2 & - & - & 0.14 (0.06) & 2.00 (0.00) & - & - & 7.37E-01 & 0.00E+00
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game missilecommand, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{missilecommand sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.01 (0.03) & -0.10 (0.06) & - & - & 1.97E-04 & 9.27E-03 & - & -
+ \\
+\hline
+\textbf{7} & - & - & 1 & 2 & - & - & 0.13 (0.05) & 2.00 (0.00) & - & - & 7.56E-01 & 2.20E-06
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game missilecommand, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{missilecommand sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.02 (0.01) & -0.04 (0.01) & - & - & 2.67E-04 & 1.36E-03 & - & -
+ \\
+\hline
+\textbf{7} & - & - & 1 & 2 & - & - & 0.00 (0.00) & 2.00 (0.00) & - & - & 1.00E+00 & 0.00E+00
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game missilecommand, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{missilecommand olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 2.68E-07 & 2.42E-06 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game missilecommand, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{modality olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.36E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 7.86E-09 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.56E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.61E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 3.49E-07 & 5.77E-07 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game modality, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{modality sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.11E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.76E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.01E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.88E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 6.06E-06 & 7.54E-06 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game modality, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{modality sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.08E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.69E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.43E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.34E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.15 (0.01) & 0.15 (0.01) & - & - & 2.12E-02 & 2.13E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game modality, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{modality sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 8.71E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.96E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{3} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.42E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.11E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.19 (0.04) & 0.19 (0.04) & - & - & 3.73E-02 & 3.75E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game modality, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{modality sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.60E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game modality, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{plaqueattack sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & 0.00 (0.00) & -0.02 (0.01) & -0.00 (0.00) & -0.00 (0.01) & 1.93E-06 & 3.38E-04 & 1.80E-06 & 1.72E-05
+ \\
+\hline
+\textbf{11} & - & - & 1 & 2 & - & - & 0.02 (0.01) & 2.02 (0.04) & - & - & 9.59E-01 & 2.41E-04
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & 0.03 (0.03) & 0.13 (0.19) & - & - & 9.23E-04 & 7.60E-01 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game plaqueattack, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{plaqueattack sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.02 (0.01) & -0.00 (0.00) & -0.02 (0.01) & 1.35E-05 & 3.33E-04 & 8.18E-06 & 2.42E-04
+ \\
+\hline
+\textbf{11} & - & - & 1 & 2 & - & - & 0.01 (0.01) & 1.99 (0.03) & - & - & 9.79E-01 & 4.21E-05
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & 0.01 (0.01) & -0.04 (0.21) & - & - & 6.20E-05 & 1.08E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game plaqueattack, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{plaqueattack sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.02 (0.00) & -0.00 (0.00) & -0.01 (0.01) & 8.90E-08 & 3.61E-04 & 1.10E-07 & 5.29E-05
+ \\
+\hline
+\textbf{11} & - & - & 1 & 2 & - & - & 0.04 (0.01) & 1.98 (0.05) & - & - & 9.13E-01 & 2.48E-04
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & 0.12 (0.05) & -0.18 (0.16) & - & - & 1.36E-02 & 1.40E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game plaqueattack, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{plaqueattack olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.04 (0.00) & -0.00 (0.00) & -0.03 (0.00) & 2.56E-07 & 1.70E-03 & 2.40E-07 & 1.21E-03
+ \\
+\hline
+\textbf{11} & - & - & 1 & 2 & - & - & -0.14 (0.10) & 2.03 (0.12) & - & - & 1.31E+00 & 6.80E-04
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & 0.05 (0.03) & -1.09 (0.61) & - & - & 3.00E-03 & 4.36E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game plaqueattack, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{plaqueattack sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & 0 & 0 & -0.00 (0.00) & -0.05 (0.01) & -0.00 (0.00) & -0.06 (0.01) & 3.29E-06 & 2.85E-03 & 9.42E-06 & 3.49E-03
+ \\
+\hline
+\textbf{11} & - & - & 1 & 2 & - & - & 0.00 (0.00) & 2.20 (0.12) & - & - & 1.00E+00 & 4.07E-02
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & 0.04 (0.01) & -2.04 (0.04) & - & - & 1.52E-03 & 9.25E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game plaqueattack, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{roguelike sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 5.45E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{6} & 0 & 0 & - & - & -0.54 (0.32) & 0.00 (0.00) & - & - & 2.93E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 0 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{10} & 0 & 0 & - & - & -0.38 (0.17) & 0.00 (0.00) & - & - & 1.45E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{13} & -1 & 0 & 0 & 2 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -0.96 (0.04) & 0.00 (0.00) & - & - & 1.78E-03 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game roguelike, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{roguelike sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.53E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 0 & 1 & - & - & 0.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{10} & 0 & 0 & - & - & -0.25 (0.22) & 0.00 (0.00) & - & - & 6.42E-02 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{13} & -1 & 0 & 0 & 2 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game roguelike, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{roguelike sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 2.67E-06 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 0 & 1 & - & - & -0.02 (0.02) & 1.00 (0.00) & - & - & 3.31E-04 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{10} & 0 & 0 & - & - & -0.30 (0.14) & 0.00 (0.00) & - & - & 9.14E-02 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{13} & -1 & 0 & 0 & 2 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 1.54E-05 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game roguelike, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{roguelike olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 3.84E-08 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{13} & -1 & 0 & 0 & 2 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game roguelike, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{roguelike sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 5.55E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{13} & -1 & 0 & 0 & 2 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game roguelike, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{seaquest sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{16} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.06 (0.05) & -0.00 (0.00) & 1.32 (0.14) & 0.00E+00 & 3.09E-03 & 7.30E-06 & 1.01E-01
+ \\
+\hline
+\textbf{17} & 0 & 0 & 0 & 1 & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.53 (0.18) & - & - & 1.26E-06 & 2.77E-01 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.02 (0.02) & -0.05 (0.05) & 1.00 (0.00) & 0.00E+00 & 2.78E-04 & 2.77E-03 & 0.00E+00
+ \\
+\hline
+\textbf{15} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.00 (0.00) & -0.02 (0.02) & 1.24 (0.09) & 0.00E+00 & 0.00E+00 & 3.43E-04 & 5.57E-02
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game seaquest, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{seaquest sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{16} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.11 (0.02) & -0.03 (0.01) & 1.51 (0.20) & 0.00E+00 & 1.29E-02 & 6.70E-04 & 2.57E-01
+ \\
+\hline
+\textbf{17} & 0 & 0 & 0 & 1 & -0.00 (0.00) & 0.29 (0.26) & - & - & 2.42E-06 & 8.67E-02 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.40 (0.10) & - & - & 4.15E-07 & 1.63E-01 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.12 (0.01) & -0.04 (0.02) & 1.22 (0.08) & 0.00E+00 & 1.38E-02 & 1.97E-03 & 4.91E-02
+ \\
+\hline
+\textbf{15} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.01 (0.01) & -0.00 (0.00) & 1.33 (0.10) & 0.00E+00 & 2.24E-04 & 2.51E-06 & 1.10E-01
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game seaquest, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{seaquest sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{16} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.16 (0.02) & -0.01 (0.00) & 1.34 (0.07) & 0.00E+00 & 2.45E-02 & 4.62E-05 & 1.16E-01
+ \\
+\hline
+\textbf{17} & 0 & 0 & 0 & 1 & -0.00 (0.00) & 0.29 (0.18) & - & - & 1.22E-05 & 8.24E-02 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.60 (0.11) & - & - & 1.84E-06 & 3.60E-01 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.13 (0.01) & -0.01 (0.00) & 1.04 (0.01) & 0.00E+00 & 1.62E-02 & 1.53E-04 & 1.35E-03
+ \\
+\hline
+\textbf{15} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.10 (0.04) & -0.01 (0.00) & 1.39 (0.11) & 0.00E+00 & 1.02E-02 & 6.20E-05 & 1.54E-01
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game seaquest, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{seaquest olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{16} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.04 (0.02) & -0.00 (0.00) & 1.35 (0.08) & 0.00E+00 & 1.74E-03 & 2.75E-07 & 1.21E-01
+ \\
+\hline
+\textbf{17} & 0 & 0 & 0 & 1 & -0.00 (0.00) & 1.43 (0.75) & - & - & 1.01E-07 & 2.03E+00 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.56 (0.12) & - & - & 8.01E-07 & 3.16E-01 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.04 (0.01) & -0.00 (0.00) & 1.03 (0.01) & 0.00E+00 & 2.01E-03 & 6.13E-07 & 7.77E-04
+ \\
+\hline
+\textbf{15} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.03 (0.02) & -0.00 (0.00) & 1.46 (0.31) & 0.00E+00 & 1.04E-03 & 1.68E-07 & 2.13E-01
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game seaquest, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{seaquest sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{16} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.06 (0.01) & -0.00 (0.00) & 1.38 (0.06) & 0.00E+00 & 4.04E-03 & 1.55E-06 & 1.48E-01
+ \\
+\hline
+\textbf{17} & 0 & 0 & 0 & 1 & -0.00 (0.00) & 0.81 (0.44) & - & - & 9.63E-07 & 6.58E-01 & - & -
+ \\
+\hline
+\textbf{2} & 0 & 0 & - & - & 0.00 (0.00) & 0.81 (0.17) & - & - & 2.38E-06 & 6.57E-01 & - & -
+ \\
+\hline
+\textbf{14} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.12 (0.01) & -0.01 (0.00) & 1.78 (0.46) & 0.00E+00 & 1.34E-02 & 3.48E-05 & 6.15E-01
+ \\
+\hline
+\textbf{15} & -1 & 0 & 0 & 1 & -1.00 (0.00) & 0.03 (0.01) & -0.00 (0.00) & 3.07 (1.58) & 0.00E+00 & 1.21E-03 & 9.45E-07 & 4.29E+00
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game seaquest, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{survivezombies sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 6.31E-09 & 1.54E-06 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -1 & - & - & -0.22 (0.03) & -1.15 (0.07) & - & - & 6.03E-01 & 2.14E-02 & - & -
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -1.06 (0.22) & - & - & 0.00E+00 & 3.27E-03 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & -0.11 (0.03) & 0.70 (0.06) & - & - & 1.15E-02 & 9.05E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game survivezombies, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{survivezombies sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & -0.00 (0.00) & - & - & 1.82E-06 & 1.99E-06 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -1 & - & - & -0.16 (0.03) & -1.18 (0.05) & - & - & 7.12E-01 & 3.18E-02 & - & -
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.94 (0.30) & - & - & 3.85E-06 & 4.09E-03 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & -0.04 (0.01) & 0.72 (0.07) & - & - & 1.69E-03 & 7.84E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game survivezombies, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{survivezombies olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & -0.00 (0.00) & - & - & 1.26E-09 & 3.94E-07 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -1 & - & - & -0.14 (0.04) & -1.09 (0.04) & - & - & 7.40E-01 & 7.96E-03 & - & -
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -0.99 (0.00) & -0.43 (0.39) & - & - & 5.72E-05 & 3.26E-01 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & -0.02 (0.01) & 0.88 (0.05) & - & - & 3.62E-04 & 1.36E-02 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game survivezombies, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{survivezombies sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & 0.00 (0.00) & -0.00 (0.00) & - & - & 1.15E-07 & 1.26E-05 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -1 & - & - & -0.39 (0.04) & -1.44 (0.11) & - & - & 3.71E-01 & 1.90E-01 & - & -
+ \\
+\hline
+\textbf{6} & -1 & -1 & - & - & -1.00 (0.00) & -0.43 (0.30) & - & - & 1.36E-05 & 3.29E-01 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & -0.24 (0.04) & 0.57 (0.09) & - & - & 5.71E-02 & 1.86E-01 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game survivezombies, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{survivezombies sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.00 (0.00) & -0.00 (0.00) & - & - & 3.78E-08 & 4.26E-07 & - & -
+ \\
+\hline
+\textbf{10} & -1 & -1 & - & - & -0.27 (0.09) & -1.05 (0.03) & - & - & 5.32E-01 & 2.44E-03 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 1 & - & - & -0.03 (0.03) & 0.96 (0.06) & - & - & 8.16E-04 & 1.39E-03 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game survivezombies, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{waitforbreakfast sampleOLMCTS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.40 (0.11) & 0.00 (0.00) & - & - & 1.59E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & -1 & 0 & - & - & -0.37 (0.05) & 0.00 (0.00) & - & - & 4.03E-01 & 6.78E-06 & - & -
+ \\
+\hline
+\textbf{4} & -1 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 6.78E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game waitforbreakfast, showing stypes estimations for the controller sampleOLMCTS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{waitforbreakfast sampleRHEA}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.79 (0.07) & 0.00 (0.00) & - & - & 6.22E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & -1 & 0 & - & - & -0.23 (0.04) & 0.02 (0.01) & - & - & 5.95E-01 & 4.96E-04 & - & -
+ \\
+\hline
+\textbf{4} & -1 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 1 & - & - & 0.83 (0.16) & 0.83 (0.16) & - & - & 3.06E-02 & 3.06E-02 & - & -
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game waitforbreakfast, showing stypes estimations for the controller sampleRHEA displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{waitforbreakfast sampleRS}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.74 (0.08) & 0.00 (0.00) & - & - & 5.42E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & -1 & 0 & - & - & -0.10 (0.02) & 0.03 (0.00) & - & - & 8.14E-01 & 6.61E-04 & - & -
+ \\
+\hline
+\textbf{4} & -1 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 4.41E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game waitforbreakfast, showing stypes estimations for the controller sampleRS displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{waitforbreakfast olets}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.85 (0.08) & 0.00 (0.00) & - & - & 7.23E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & -1 & 0 & - & - & -0.02 (0.00) & 0.01 (0.00) & - & - & 9.61E-01 & 1.06E-04 & - & -
+ \\
+\hline
+\textbf{4} & -1 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.08E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{7} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{8} & 1 & 1 & - & - & 1.00 (0.00) & 1.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game waitforbreakfast, showing stypes estimations for the controller olets displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\begin{table*}[!t]
+\begin{center}
+\begin{adjustbox}{width=1\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{13}{|c|}{\textbf{waitforbreakfast sampleonesteplookahead}}\\
+\hline
+\textbf{Stype} & \multicolumn{4}{|c|}{\textbf{Real}} & \multicolumn{4}{|c|}{\textbf{Estimations}} & \multicolumn{4}{|c|}{\textbf{SqError}}\\
+\hline
+ & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS} & \textbf{CW} & \textbf{CS} & \textbf{AW} & \textbf{AS}\\
+\hline
+\textbf{0} & 0 & 0 & - & - & -0.55 (0.11) & 0.00 (0.00) & - & - & 3.04E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{18} & 0 & 0 & - & - & 0.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{4} & -1 & 0 & - & - & -1.00 (0.00) & 0.00 (0.00) & - & - & 0.00E+00 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{2} & -1 & 0 & - & - & -0.19 (0.04) & 0.00 (0.00) & - & - & 6.62E-01 & 0.00E+00 & - & -
+ \\
+\hline
+\textbf{5} & 0 & 0 & - & - & -0.00 (0.00) & 0.00 (0.00) & - & - & 1.21E-07 & 0.00E+00 & - & -
+ \\
+\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Results for the game waitforbreakfast, showing stypes estimations for the controller sampleonesteplookahead displaying the id of the sprite, the real information and the estimations and square error obtained by the agent for every interaction:  Collision wins (CW), Collision score (CS), Action-onto win (AW), Action-onto score (AS)}
+\label{tab:weights}
+\end{center}
+\end{table*}
+\clearpage
+\begin{table*}[!t]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\multicolumn{3}{|c|}{\textbf{KnowledgeEstimationHeuristic}}\\
+\hline
+\textbf{Rank} & \textbf{Controller} & \textbf{Total points}\\
+\hline
+\textbf{1} & sampleOLMCTS & 356
+ \\
+\hline
+\textbf{2} & sampleRHEA & 341
+ \\
+\hline
+\textbf{3} & sampleRS & 338
+ \\
+\hline
+\textbf{4} & olets & 298
+ \\
+\hline
+\textbf{5} & sampleonesteplookahead & 267
+ \\
+\hline
+\end{tabular}
+\caption{Global results for the heuristic KnowledgeEstimationHeuristic, showing rank, controller and total number of points received.}
+\label{tab:weights}
+\end{center}
+\end{table*}
+

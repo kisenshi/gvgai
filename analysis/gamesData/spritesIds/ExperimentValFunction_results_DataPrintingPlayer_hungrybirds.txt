@@ -1,0 +1,6 @@
+2 <- floor
+1 <- avatar
+3 <- foodbank
+0 <- wall
+4 <- goal
+5 <- food

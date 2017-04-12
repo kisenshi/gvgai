@@ -1,0 +1,10 @@
+floor	2	-	-	-	-
+hole	3	-1	0	-	-
+avatar	1	-	-	-	-
+nokey	4	-	-	-	-
+withkey	5	-	-	-	-
+mushroom	6	0	1	-	-
+key	7	0	0	-	-
+goal	8	1	5	-	-
+box	9	0	0	-	-
+wall	0	0	0	-	-

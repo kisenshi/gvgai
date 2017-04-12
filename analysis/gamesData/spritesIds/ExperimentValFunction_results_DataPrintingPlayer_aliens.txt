@@ -1,0 +1,12 @@
+2 <- background
+3 <- base
+1 <- avatar
+4 <- missile
+5 <- sam
+6 <- bomb
+7 <- alien
+8 <- alienGreen
+9 <- alienBlue
+10 <- portal
+11 <- portalSlow
+12 <- portalFast

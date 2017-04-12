@@ -1,0 +1,7 @@
+floor	2	-	-	-	-
+turret	3	-	-	-	-
+bomb	4	-1	-1	-	-
+structure	5	-	-	-	-
+goal	6	1	5	-	-
+avatar	1	-	-	-	-
+wall	0	0	0	-	-

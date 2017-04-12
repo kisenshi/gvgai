@@ -1,0 +1,7 @@
+2 <- floor
+3 <- turret
+4 <- bomb
+5 <- structure
+6 <- goal
+1 <- avatar
+0 <- wall

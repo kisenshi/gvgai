@@ -1,0 +1,17 @@
+floor	2	-	-	-	-
+floorV	3	-	-	-	-
+crossing	4	-	-	-	-
+goal	5	0	10	-	-
+deadPortal	6	0	0	-	-
+car	7	-1	-5	-	-
+rightcar	8	-1	-5	-	-
+fastRcar	9	-1	-5	-	-
+slowRcar	10	-1	-5	-	-
+downcar	11	-1	-5	-	-
+fastDcar	12	-1	-5	-	-
+slowDcar	13	-1	-5	-	-
+start	14	-	-	-	-
+wall	0	0	0	-	-
+tree	15	0	0	-	-
+input	16	-	-	-	-
+avatar	1	-	-	-	-

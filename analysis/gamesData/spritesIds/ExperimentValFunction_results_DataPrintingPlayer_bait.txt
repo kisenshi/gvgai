@@ -1,0 +1,10 @@
+2 <- floor
+3 <- hole
+1 <- avatar
+4 <- nokey
+5 <- withkey
+6 <- mushroom
+7 <- key
+8 <- goal
+9 <- box
+0 <- wall

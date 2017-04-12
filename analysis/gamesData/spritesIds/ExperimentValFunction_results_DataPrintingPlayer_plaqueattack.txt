@@ -1,0 +1,17 @@
+2 <- floor
+3 <- fullMolar
+4 <- fullMolarInf
+5 <- fullMolarSup
+6 <- deadMolar
+7 <- deadMolarInf
+8 <- deadMolarSup
+9 <- movable
+1 <- avatar
+10 <- food
+11 <- hotdog
+12 <- burger
+13 <- holes
+14 <- hotdoghole
+15 <- burgerhole
+16 <- fluor
+0 <- wall

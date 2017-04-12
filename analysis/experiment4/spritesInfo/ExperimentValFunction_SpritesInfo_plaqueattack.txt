@@ -1,0 +1,17 @@
+floor	2	-	-	-	-
+fullMolar	3	-	-	-	-
+fullMolarInf	4	-	-	-	-
+fullMolarSup	5	-	-	-	-
+deadMolar	6	-	-	-	-
+deadMolarInf	7	0	1	-	-
+deadMolarSup	8	0	1	-	-
+movable	9	-	-	-	-
+avatar	1	-	-	-	-
+food	10	-	-	1	2
+hotdog	11	-	-	1	2
+burger	12	-	-	1	2
+holes	13	-	-	-	-
+hotdoghole	14	-	-	-	-
+burgerhole	15	-	-	-	-
+fluor	16	-	-	-	-
+wall	0	0	0	0	0

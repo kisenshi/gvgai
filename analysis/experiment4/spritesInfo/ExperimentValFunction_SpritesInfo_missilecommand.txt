@@ -1,0 +1,9 @@
+floor	2	-	-	-	-
+city	3	-	-	-	-
+explosion	4	-	-	-	-
+movable	5	-	-	-	-
+avatar	1	-	-	-	-
+incoming	6	-	-	1	2
+incoming_slow	7	-	-	1	2
+incoming_fast	8	-	-	1	2
+wall	0	0	0	-	-

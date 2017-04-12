@@ -1,0 +1,13 @@
+floor	2	-	-	-	-
+sword	3	-	-	-	-
+entrance	4	-	-	-	-
+virus	5	0	0	-	-
+moving	6	-	-	-	-
+avatar	1	-	-	-	-
+normal	7	-	-	-	-
+carrier	8	-	-	-	-
+npc	9	-	-	-	-
+host	10	1	2	-	-
+infected	11	0	0	-	-
+doctor	12	0	-1	0	2
+wall	0	0	0	-	-

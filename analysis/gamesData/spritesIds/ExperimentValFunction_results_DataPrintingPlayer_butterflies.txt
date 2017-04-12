@@ -1,0 +1,6 @@
+2 <- floor
+3 <- cocoon
+4 <- animal
+1 <- avatar
+5 <- butterfly
+0 <- wall

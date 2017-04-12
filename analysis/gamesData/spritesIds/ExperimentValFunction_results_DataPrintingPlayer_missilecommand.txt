@@ -1,0 +1,9 @@
+2 <- floor
+3 <- city
+4 <- explosion
+5 <- movable
+1 <- avatar
+6 <- incoming
+7 <- incoming_slow
+8 <- incoming_fast
+0 <- wall

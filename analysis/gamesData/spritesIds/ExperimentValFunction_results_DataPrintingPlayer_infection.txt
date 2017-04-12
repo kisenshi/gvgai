@@ -1,0 +1,13 @@
+2 <- floor
+3 <- sword
+4 <- entrance
+5 <- virus
+6 <- moving
+1 <- avatar
+7 <- normal
+8 <- carrier
+9 <- npc
+10 <- host
+11 <- infected
+12 <- doctor
+0 <- wall

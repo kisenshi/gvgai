@@ -1,0 +1,12 @@
+background	2	-	-	-	-
+base	3	-	-	0	1
+avatar	1	-	-	-	-
+missile	4	-	-	-	-
+sam	5	-	-	-	-
+bomb	6	-1	-1	-	-
+alien	7	-1	-1	1	2
+alienGreen	8	-1	-1	1	2
+alienBlue	9	-1	-1	1	2
+portal	10	-	-	-	-
+portalSlow	11	-	-	-	-
+portalFast	12	-	-	-	-

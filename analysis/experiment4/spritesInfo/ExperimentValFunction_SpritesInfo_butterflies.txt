@@ -1,0 +1,6 @@
+floor	2	-	-	-	-
+cocoon	3	-	-	-	-
+animal	4	-	-	-	-
+avatar	1	-	-	-	-
+butterfly	5	1	2	-	-
+wall	0	0	0	-	-

@@ -1,0 +1,14 @@
+floor	2	-	-	-	-
+goodies	3	-	-	-	-
+gold	4	0	0	1	0
+gem	5	1	1	-	-
+shovel	6	-	-	0	0
+weapon	7	-	-	-	-
+resting	8	0	0	-	-
+boulder	9	0	0	-	-
+moving	10	-	-	-	-
+avatar	1	-	-	-	-
+monster	11	-1	-1	-	-
+falling	12	0	0	-	-
+entrance	13	-	-	-	-
+wall	0	0	0	0	0

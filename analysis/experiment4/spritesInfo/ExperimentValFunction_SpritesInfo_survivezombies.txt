@@ -1,0 +1,11 @@
+floor	2	-	-	-	-
+flower	3	-	-	-	-
+hell	4	-1	-1	-	-
+fastHell	5	-1	-1	-	-
+slowHell	6	-1	-1	-	-
+honey	7	0	1	-	-
+moving	8	-	-	-	-
+avatar	1	-	-	-	-
+bee	9	-	-	-	-
+zombie	10	-1	-1	-	-
+wall	0	0	0	-	-

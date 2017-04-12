@@ -1,0 +1,7 @@
+floor	2	-	-	-	-
+carcass	3	-	-	-	-
+goat	4	-	-	-	-
+angry	5	-1	-1	-	-
+scared	6	1	1	-	-
+avatar	1	-	-	-	-
+wall	0	0	0	-	-

@@ -1,0 +1,9 @@
+2 <- floor
+3 <- hole
+4 <- shovel
+5 <- entrance
+6 <- exit
+7 <- moving
+1 <- avatar
+8 <- lemming
+0 <- wall

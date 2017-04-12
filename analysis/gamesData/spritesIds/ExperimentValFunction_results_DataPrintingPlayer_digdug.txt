@@ -1,0 +1,14 @@
+2 <- floor
+3 <- goodies
+4 <- gold
+5 <- gem
+6 <- shovel
+7 <- weapon
+8 <- resting
+9 <- boulder
+10 <- moving
+1 <- avatar
+11 <- monster
+12 <- falling
+13 <- entrance
+0 <- wall

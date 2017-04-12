@@ -1,0 +1,6 @@
+2 <- floor
+1 <- avatar
+3 <- box
+4 <- exit
+5 <- hole
+0 <- wall

@@ -1,0 +1,11 @@
+black	2	0	0	-	-
+white	3	0	0	-	-
+grey	4	0	0	-	-
+target	5	-	-	-	-
+winTarget	6	-	-	-	-
+crate	7	0	0	-	-
+avatar	1	-	-	-	-
+inBlack	8	-	-	-	-
+inWhite	9	-	-	-	-
+inGrey	10	-	-	-	-
+wall	0	0	0	-	-

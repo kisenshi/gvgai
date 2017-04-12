@@ -1,0 +1,15 @@
+floor	2	-	-	-	-
+exit	3	1	10	-	-
+sword	4	-	-	-	-
+weapon	5	0	2	-	-
+health	6	0	0	-	-
+lock	7	0	0	-	-
+gold	8	0	1	-	-
+key	9	0	1	-	-
+market	10	0	0	-	-
+transaction	11	-	-	-	-
+moving	12	-	-	-	-
+avatar	1	-	-	-	-
+spider	13	-1	0	0	2
+phantom	14	-1	0	0	1
+wall	0	0	0	-	-

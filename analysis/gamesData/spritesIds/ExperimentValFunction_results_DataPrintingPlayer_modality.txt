@@ -1,0 +1,11 @@
+2 <- black
+3 <- white
+4 <- grey
+5 <- target
+6 <- winTarget
+7 <- crate
+1 <- avatar
+8 <- inBlack
+9 <- inWhite
+10 <- inGrey
+0 <- wall

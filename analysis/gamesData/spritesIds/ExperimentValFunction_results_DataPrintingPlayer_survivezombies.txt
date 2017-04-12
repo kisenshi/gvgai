@@ -1,0 +1,11 @@
+2 <- floor
+3 <- flower
+4 <- hell
+5 <- fastHell
+6 <- slowHell
+7 <- honey
+8 <- moving
+1 <- avatar
+9 <- bee
+10 <- zombie
+0 <- wall

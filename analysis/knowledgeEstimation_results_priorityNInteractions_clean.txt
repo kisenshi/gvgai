@@ -1,0 +1,991 @@
+Reading data for KnowledgeEstimationHeuristic
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_aliens.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_aliens.txt
+
+Results aliens
+
+sampleRS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.11E-01
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.18E-01
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.20E-01
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.21E-01
+
+POINTS: 12
+-------------
+olets: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.25E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 25
+2)sampleOLMCTS 18
+3)sampleRHEA 15
+4)sampleonesteplookahead 12
+5)olets 10
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_bait.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_bait.txt
+
+Results bait
+
+sampleRHEA: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.04E+00
+
+POINTS: 25
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.43E+00
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.54E+00
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 4.33E+00
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 6.50E+00
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 43
+2)sampleRHEA 40
+3)sampleOLMCTS 33
+4)sampleonesteplookahead 22
+5)olets 22
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_butterflies.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_butterflies.txt
+
+Results butterflies
+
+sampleRS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.38E-01
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.41E-01
+
+POINTS: 18
+-------------
+olets: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.50E-01
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.52E-01
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.53E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 68
+2)sampleRHEA 58
+3)sampleOLMCTS 43
+4)olets 37
+5)sampleonesteplookahead 34
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_camelRace.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_camelRace.txt
+
+Results camelRace
+
+olets: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 2.25E-05
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 6.15E-05
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 3.38E-04
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 4.66E-04
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 8.49E-04
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 80
+2)sampleRHEA 73
+3)olets 62
+4)sampleOLMCTS 53
+5)sampleonesteplookahead 52
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_chase.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_chase.txt
+
+Results chase
+
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.67E-01
+
+POINTS: 25
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.67E-01
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.67E-01
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 2.27E-08
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 1.04E-07
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 98
+2)sampleRHEA 88
+3)sampleOLMCTS 78
+4)olets 74
+5)sampleonesteplookahead 62
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_chopper.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_chopper.txt
+
+Results chopper
+
+sampleRHEA: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 7.26E-02
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 7.27E-02
+
+POINTS: 18
+-------------
+olets: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 7.50E-02
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 7.51E-02
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 1.01E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRHEA 113
+2)sampleRS 110
+3)sampleOLMCTS 96
+4)olets 89
+5)sampleonesteplookahead 72
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_crossfire.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_crossfire.txt
+
+Results crossfire
+
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 8.30E-06
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 9.91E-08
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.38E-05
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 7.04E-05
+
+POINTS: 12
+-------------
+olets: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.30E-04
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRHEA 125
+2)sampleRS 125
+3)sampleOLMCTS 121
+4)olets 99
+5)sampleonesteplookahead 90
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_digdug.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_digdug.txt
+
+Results digdug
+
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 10
+total_sqerror_estimed_avg: 1.50E-01
+
+POINTS: 25
+-------------
+olets: 
+
+n_total_interactions_estimed: 10
+total_sqerror_estimed_avg: 1.51E-01
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 10
+total_sqerror_estimed_avg: 1.52E-01
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 10
+total_sqerror_estimed_avg: 1.53E-01
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 10
+total_sqerror_estimed_avg: 1.55E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRS 137
+2)sampleOLMCTS 136
+3)sampleRHEA 135
+4)olets 117
+5)sampleonesteplookahead 115
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_escape.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_escape.txt
+
+Results escape
+
+sampleRHEA: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 0.00E+00
+
+POINTS: 25
+-------------
+olets: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 6.71E-08
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 5.81E-07
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.44E-06
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 3.75E-07
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRHEA 160
+2)sampleRS 152
+3)sampleOLMCTS 148
+4)olets 135
+5)sampleonesteplookahead 125
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_hungrybirds.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_hungrybirds.txt
+
+Results hungrybirds
+
+olets: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 1.40E-10
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 1.50E-10
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 3.27E-10
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 3.32E-10
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 1.49E-05
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleRHEA 172
+2)sampleRS 167
+3)sampleOLMCTS 166
+4)olets 160
+5)sampleonesteplookahead 135
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_infection.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_infection.txt
+
+Results infection
+
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 8.33E-02
+
+POINTS: 25
+-------------
+olets: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 8.60E-02
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 8.82E-02
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 9.07E-02
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 1.10E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 191
+2)sampleRHEA 187
+3)sampleRS 179
+4)olets 178
+5)sampleonesteplookahead 145
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_intersection.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_intersection.txt
+
+Results intersection
+
+sampleRS: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 2.17E+00
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 2.17E+00
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 2.19E+00
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 2.69E+00
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.10E-07
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 209
+2)sampleRS 204
+3)sampleRHEA 202
+4)olets 190
+5)sampleonesteplookahead 155
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_lemmings.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_lemmings.txt
+
+Results lemmings
+
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.07E-05
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 1.31E-05
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 3.17E-05
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 5.99E-05
+
+POINTS: 12
+-------------
+olets: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 9.54E-05
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 224
+2)sampleRHEA 220
+3)sampleRS 216
+4)olets 200
+5)sampleonesteplookahead 180
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_missilecommand.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_missilecommand.txt
+
+Results missilecommand
+
+sampleRS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 1.70E-01
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 1.85E-01
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 1.91E-01
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 2.50E-01
+
+POINTS: 12
+-------------
+olets: 
+
+n_total_interactions_estimed: 1
+total_sqerror_estimed_avg: 1.34E-06
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 242
+2)sampleRS 241
+3)sampleRHEA 235
+4)olets 210
+5)sampleonesteplookahead 192
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_modality.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_modality.txt
+
+Results modality
+
+olets: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 1.32E-07
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 1.48E-06
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 4.25E-03
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 7.48E-03
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 2
+total_sqerror_estimed_avg: 4.00E-08
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 260
+2)sampleRS 256
+3)sampleRHEA 247
+4)olets 235
+5)sampleonesteplookahead 202
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_plaqueattack.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_plaqueattack.txt
+
+Results plaqueattack
+
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.15E-01
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.57E-01
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 2.91E-01
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 7.09E-01
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.29E+00
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 285
+2)sampleRS 271
+3)sampleRHEA 265
+4)olets 247
+5)sampleonesteplookahead 212
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_roguelike.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_roguelike.txt
+
+Results roguelike
+
+sampleRS: 
+
+n_total_interactions_estimed: 6
+total_sqerror_estimed_avg: 3.67E-02
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 6.42E-03
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 9.18E-03
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 6.40E-09
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 9.25E-08
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 303
+2)sampleRS 296
+3)sampleRHEA 280
+4)olets 259
+5)sampleonesteplookahead 222
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_seaquest.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_seaquest.txt
+
+Results seaquest
+
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 8
+total_sqerror_estimed_avg: 2.75E-02
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 8
+total_sqerror_estimed_avg: 4.34E-02
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 8
+total_sqerror_estimed_avg: 4.78E-02
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 8
+total_sqerror_estimed_avg: 1.68E-01
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 8
+total_sqerror_estimed_avg: 3.99E-01
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 313
+2)sampleRS 311
+3)sampleRHEA 298
+4)olets 271
+5)sampleonesteplookahead 247
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_survivezombies.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_survivezombies.txt
+
+Results survivezombies
+
+sampleRHEA: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 9.12E-02
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.04E-01
+
+POINTS: 18
+-------------
+olets: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.36E-01
+
+POINTS: 15
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 4
+total_sqerror_estimed_avg: 1.42E-01
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 3
+total_sqerror_estimed_avg: 8.94E-02
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 331
+2)sampleRS 323
+3)sampleRHEA 323
+4)olets 286
+5)sampleonesteplookahead 257
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_waitforbreakfast.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_waitforbreakfast.txt
+
+Results waitforbreakfast
+
+sampleOLMCTS: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 4.01E-02
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 9.13E-02
+
+POINTS: 18
+-------------
+sampleRS: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 9.69E-02
+
+POINTS: 15
+-------------
+olets: 
+
+n_total_interactions_estimed: 7
+total_sqerror_estimed_avg: 1.20E-01
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+n_total_interactions_estimed: 5
+total_sqerror_estimed_avg: 9.66E-02
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)sampleOLMCTS 356
+2)sampleRHEA 341
+3)sampleRS 338
+4)olets 298
+5)sampleonesteplookahead 267
+
+
+RANKING
+
+1)sampleOLMCTS 356
+2)sampleRHEA 341
+3)sampleRS 338
+4)olets 298
+5)sampleonesteplookahead 267
+

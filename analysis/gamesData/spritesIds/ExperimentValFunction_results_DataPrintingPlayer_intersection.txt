@@ -1,0 +1,17 @@
+2 <- floor
+3 <- floorV
+4 <- crossing
+5 <- goal
+6 <- deadPortal
+7 <- car
+8 <- rightcar
+9 <- fastRcar
+10 <- slowRcar
+11 <- downcar
+12 <- fastDcar
+13 <- slowDcar
+14 <- start
+0 <- wall
+15 <- tree
+16 <- input
+1 <- avatar

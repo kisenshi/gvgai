@@ -1,0 +1,9 @@
+floor	2	-	-	-	-
+hole	3	-1	-5	-	-
+shovel	4	-	-	-	-
+entrance	5	-	-	-	-
+exit	6	-	-	-	-
+moving	7	-	-	-	-
+avatar	1	-	-	-	-
+lemming	8	-	-	-	-
+wall	0	0	0	0	-1

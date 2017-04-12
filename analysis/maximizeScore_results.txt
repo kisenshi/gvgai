@@ -1,0 +1,1171 @@
+Reading data for MaximizeScoreHeuristic
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_aliens.txt
+
+RESULTS
+
+olets: 
+
+victories: 1.0
+score: 77.95
+winGametick: 705.05
+loseGametick: nan
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 1.0
+score: 76.55
+winGametick: 489.45
+loseGametick: nan
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 1.0
+score: 76.2
+winGametick: 500.9
+loseGametick: nan
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.7
+score: 63.15
+winGametick: 781.714285714
+loseGametick: 873.666666667
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.35
+score: 49.8
+winGametick: 737.857142857
+loseGametick: 592.384615385
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 25
+2)sampleOLMCTS 18
+3)sampleRS 15
+4)sampleonesteplookahead 12
+5)sampleRHEA 10
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_bait.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.5
+score: 2.5
+winGametick: 8.9
+loseGametick: 1500.0
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.5
+score: 2.5
+winGametick: 16.9
+loseGametick: 1500.0
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.5
+score: 2.5
+winGametick: 22.6
+loseGametick: 1500.0
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.3
+score: 1.5
+winGametick: 37.3333333333
+loseGametick: 1500.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.3
+score: 1.5
+winGametick: 90.6666666667
+loseGametick: 1500.0
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 50
+2)sampleOLMCTS 36
+3)sampleRS 30
+4)sampleonesteplookahead 24
+5)sampleRHEA 20
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_butterflies.txt
+
+RESULTS
+
+sampleRS: 
+
+victories: 1.0
+score: 36.9
+winGametick: 299.6
+loseGametick: nan
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 1.0
+score: 36.6
+winGametick: 255.4
+loseGametick: nan
+
+POINTS: 18
+-------------
+olets: 
+
+victories: 0.9
+score: 37.1
+winGametick: 292.833333333
+loseGametick: 210.5
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.35
+score: 40.4
+winGametick: 987.571428571
+loseGametick: 795.230769231
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.05
+score: 29.2
+winGametick: 849.0
+loseGametick: 818.684210526
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 65
+2)sampleRS 55
+3)sampleOLMCTS 54
+4)sampleonesteplookahead 36
+5)sampleRHEA 30
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_camelRace.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 79.0
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 79.0
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 79.0
+
+POINTS: 25
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 79.0
+
+POINTS: 25
+-------------
+sampleRS: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 79.0
+
+POINTS: 25
+-------------
+
+RANKING
+
+1)olets 90
+2)sampleRS 80
+3)sampleOLMCTS 79
+4)sampleonesteplookahead 61
+5)sampleRHEA 55
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_chase.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.7
+score: 4.8
+winGametick: 564.142857143
+loseGametick: 601.0
+
+POINTS: 25
+-------------
+sampleRS: 
+
+victories: 0.2
+score: 3.5
+winGametick: 1099.25
+loseGametick: 849.625
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+victories: 0.1
+score: 3.5
+winGametick: 969.0
+loseGametick: 1292.05555556
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.05
+score: 1.2
+winGametick: 1093.0
+loseGametick: 1132.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: 0.65
+winGametick: nan
+loseGametick: 1362.8
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 115
+2)sampleRS 98
+3)sampleOLMCTS 94
+4)sampleonesteplookahead 73
+5)sampleRHEA 65
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_chopper.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.3
+score: 6.9
+winGametick: 1288.33333333
+loseGametick: 1480.21428571
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.1
+score: 2.05
+winGametick: 1315.0
+loseGametick: 1440.38888889
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.1
+score: 0.85
+winGametick: 1341.0
+loseGametick: 1343.88888889
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -2.15
+winGametick: nan
+loseGametick: 425.5
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+victories: 0.0
+score: -9.4
+winGametick: nan
+loseGametick: 1119.7
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 140
+2)sampleRS 113
+3)sampleOLMCTS 112
+4)sampleonesteplookahead 83
+5)sampleRHEA 77
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_crossfire.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.55
+score: 2.7
+winGametick: 735.272727273
+loseGametick: 1465.88888889
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+victories: 0.05
+score: -0.7
+winGametick: 726.0
+loseGametick: 381.0
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.05
+score: -0.7
+winGametick: 1197.0
+loseGametick: 491.842105263
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: 0.0
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 84.25
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 165
+2)sampleRS 128
+3)sampleOLMCTS 124
+4)sampleonesteplookahead 101
+5)sampleRHEA 87
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_digdug.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.0
+score: 18.4
+winGametick: nan
+loseGametick: 1433.15
+
+POINTS: 25
+-------------
+sampleRS: 
+
+victories: 0.0
+score: 18.2
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: 15.35
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.0
+score: 5.15
+winGametick: nan
+loseGametick: 941.8
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: 1.55
+winGametick: nan
+loseGametick: 348.05
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 190
+2)sampleRS 146
+3)sampleOLMCTS 139
+4)sampleonesteplookahead 113
+5)sampleRHEA 97
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_escape.txt
+
+RESULTS
+
+sampleRS: 
+
+victories: 0.95
+score: 0.9
+winGametick: 257.578947368
+loseGametick: 993.0
+
+POINTS: 25
+-------------
+olets: 
+
+victories: 0.85
+score: 0.85
+winGametick: 118.588235294
+loseGametick: 1000.0
+
+POINTS: 18
+-------------
+sampleonesteplookahead: 
+
+victories: 0.7
+score: 0.7
+winGametick: 490.214285714
+loseGametick: 1000.0
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: -0.05
+winGametick: nan
+loseGametick: 999.85
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -1.0
+winGametick: nan
+loseGametick: 104.4
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 208
+2)sampleRS 171
+3)sampleOLMCTS 151
+4)sampleonesteplookahead 128
+5)sampleRHEA 107
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_hungrybirds.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.65
+score: 65.0
+winGametick: 176.384615385
+loseGametick: 60.0
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: 4.0
+winGametick: nan
+loseGametick: 465.0
+
+POINTS: 18
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: 0.0
+winGametick: nan
+loseGametick: 341.25
+
+POINTS: 15
+-------------
+sampleRS: 
+
+victories: 0.0
+score: 0.0
+winGametick: nan
+loseGametick: 318.75
+
+POINTS: 12
+-------------
+sampleonesteplookahead: 
+
+victories: 0.0
+score: 0.0
+winGametick: nan
+loseGametick: 307.5
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 233
+2)sampleRS 183
+3)sampleOLMCTS 169
+4)sampleonesteplookahead 138
+5)sampleRHEA 122
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_infection.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.95
+score: 25.3
+winGametick: 720.0
+loseGametick: 1500.0
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.9
+score: 18.85
+winGametick: 695.666666667
+loseGametick: 1500.0
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.85
+score: 19.5
+winGametick: 876.0
+loseGametick: 1500.0
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.85
+score: 11.8
+winGametick: 1032.52941176
+loseGametick: 1500.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.55
+score: 2.8
+winGametick: 1040.36363636
+loseGametick: 1500.0
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 258
+2)sampleRS 198
+3)sampleOLMCTS 187
+4)sampleonesteplookahead 150
+5)sampleRHEA 132
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_intersection.txt
+
+RESULTS
+
+olets: 
+
+victories: 1.0
+score: 34.5
+winGametick: 1000.0
+loseGametick: nan
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+victories: 1.0
+score: 4.7
+winGametick: 1000.0
+loseGametick: nan
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 1.0
+score: 4.15
+winGametick: 1000.0
+loseGametick: nan
+
+POINTS: 15
+-------------
+sampleOLMCTS: 
+
+victories: 1.0
+score: 1.0
+winGametick: 1000.0
+loseGametick: nan
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -25.0
+winGametick: nan
+loseGametick: 347.45
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 283
+2)sampleRS 213
+3)sampleOLMCTS 199
+4)sampleonesteplookahead 168
+5)sampleRHEA 142
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_lemmings.txt
+
+RESULTS
+
+sampleonesteplookahead: 
+
+victories: 0.0
+score: 0.0
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 25
+-------------
+olets: 
+
+victories: 0.0
+score: -0.45
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: -0.75
+winGametick: nan
+loseGametick: 1500.0
+
+POINTS: 15
+-------------
+sampleRS: 
+
+victories: 0.0
+score: -0.75
+winGametick: nan
+loseGametick: 1499.65
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -13.2
+winGametick: nan
+loseGametick: 315.3
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 301
+2)sampleRS 225
+3)sampleOLMCTS 214
+4)sampleonesteplookahead 193
+5)sampleRHEA 152
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_missilecommand.txt
+
+RESULTS
+
+sampleOLMCTS: 
+
+victories: 0.75
+score: 2.6
+winGametick: 133.4
+loseGametick: 209.0
+
+POINTS: 25
+-------------
+sampleRS: 
+
+victories: 0.6
+score: 1.4
+winGametick: 155.0
+loseGametick: 209.0
+
+POINTS: 18
+-------------
+olets: 
+
+victories: 0.15
+score: -2.05
+winGametick: 143.0
+loseGametick: 117.117647059
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.05
+score: -1.75
+winGametick: 110.0
+loseGametick: 158.631578947
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: -2.7
+winGametick: nan
+loseGametick: 124.85
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 316
+2)sampleRS 243
+3)sampleOLMCTS 239
+4)sampleonesteplookahead 205
+5)sampleRHEA 162
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_modality.txt
+
+RESULTS
+
+olets: 
+
+victories: 1.0
+score: 1.0
+winGametick: 7.2
+loseGametick: nan
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 1.0
+score: 1.0
+winGametick: 10.95
+loseGametick: nan
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 1.0
+score: 1.0
+winGametick: 15.4
+loseGametick: nan
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.6
+score: 0.6
+winGametick: 130.416666667
+loseGametick: 1500.0
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.5
+score: 0.5
+winGametick: 176.1
+loseGametick: 1500.0
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 341
+2)sampleRS 258
+3)sampleOLMCTS 257
+4)sampleonesteplookahead 217
+5)sampleRHEA 172
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_plaqueattack.txt
+
+RESULTS
+
+sampleRS: 
+
+victories: 0.85
+score: 35.95
+winGametick: 532.0
+loseGametick: 489.666666667
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.75
+score: 36.25
+winGametick: 482.266666667
+loseGametick: 605.0
+
+POINTS: 18
+-------------
+olets: 
+
+victories: 0.7
+score: 23.5
+winGametick: 573.285714286
+loseGametick: 358.666666667
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.15
+score: 13.05
+winGametick: 615.0
+loseGametick: 467.764705882
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.05
+score: 7.85
+winGametick: 579.0
+loseGametick: 404.052631579
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 356
+2)sampleRS 283
+3)sampleOLMCTS 275
+4)sampleonesteplookahead 229
+5)sampleRHEA 182
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_roguelike.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.0
+score: 4.35
+winGametick: nan
+loseGametick: 499.1
+
+POINTS: 25
+-------------
+sampleRS: 
+
+victories: 0.0
+score: 0.75
+winGametick: nan
+loseGametick: 714.05
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+victories: 0.0
+score: 0.7
+winGametick: nan
+loseGametick: 880.5
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.0
+score: 0.35
+winGametick: nan
+loseGametick: 501.4
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: 0.2
+winGametick: nan
+loseGametick: 538.2
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 381
+2)sampleRS 301
+3)sampleOLMCTS 290
+4)sampleonesteplookahead 241
+5)sampleRHEA 192
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_seaquest.txt
+
+RESULTS
+
+olets: 
+
+victories: 0.65
+score: 1184.0
+winGametick: 1000.0
+loseGametick: 483.714285714
+
+POINTS: 25
+-------------
+sampleOLMCTS: 
+
+victories: 0.3
+score: 442.25
+winGametick: 1000.0
+loseGametick: 610.5
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.25
+score: 231.2
+winGametick: 1000.0
+loseGametick: 375.133333333
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.15
+score: 71.4
+winGametick: 1000.0
+loseGametick: 529.470588235
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.0
+score: 4.2
+winGametick: nan
+loseGametick: 244.15
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 406
+2)sampleRS 316
+3)sampleOLMCTS 308
+4)sampleonesteplookahead 253
+5)sampleRHEA 202
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_survivezombies.txt
+
+RESULTS
+
+sampleRS: 
+
+victories: 0.9
+score: 7.05
+winGametick: 1000.0
+loseGametick: 773.0
+
+POINTS: 25
+-------------
+olets: 
+
+victories: 0.9
+score: 6.7
+winGametick: 1000.0
+loseGametick: 771.5
+
+POINTS: 18
+-------------
+sampleOLMCTS: 
+
+victories: 0.85
+score: 6.2
+winGametick: 1000.0
+loseGametick: 597.0
+
+POINTS: 15
+-------------
+sampleonesteplookahead: 
+
+victories: 0.85
+score: 6.05
+winGametick: 1000.0
+loseGametick: 697.333333333
+
+POINTS: 12
+-------------
+sampleRHEA: 
+
+victories: 0.15
+score: 2.35
+winGametick: 1000.0
+loseGametick: 427.411764706
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 424
+2)sampleRS 341
+3)sampleOLMCTS 323
+4)sampleonesteplookahead 265
+5)sampleRHEA 212
+
+Reading experiment1/results/ExperimentValFunction_results_MaximizeScoreHeuristic_waitforbreakfast.txt
+
+RESULTS
+
+olets: 
+
+victories: 1.0
+score: 1.0
+winGametick: 92.65
+loseGametick: nan
+
+POINTS: 25
+-------------
+sampleonesteplookahead: 
+
+victories: 1.0
+score: 1.0
+winGametick: 218.7
+loseGametick: nan
+
+POINTS: 18
+-------------
+sampleRS: 
+
+victories: 0.95
+score: 0.95
+winGametick: 111.684210526
+loseGametick: 1500.0
+
+POINTS: 15
+-------------
+sampleRHEA: 
+
+victories: 0.05
+score: 0.05
+winGametick: 50.0
+loseGametick: 95.0526315789
+
+POINTS: 12
+-------------
+sampleOLMCTS: 
+
+victories: 0.05
+score: 0.05
+winGametick: 1495.0
+loseGametick: 1500.0
+
+POINTS: 10
+-------------
+
+RANKING
+
+1)olets 449
+2)sampleRS 356
+3)sampleOLMCTS 333
+4)sampleonesteplookahead 283
+5)sampleRHEA 224
+
+
+RANKING
+
+1)olets 449
+2)sampleRS 356
+3)sampleOLMCTS 333
+4)sampleonesteplookahead 283
+5)sampleRHEA 224
+

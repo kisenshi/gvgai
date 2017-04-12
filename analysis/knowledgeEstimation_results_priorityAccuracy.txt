@@ -1,0 +1,4987 @@
+Reading data for KnowledgeEstimationHeuristic
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_aliens.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_aliens.txt
+[['background' '2' '-' '-' '-' '-']
+ ['base' '3' '-' '-' '0' '1']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['missile' '4' '-' '-' '-' '-']
+ ['sam' '5' '-' '-' '-' '-']
+ ['bomb' '6' '-1' '-1' '-' '-']
+ ['alien' '7' '-1' '-1' '1' '2']
+ ['alienGreen' '8' '-1' '-1' '1' '2']
+ ['alienBlue' '9' '-1' '-1' '1' '2']
+ ['portal' '10' '-' '-' '-' '-']
+ ['portalSlow' '11' '-' '-' '-' '-']
+ ['portalFast' '12' '-' '-' '-' '-']]
+ESTIMATIONS olets (total interactions: 4)
+sqerror sum 0.998832144577
+sqerror average (total estimations): 0.124854018072
+
+STYPE 9
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.80819 (0.09561)
+Actiononto: 0.01935 (0.00956) 1.98931 (0.00501)
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0367927422
+Actiononto: 0.9616788757 0.0001142812
+
+STYPE 3
+----Estimations:
+Collisions: - -
+Actiononto: -0.00003 (0.00002) 0.99997 (0.00002)
+----Real:
+Collisions: - -
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000000012 0.0000000012
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.01569 (0.01956)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0002462432
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 4)
+sqerror sum 0.943438522357
+sqerror average (total estimations): 0.117929815295
+
+STYPE 9
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.91816 (0.03928)
+Actiononto: 0.03248 (0.00571) 1.99713 (0.00107)
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0066982259
+Actiononto: 0.9360906879 0.0000082157
+
+STYPE 3
+----Estimations:
+Collisions: - -
+Actiononto: -0.00009 (0.00009) 0.99991 (0.00009)
+----Real:
+Collisions: - -
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000000089 0.0000000089
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.97467 (0.02325)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0006413751
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 4)
+sqerror sum 0.97067776661
+sqerror average (total estimations): 0.121334720826
+
+STYPE 9
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.92616 (0.02665)
+Actiononto: 0.01981 (0.00762) 1.99662 (0.00686)
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0054516540
+Actiononto: 0.9607694428 0.0000114441
+
+STYPE 3
+----Estimations:
+Collisions: - -
+Actiononto: -0.00063 (0.00061) 0.99938 (0.00061)
+----Real:
+Collisions: - -
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000003906 0.0000003906
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.93333 (0.08999)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0044444444
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 4)
+sqerror sum 0.960915873542
+sqerror average (total estimations): 0.120114484193
+
+STYPE 9
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.89078 (0.00000)
+Actiononto: 0.02704 (0.00956) 2.00047 (0.00243)
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0119279200
+Actiononto: 0.9466538995 0.0000002241
+
+STYPE 3
+----Estimations:
+Collisions: - -
+Actiononto: 0.00065 (0.00171) 1.00222 (0.00317)
+----Real:
+Collisions: - -
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000004265 0.0000049302
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.95175 (0.01607)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0023284733
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 4)
+sqerror sum 0.887488743193
+sqerror average (total estimations): 0.110936092899
+
+STYPE 9
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.88349 (0.02169)
+Actiononto: 0.07347 (0.00450) 1.98136 (0.00257)
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0135745018
+Actiononto: 0.8584559358 0.0003472812
+
+STYPE 3
+----Estimations:
+Collisions: - -
+Actiononto: 0.00007 (0.00021) 1.00026 (0.00039)
+----Real:
+Collisions: - -
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000000052 0.0000000692
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.87707 (0.06760)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0151109500
+Actiononto: - -
+-------------------------------------------------------------
+
+Results aliens
+
+
+RANKING
+
+1)sampleRS 25
+2)sampleOLMCTS 18
+3)sampleRHEA 15
+4)sampleonesteplookahead 12
+5)olets 10
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_bait.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_bait.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['hole' '3' '-1' '0' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['nokey' '4' '-' '-' '-' '-']
+ ['withkey' '5' '-' '-' '-' '-']
+ ['mushroom' '6' '0' '1' '-' '-']
+ ['key' '7' '0' '0' '-' '-']
+ ['goal' '8' '1' '5' '-' '-']
+ ['box' '9' '0' '0' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 3)
+sqerror sum 26.0000837741
+sqerror average (total estimations): 4.33334729569
+
+STYPE 0
+----Estimations:
+Collisions: -0.00033 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001110 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -0.00004 (0.00001) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000835453 25.0000000000
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00034 (0.00008) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001178 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 4)
+sqerror sum 20.30086509
+sqerror average (total estimations): 2.53760813624
+
+STYPE 0
+----Estimations:
+Collisions: -0.00053 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002778 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.11598 (0.06232) 0.58193 (0.31140)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.7814838661 19.5193808572
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00030 (0.00007) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000888 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 26.0009006591
+sqerror average (total estimations): 6.50022516478
+
+STYPE 0
+----Estimations:
+Collisions: -0.00078 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000006122 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -0.00045 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0009000469 25.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 4)
+sqerror sum 16.3068226502
+sqerror average (total estimations): 2.03835283128
+
+STYPE 0
+----Estimations:
+Collisions: -0.00030 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000890 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.20765 (0.06966) 1.04033 (0.34801)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.6278187338 15.6790036871
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00037 (0.00010) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001402 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 4)
+sqerror sum 19.4590996295
+sqerror average (total estimations): 2.43238745369
+
+STYPE 0
+----Estimations:
+Collisions: -0.00045 (0.00001) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002007 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.13452 (0.04148) 0.67449 (0.20709)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.7490471925 18.7100521656
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00027 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000707 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results bait
+
+
+RANKING
+
+1)sampleRS 43
+2)sampleRHEA 40
+3)sampleOLMCTS 33
+4)sampleonesteplookahead 22
+5)olets 22
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_butterflies.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_butterflies.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['cocoon' '3' '-' '-' '-' '-']
+ ['animal' '4' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['butterfly' '5' '2' '1' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 2)
+sqerror sum 5.23763894097
+sqerror average (total estimations): 1.30940973524
+
+STYPE 0
+----Estimations:
+Collisions: -0.00101 (0.00028) 0.00426 (0.00059)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000010247 0.0000181088
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00797 (0.00598) 2.12668 (0.02595)
+Actiononto: - -
+----Real:
+Collisions: 2.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 3.9682015225 1.2694182850
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 2)
+sqerror sum 5.20656370707
+sqerror average (total estimations): 1.30164092677
+
+STYPE 0
+----Estimations:
+Collisions: -0.00331 (0.00075) 0.00523 (0.00066)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000109676 0.0000273292
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00144 (0.00080) 2.09579 (0.01534)
+Actiononto: - -
+----Real:
+Collisions: 2.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 4.0057647066 1.2007607036
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 5.11223968422
+sqerror average (total estimations): 1.27805992105
+
+STYPE 0
+----Estimations:
+Collisions: -0.00199 (0.00040) 0.00163 (0.00053)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000039487 0.0000026574
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00181 (0.00177) 2.05118 (0.01909)
+Actiononto: - -
+----Real:
+Collisions: 2.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 4.0072628219 1.1049702562
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 2)
+sqerror sum 5.18666334583
+sqerror average (total estimations): 1.29666583646
+
+STYPE 0
+----Estimations:
+Collisions: -0.00354 (0.00084) 0.01097 (0.00237)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000125387 0.0001203972
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.02876 (0.02402) 2.14050 (0.02978)
+Actiononto: - -
+----Real:
+Collisions: 2.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 3.8857826838 1.3007477261
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 2)
+sqerror sum 5.09470378836
+sqerror average (total estimations): 1.27367594709
+
+STYPE 0
+----Estimations:
+Collisions: -0.00315 (0.00064) 0.00723 (0.00120)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000098950 0.0000522900
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.02893 (0.01472) 2.09978 (0.01265)
+Actiononto: - -
+----Real:
+Collisions: 2.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 3.8851213947 1.2095202087
+Actiononto: - -
+-------------------------------------------------------------
+
+Results butterflies
+
+
+RANKING
+
+1)sampleRS 68
+2)sampleRHEA 55
+3)sampleOLMCTS 45
+4)sampleonesteplookahead 40
+5)olets 32
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_camelRace.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_camelRace.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['camel' '3' '-' '-' '-' '-']
+ ['randomCamel' '4' '-' '-' '-' '-']
+ ['straightCamelFast' '5' '-' '-' '-' '-']
+ ['fastR' '6' '-' '-' '-' '-']
+ ['fastL' '7' '-' '-' '-' '-']
+ ['straightCamelMedium' '8' '-' '-' '-' '-']
+ ['mediumR' '9' '-' '-' '-' '-']
+ ['mediumL' '10' '-' '-' '-' '-']
+ ['straightCamelSlow' '11' '-' '-' '-' '-']
+ ['slowR' '12' '-' '-' '-' '-']
+ ['slowL' '13' '-' '-' '-' '-']
+ ['structure' '14' '-' '-' '-' '-']
+ ['goal' '15' '1' '1' '-' '-']
+ ['winnerNPC' '16' '-' '-' '-' '-']
+ ['winnerPlayer' '17' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['left' '18' '-' '-' '-' '-']
+ ['right' '19' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 1)
+sqerror sum 4.50784359338e-05
+sqerror average (total estimations): 2.25392179669e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00475 (0.00064) -0.00475 (0.00064)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000225392 0.0000225392
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 1)
+sqerror sum 0.0016978757914
+sqerror average (total estimations): 0.000848937895698
+
+STYPE 0
+----Estimations:
+Collisions: -0.02914 (0.00047) -0.02914 (0.00047)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0008489379 0.0008489379
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 1)
+sqerror sum 0.000122993336152
+sqerror average (total estimations): 6.14966680758e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00784 (0.00060) -0.00784 (0.00060)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000614967 0.0000614967
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 1)
+sqerror sum 0.000675214789699
+sqerror average (total estimations): 0.00033760739485
+
+STYPE 0
+----Estimations:
+Collisions: -0.01837 (0.00194) -0.01837 (0.00194)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0003376074 0.0003376074
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 1)
+sqerror sum 0.000932627357456
+sqerror average (total estimations): 0.000466313678728
+
+STYPE 0
+----Estimations:
+Collisions: -0.02159 (0.00101) -0.02159 (0.00101)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0004663137 0.0004663137
+Actiononto: - -
+-------------------------------------------------------------
+
+Results camelRace
+
+
+RANKING
+
+1)sampleRS 80
+2)sampleRHEA 70
+3)sampleonesteplookahead 58
+4)olets 57
+5)sampleOLMCTS 55
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_chase.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_chase.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['carcass' '3' '-' '-' '-' '-']
+ ['goat' '4' '-' '-' '-' '-']
+ ['angry' '5' '-1' '-1' '-' '-']
+ ['scared' '6' '1' '1' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 1)
+sqerror sum 4.54675575375e-08
+sqerror average (total estimations): 2.27337787687e-08
+
+STYPE 0
+----Estimations:
+Collisions: -0.00021 (0.00003) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000455 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 3)
+sqerror sum 1.00000145199
+sqerror average (total estimations): 0.166666908664
+
+STYPE 0
+----Estimations:
+Collisions: -0.00120 (0.00003) -0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000014520 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 1)
+sqerror sum 2.07924342667e-07
+sqerror average (total estimations): 1.03962171334e-07
+
+STYPE 0
+----Estimations:
+Collisions: -0.00046 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002079 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 3)
+sqerror sum 1.00004269696
+sqerror average (total estimations): 0.166673782827
+
+STYPE 0
+----Estimations:
+Collisions: -0.00090 (0.00005) -0.00007 (0.00006)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000008027 0.0000000050
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00647 (0.00435)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000418893
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 3)
+sqerror sum 1.00000190866
+sqerror average (total estimations): 0.166666984777
+
+STYPE 0
+----Estimations:
+Collisions: -0.00099 (0.00005) -0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000009841 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00096 (0.00094)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000009246
+Actiononto: - -
+-------------------------------------------------------------
+
+Results chase
+
+
+RANKING
+
+1)sampleRS 92
+2)olets 82
+3)sampleRHEA 80
+4)sampleonesteplookahead 76
+5)sampleOLMCTS 70
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_chopper.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_chopper.txt
+[['layers' '2' '-' '-' '-' '-']
+ ['stratosphere' '3' '-' '-' '-' '-']
+ ['thermosphere' '4' '0' '0' '-' '-']
+ ['troposphere' '5' '0' '0' '-' '-']
+ ['satellite' '6' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['missile' '7' '-' '-' '-' '-']
+ ['sam' '8' '-1' '0' '0' '0']
+ ['bomb' '9' '-' '-' '-' '-']
+ ['cloud' '10' '-' '-' '-' '-']
+ ['leftCloud' '11' '-' '-' '-' '-']
+ ['fastLeftCloud' '12' '-' '-' '-' '-']
+ ['rightCloud' '13' '-' '-' '-' '-']
+ ['fastRightCloud' '14' '-' '-' '-' '-']
+ ['tank' '15' '-' '-' '1' '1']
+ ['portal' '16' '0' '0' '-' '-']
+ ['portalBase' '17' '0' '0' '-' '-']
+ ['portalAmmo' '18' '0' '0' '-' '-']
+ ['supply' '19' '0' '0' '-' '-']
+ ['bullet' '20' '-' '-' '-' '-']]
+ESTIMATIONS olets (total interactions: 7)
+sqerror sum 1.05046372535
+sqerror average (total estimations): 0.0750331232392
+
+STYPE 4
+----Estimations:
+Collisions: -0.00041 (0.00006) -0.01537 (0.00094)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001671 0.0002362726
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00233 (0.00090) -0.00509 (0.00285)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000054180 0.0000258963
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.03846 (0.00587)
+Actiononto: -0.12823 (0.06523) -0.04702 (0.01165)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0014788085
+Actiononto: 0.0164423985 0.0022104446
+
+STYPE 15
+----Estimations:
+Collisions: - -
+Actiononto: -0.01377 (0.01281) 1.04327 (0.02859)
+----Real:
+Collisions: - -
+Actiononto: 1.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0277228013 0.0018725801
+
+STYPE 18
+----Estimations:
+Collisions: -0.00149 (0.00061) -0.00475 (0.00170)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000022080 0.0000225675
+Actiononto: - -
+
+STYPE 19
+----Estimations:
+Collisions: -0.00116 (0.00039) -0.02104 (0.00244)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000013549 0.0004428079
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 7)
+sqerror sum 1.01716000263
+sqerror average (total estimations): 0.0726542859022
+
+STYPE 4
+----Estimations:
+Collisions: -0.00094 (0.00024) -0.01069 (0.00106)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000008894 0.0001142915
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00537 (0.00061) -0.00500 (0.00176)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000287984 0.0000249904
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.01619 (0.00563)
+Actiononto: -0.04499 (0.00768) -0.04476 (0.01109)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0002620976
+Actiononto: 0.0020243137 0.0020036477
+
+STYPE 15
+----Estimations:
+Collisions: - -
+Actiononto: -0.00401 (0.00147) 1.06630 (0.01940)
+----Real:
+Collisions: - -
+Actiononto: 1.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0080389493 0.0043956905
+
+STYPE 18
+----Estimations:
+Collisions: -0.00153 (0.00055) -0.01092 (0.00292)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000023272 0.0001192385
+Actiononto: - -
+
+STYPE 19
+----Estimations:
+Collisions: -0.00321 (0.00058) -0.01160 (0.00204)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000103228 0.0001344456
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 6)
+sqerror sum 1.21641486923
+sqerror average (total estimations): 0.101367905769
+
+STYPE 8
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.09619 (0.04761)
+Actiononto: -0.14648 (0.05411) -0.02828 (0.01237)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0092515729
+Actiononto: 0.0214563014 0.0007998921
+
+STYPE 19
+----Estimations:
+Collisions: -0.01176 (0.00409) -0.02059 (0.00461)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0001383823 0.0004239431
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -0.00210 (0.00028) -0.01830 (0.00069)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000044118 0.0003347972
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00944 (0.00387) -0.01559 (0.00411)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000891106 0.0002429884
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: - -
+Actiononto: 0.00000 (0.00000) 1.42857 (0.17122)
+----Real:
+Collisions: - -
+Actiononto: 1.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0000000000 0.1836734694
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 7)
+sqerror sum 1.01639935623
+sqerror average (total estimations): 0.0725999540167
+
+STYPE 4
+----Estimations:
+Collisions: -0.00013 (0.00007) -0.00868 (0.00172)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000182 0.0000753757
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.01723 (0.00523) -0.00418 (0.00171)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0002968382 0.0000174410
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.01585 (0.00299)
+Actiononto: -0.10796 (0.03216) -0.03882 (0.01318)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0002512610
+Actiononto: 0.0116553940 0.0015069869
+
+STYPE 15
+----Estimations:
+Collisions: - -
+Actiononto: -0.00028 (0.00027) 1.03232 (0.02683)
+----Real:
+Collisions: - -
+Actiononto: 1.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0005656908 0.0010447421
+
+STYPE 18
+----Estimations:
+Collisions: -0.02591 (0.02256) 0.00153 (0.00244)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0006715414 0.0000023287
+Actiononto: - -
+
+STYPE 19
+----Estimations:
+Collisions: -0.01454 (0.00720) -0.01001 (0.00265)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0002115123 0.0001002258
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 7)
+sqerror sum 1.05151462547
+sqerror average (total estimations): 0.0751081875335
+
+STYPE 4
+----Estimations:
+Collisions: -0.00203 (0.00042) -0.01161 (0.00111)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000041191 0.0001348029
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.01014 (0.00081) -0.00988 (0.00139)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0001028449 0.0000976544
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.02190 (0.00285)
+Actiononto: -0.10593 (0.01823) -0.03427 (0.00562)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0004798194
+Actiononto: 0.0112211499 0.0011746744
+
+STYPE 15
+----Estimations:
+Collisions: - -
+Actiononto: -0.01578 (0.00878) 1.07870 (0.02920)
+----Real:
+Collisions: - -
+Actiononto: 1.00 1.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0318044680 0.0061937622
+
+STYPE 18
+----Estimations:
+Collisions: -0.00578 (0.00098) -0.00846 (0.00222)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000333993 0.0000715448
+Actiononto: - -
+
+STYPE 19
+----Estimations:
+Collisions: -0.00749 (0.00133) -0.01184 (0.00142)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000561181 0.0001402681
+Actiononto: - -
+-------------------------------------------------------------
+
+Results chopper
+
+
+RANKING
+
+1)sampleRHEA 105
+2)sampleRS 104
+3)olets 97
+4)sampleOLMCTS 88
+5)sampleonesteplookahead 86
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_crossfire.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_crossfire.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['turret' '3' '-' '-' '-' '-']
+ ['bomb' '4' '-1' '-1' '-' '-']
+ ['structure' '5' '-' '-' '-' '-']
+ ['goal' '6' '1' '5' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 2)
+sqerror sum 0.00091833111591
+sqerror average (total estimations): 0.000229582778977
+
+STYPE 0
+----Estimations:
+Collisions: -0.00024 (0.00003) -0.00003 (0.00001)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000566 0.0000000008
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.03030 (0.02889)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0009182736
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 3)
+sqerror sum 4.98295086603e-05
+sqerror average (total estimations): 8.30491811005e-06
+
+STYPE 0
+----Estimations:
+Collisions: -0.00202 (0.00013) -0.00101 (0.00012)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000040851 0.0000010103
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00669 (0.00110)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000447342
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: 1.00000 (0.00000) 5.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 3.96595590697e-07
+sqerror average (total estimations): 9.91488976741e-08
+
+STYPE 0
+----Estimations:
+Collisions: -0.00061 (0.00012) -0.00015 (0.00013)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003733 0.0000000233
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 2)
+sqerror sum 0.000281777115144
+sqerror average (total estimations): 7.04442787859e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00875 (0.00256) -0.00875 (0.00256)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000765642 0.0000765642
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.01134 (0.00484)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0001286487
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 2)
+sqerror sum 9.50323178919e-05
+sqerror average (total estimations): 2.3758079473e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00546 (0.00056) -0.00479 (0.00061)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000297611 0.0000229767
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00650 (0.00100)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000422944
+Actiononto: - -
+-------------------------------------------------------------
+
+Results crossfire
+
+
+RANKING
+
+1)sampleRS 119
+2)sampleRHEA 117
+3)sampleonesteplookahead 111
+4)olets 107
+5)sampleOLMCTS 106
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_digdug.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_digdug.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['goodies' '3' '-' '-' '-' '-']
+ ['gold' '4' '0' '0' '1' '0']
+ ['gem' '5' '1' '1' '-' '-']
+ ['shovel' '6' '-' '-' '0' '0']
+ ['weapon' '7' '-' '-' '-' '-']
+ ['resting' '8' '0' '0' '-' '-']
+ ['boulder' '9' '0' '0' '-' '-']
+ ['moving' '10' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['monster' '11' '-1' '-1' '-' '-']
+ ['falling' '12' '0' '0' '-' '-']
+ ['entrance' '13' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '0' '0']]
+ESTIMATIONS olets (total interactions: 10)
+sqerror sum 3.01189315161
+sqerror average (total estimations): 0.150594657581
+
+STYPE 0
+----Estimations:
+Collisions: -0.00022 (0.00003) 0.00055 (0.00052)
+Actiononto: -0.00051 (0.00011) 0.00028 (0.00039)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000500 0.0000003029
+Actiononto: 0.0000002618 0.0000000792
+
+STYPE 4
+----Estimations:
+Collisions: -0.00006 (0.00004) -0.00002 (0.00001)
+Actiononto: -0.00177 (0.00107) -0.00019 (0.00018)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 1.00 0.00
+----SqErrors:
+Collisions: 0.0000000042 0.0000000003
+Actiononto: 1.0035349091 0.0000000345
+
+STYPE 5
+----Estimations:
+Collisions: -0.00311 (0.00073) 0.99676 (0.00073)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0062197811 0.0000105226
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: - -
+Actiononto: -0.00093 (0.00010) 0.00573 (0.00116)
+----Real:
+Collisions: - -
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000008684 0.0000328532
+
+STYPE 8
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.02796 (0.02606)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0007818259
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00020 (0.00009) 0.00002 (0.00003)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000395 0.0000000003
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.02927 (0.02277)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0008565650
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.02133 (0.01275)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0004550534
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 10)
+sqerror sum 3.04397330314
+sqerror average (total estimations): 0.152198665157
+
+STYPE 0
+----Estimations:
+Collisions: -0.00212 (0.00025) -0.00102 (0.00034)
+Actiononto: -0.00161 (0.00028) -0.00052 (0.00037)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000045033 0.0000010490
+Actiononto: 0.0000025766 0.0000002654
+
+STYPE 4
+----Estimations:
+Collisions: -0.00092 (0.00037) -0.00052 (0.00041)
+Actiononto: -0.00065 (0.00039) -0.00065 (0.00039)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 1.00 0.00
+----SqErrors:
+Collisions: 0.0000008448 0.0000002695
+Actiononto: 1.0012945865 0.0000004187
+
+STYPE 5
+----Estimations:
+Collisions: -0.01987 (0.00234) 0.98096 (0.00245)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0401425528 0.0003625420
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: - -
+Actiononto: -0.00356 (0.00034) 0.00139 (0.00067)
+----Real:
+Collisions: - -
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000126854 0.0000019313
+
+STYPE 8
+----Estimations:
+Collisions: -0.00293 (0.00167) 0.04491 (0.02212)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000085774 0.0020169561
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00126 (0.00073) 0.00298 (0.00106)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000015873 0.0000088731
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.98956 (0.00652)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0001090197
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00202 (0.00270)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000040642
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 10)
+sqerror sum 3.00007687021
+sqerror average (total estimations): 0.150003843511
+
+STYPE 0
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: 0.00000 (0.00000) 0.00000 (0.00000)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: 0.0000000000 0.0000000000
+
+STYPE 4
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: 0.00000 (0.00000) 0.00000 (0.00000)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 1.00 0.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: 1.0000000000 0.0000000000
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: - -
+Actiononto: -0.00638 (0.00210) -0.00419 (0.00110)
+----Real:
+Collisions: - -
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000406920 0.0000175700
+
+STYPE 8
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00431 (0.00334) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000186082 0.0000000000
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 10)
+sqerror sum 3.10846984712
+sqerror average (total estimations): 0.155423492356
+
+STYPE 0
+----Estimations:
+Collisions: -0.00313 (0.00050) -0.00267 (0.00079)
+Actiononto: -0.00373 (0.00133) -0.00302 (0.00146)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000097681 0.0000071217
+Actiononto: 0.0000139185 0.0000091270
+
+STYPE 4
+----Estimations:
+Collisions: -0.00453 (0.00267) -0.00275 (0.00374)
+Actiononto: -0.00061 (0.00059) 0.00013 (0.00095)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 1.00 0.00
+----SqErrors:
+Collisions: 0.0000204878 0.0000075402
+Actiononto: 1.0012124885 0.0000000171
+
+STYPE 5
+----Estimations:
+Collisions: -0.04380 (0.01026) 0.95635 (0.01029)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0895231702 0.0019050594
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: - -
+Actiononto: -0.00567 (0.00075) 0.00069 (0.00114)
+----Real:
+Collisions: - -
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000322005 0.0000004793
+
+STYPE 8
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.12051 (0.07771)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0145214672
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00336 (0.00227)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000112720
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.96542 (0.03083)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0011956708
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00024 (0.00106)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000000589
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 10)
+sqerror sum 3.05646432761
+sqerror average (total estimations): 0.15282321638
+
+STYPE 0
+----Estimations:
+Collisions: -0.00329 (0.00021) -0.00096 (0.00083)
+Actiononto: -0.00361 (0.00059) -0.00081 (0.00123)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000108133 0.0000009246
+Actiononto: 0.0000130461 0.0000006574
+
+STYPE 4
+----Estimations:
+Collisions: -0.00447 (0.00109) -0.00338 (0.00127)
+Actiononto: -0.00617 (0.00267) -0.00519 (0.00259)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 1.00 0.00
+----SqErrors:
+Collisions: 0.0000199592 0.0000114206
+Actiononto: 1.0123802490 0.0000269602
+
+STYPE 5
+----Estimations:
+Collisions: -0.02086 (0.00501) 0.98063 (0.00491)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0421607837 0.0003752469
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: - -
+Actiononto: -0.00782 (0.00055) -0.00146 (0.00110)
+----Real:
+Collisions: - -
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.0000612270 0.0000021193
+
+STYPE 8
+----Estimations:
+Collisions: -0.00237 (0.00158) 0.03664 (0.03066)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000056016 0.0013423633
+Actiononto: - -
+
+STYPE 9
+----Estimations:
+Collisions: -0.00274 (0.00164) 0.00453 (0.00226)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000075122 0.0000205237
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00306 (0.00637)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000093651
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -1.00000 (0.00000) -0.00394 (0.00468)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000155545
+Actiononto: - -
+-------------------------------------------------------------
+
+Results digdug
+
+
+RANKING
+
+1)sampleonesteplookahead 136
+2)sampleRS 131
+3)sampleRHEA 127
+4)olets 125
+5)sampleOLMCTS 121
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_escape.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_escape.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['box' '3' '0' '0' '-' '-']
+ ['exit' '4' '1' '1' '-' '-']
+ ['hole' '5' '-1' '-1' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 4)
+sqerror sum 5.36439078693e-07
+sqerror average (total estimations): 6.70548848367e-08
+
+STYPE 0
+----Estimations:
+Collisions: -0.00062 (0.00009) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003904 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00038 (0.00007) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001460 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 3)
+sqerror sum 8.6145269432e-06
+sqerror average (total estimations): 1.43575449053e-06
+
+STYPE 0
+----Estimations:
+Collisions: -0.00122 (0.00012) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000014908 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00267 (0.00062) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000071237 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 1)
+sqerror sum 7.49764811041e-07
+sqerror average (total estimations): 3.74882405521e-07
+
+STYPE 0
+----Estimations:
+Collisions: -0.00087 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000007498 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 4)
+sqerror sum 0.0
+sqerror average (total estimations): 0.0
+
+STYPE 0
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 4)
+sqerror sum 4.65111943325e-06
+sqerror average (total estimations): 5.81389929157e-07
+
+STYPE 0
+----Estimations:
+Collisions: -0.00163 (0.00013) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000026609 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00141 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000019902 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results escape
+
+
+RANKING
+
+1)sampleRHEA 152
+2)sampleonesteplookahead 151
+3)sampleRS 143
+4)olets 143
+5)sampleOLMCTS 131
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_hungrybirds.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_hungrybirds.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['foodbank' '3' '0' '40' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']
+ ['goal' '4' '1' '100' '-' '-']
+ ['food' '5' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 2)
+sqerror sum 5.60644973756e-10
+sqerror average (total estimations): 1.40161243439e-10
+
+STYPE 0
+----Estimations:
+Collisions: -0.00002 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000006 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 2)
+sqerror sum 5.98087054068e-10
+sqerror average (total estimations): 1.49521763517e-10
+
+STYPE 0
+----Estimations:
+Collisions: -0.00002 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000006 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 1)
+sqerror sum 2.98605512258e-05
+sqerror average (total estimations): 1.49302756129e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00546 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000298606 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 2)
+sqerror sum 1.32612231696e-09
+sqerror average (total estimations): 3.31530579241e-10
+
+STYPE 0
+----Estimations:
+Collisions: -0.00004 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000013 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 2)
+sqerror sum 1.30982514159e-09
+sqerror average (total estimations): 3.27456285398e-10
+
+STYPE 0
+----Estimations:
+Collisions: -0.00004 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000013 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results hungrybirds
+
+
+RANKING
+
+1)olets 168
+2)sampleRHEA 164
+3)sampleonesteplookahead 161
+4)sampleRS 158
+5)sampleOLMCTS 149
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_infection.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_infection.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['sword' '3' '-' '-' '-' '-']
+ ['entrance' '4' '-' '-' '-' '-']
+ ['virus' '5' '0' '0' '-' '-']
+ ['moving' '6' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['normal' '7' '-' '-' '-' '-']
+ ['carrier' '8' '-' '-' '-' '-']
+ ['npc' '9' '-' '-' '-' '-']
+ ['host' '10' '1' '2' '-' '-']
+ ['infected' '11' '0' '0' '-' '-']
+ ['doctor' '12' '0' '-1' '0' '2']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 6)
+sqerror sum 1.03146517259
+sqerror average (total estimations): 0.085955431049
+
+STYPE 0
+----Estimations:
+Collisions: 0.00007 (0.00004) 0.00009 (0.00008)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000054 0.0000000080
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: 0.00000 (0.00000) 2.03263 (0.02938)
+Actiononto: - -
+----Real:
+Collisions: 1.00 2.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0010644832
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.01615 (0.00507)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0002606666
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: 0.00000 (0.00000) -0.85803 (0.03304)
+Actiononto: 0.00000 (0.00000) 1.90009 (0.03289)
+----Real:
+Collisions: 0.00 -1.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0201544992
+Actiononto: 0.0000000000 0.0099827255
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00167 (0.00126)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000027847
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 6)
+sqerror sum 1.00019077211
+sqerror average (total estimations): 0.0833492310091
+
+STYPE 0
+----Estimations:
+Collisions: 0.00004 (0.00023) 0.00034 (0.00025)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000017 0.0000001142
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: 0.02890 (0.02183) 1.99360 (0.00445)
+Actiononto: - -
+----Real:
+Collisions: 1.00 2.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.9430391370 0.0000409448
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.01560 (0.00398)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0002434624
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: 0.00000 (0.00000) -0.82023 (0.02681)
+Actiononto: 0.00015 (0.00015) 1.84335 (0.04995)
+----Real:
+Collisions: 0.00 -1.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0323156008
+Actiononto: 0.0000000239 0.0245383598
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00362 (0.00347)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000131275
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 5)
+sqerror sum 1.09633280897
+sqerror average (total estimations): 0.109633280897
+
+STYPE 0
+----Estimations:
+Collisions: 0.00010 (0.00009) -0.00028 (0.00017)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000107 0.0000000808
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: 0.00000 (0.00000) 2.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 2.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: 0.00000 (0.00000) -0.75085 (0.14747)
+Actiononto: 0.00000 (0.00000) 1.81491 (0.06922)
+----Real:
+Collisions: 0.00 -1.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0620752536
+Actiononto: 0.0000000000 0.0342574638
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 6)
+sqerror sum 1.05873338322
+sqerror average (total estimations): 0.0882277819346
+
+STYPE 0
+----Estimations:
+Collisions: 0.00025 (0.00028) 0.00054 (0.00021)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000647 0.0000002917
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: 0.00091 (0.00089) 2.02803 (0.03909)
+Actiononto: - -
+----Real:
+Collisions: 1.00 2.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.9981826446 0.0007857566
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: 0.00026 (0.00020) 0.03204 (0.00647)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000699 0.0010268630
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: 0.00119 (0.00072) -0.86636 (0.01722)
+Actiononto: 0.00140 (0.00099) 1.79844 (0.03458)
+----Real:
+Collisions: 0.00 -1.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000014205 0.0178591472
+Actiononto: 0.0000019668 0.0406262216
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.01578 (0.00944)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0002489366
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 6)
+sqerror sum 1.08820370598
+sqerror average (total estimations): 0.0906836421647
+
+STYPE 0
+----Estimations:
+Collisions: 0.00044 (0.00040) 0.00100 (0.00029)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001971 0.0000009973
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.96779 (0.04323)
+Actiononto: - -
+----Real:
+Collisions: 1.00 2.00
+Actiononto: - -
+----SqErrors:
+Collisions: 1.0000000000 0.0010374395
+Actiononto: - -
+
+STYPE 11
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.03871 (0.00500)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0014982048
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: 0.00000 (0.00000) -0.79023 (0.01492)
+Actiononto: 0.00009 (0.00009) 1.79598 (0.03529)
+----Real:
+Collisions: 0.00 -1.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0440025939
+Actiononto: 0.0000000080 0.0416250081
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00627 (0.00416)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000392573
+Actiononto: - -
+-------------------------------------------------------------
+
+Results infection
+
+
+RANKING
+
+1)olets 186
+2)sampleRHEA 179
+3)sampleOLMCTS 174
+4)sampleonesteplookahead 171
+5)sampleRS 170
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_intersection.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_intersection.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['floorV' '3' '-' '-' '-' '-']
+ ['crossing' '4' '-' '-' '-' '-']
+ ['goal' '5' '0' '10' '-' '-']
+ ['deadPortal' '6' '0' '0' '-' '-']
+ ['car' '7' '-1' '-5' '-' '-']
+ ['rightcar' '8' '-1' '-5' '-' '-']
+ ['fastRcar' '9' '-1' '-5' '-' '-']
+ ['slowRcar' '10' '-1' '-5' '-' '-']
+ ['downcar' '11' '-1' '-5' '-' '-']
+ ['fastDcar' '12' '-1' '-5' '-' '-']
+ ['slowDcar' '13' '-1' '-5' '-' '-']
+ ['start' '14' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']
+ ['tree' '15' '0' '0' '-' '-']
+ ['input' '16' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']]
+ESTIMATIONS olets (total interactions: 5)
+sqerror sum 26.854239271
+sqerror average (total estimations): 2.6854239271
+
+STYPE 0
+----Estimations:
+Collisions: 0.00046 (0.00008) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002107 0.0000000000
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.00047 (0.00045) -5.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.9990568263 0.0000000000
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -0.07692 (0.07391) -5.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.8520710059 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.00061 (0.00044) -5.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003695 25.0000000000
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: 0.05578 (0.05398) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0031108585 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 6)
+sqerror sum 26.0673848908
+sqerror average (total estimations): 2.17228207423
+
+STYPE 0
+----Estimations:
+Collisions: 0.00201 (0.00016) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000040538 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 10.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 10.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.27799 (0.04003) -5.01455 (0.00553)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0772810461 25.1457453432
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.31822 (0.04468) -5.02804 (0.00921)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.4648238430 0.0007860264
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -0.38624 (0.08921) -5.04521 (0.02166)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.3766979122 0.0020437661
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: 0.00170 (0.00029) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000028999 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 8.418820726e-07
+sqerror average (total estimations): 2.1047051815e-07
+
+STYPE 0
+----Estimations:
+Collisions: 0.00068 (0.00007) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000004663 0.0000000000
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: 0.00061 (0.00007) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003756 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 6)
+sqerror sum 26.291189278
+sqerror average (total estimations): 2.19093243983
+
+STYPE 0
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 10.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 10.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.31984 (0.04415) -5.01243 (0.00375)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.1022993274 25.1244232897
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.29422 (0.04583) -5.01773 (0.00454)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.4981284034 0.0003142420
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -0.25845 (0.06723) -5.12698 (0.05889)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.5498997154 0.0161243002
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 6)
+sqerror sum 25.9815319242
+sqerror average (total estimations): 2.16512766035
+
+STYPE 0
+----Estimations:
+Collisions: 0.00203 (0.00025) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000041180 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 10.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 10.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.63419 (0.03916) -5.00756 (0.00161)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.4021913846 25.0756882274
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.65850 (0.04127) -5.01339 (0.00385)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.1166209982 0.0001791718
+Actiononto: - -
+
+STYPE 12
+----Estimations:
+Collisions: -0.37947 (0.08245) -5.04226 (0.00927)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.3850588528 0.0017862815
+Actiononto: - -
+
+STYPE 15
+----Estimations:
+Collisions: 0.00170 (0.00025) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000028899 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results intersection
+
+
+RANKING
+
+1)olets 196
+2)sampleonesteplookahead 196
+3)sampleRHEA 191
+4)sampleOLMCTS 189
+5)sampleRS 188
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_lemmings.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_lemmings.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['hole' '3' '-1' '-5' '-' '-']
+ ['shovel' '4' '-' '-' '-' '-']
+ ['entrance' '5' '-' '-' '-' '-']
+ ['exit' '6' '-' '-' '-' '-']
+ ['moving' '7' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['lemming' '8' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '0' '-1']]
+ESTIMATIONS olets (total interactions: 3)
+sqerror sum 0.000572411547505
+sqerror average (total estimations): 9.54019245842e-05
+
+STYPE 0
+----Estimations:
+Collisions: 0.00002 (0.00001) 0.00797 (0.00269)
+Actiononto: 0.00002 (0.00001) -0.98768 (0.00576)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 -1.00
+----SqErrors:
+Collisions: 0.0000000003 0.0000635738
+Actiononto: 0.0000000003 0.0001516779
+
+STYPE 3
+----Estimations:
+Collisions: -1.00000 (0.00000) -4.98110 (0.01377)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0003571592
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 3)
+sqerror sum 0.000190386746461
+sqerror average (total estimations): 3.17311244101e-05
+
+STYPE 0
+----Estimations:
+Collisions: 0.00033 (0.00033) -0.00123 (0.00200)
+Actiononto: 0.00031 (0.00030) -0.99993 (0.00239)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 -1.00
+----SqErrors:
+Collisions: 0.0000001116 0.0000015147
+Actiononto: 0.0000000939 0.0000000044
+
+STYPE 3
+----Estimations:
+Collisions: -1.00000 (0.00000) -4.98626 (0.00642)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0001886621
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 3)
+sqerror sum 6.44263302161e-05
+sqerror average (total estimations): 1.07377217027e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00042 (0.00041) 0.00476 (0.00783)
+Actiononto: 0.00000 (0.00000) -1.00456 (0.00216)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 -1.00
+----SqErrors:
+Collisions: 0.0000001736 0.0000226729
+Actiononto: 0.0000000000 0.0000207593
+
+STYPE 3
+----Estimations:
+Collisions: -1.00000 (0.00000) -5.00456 (0.00243)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000208205
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 3)
+sqerror sum 7.857807578e-05
+sqerror average (total estimations): 1.30963459633e-05
+
+STYPE 0
+----Estimations:
+Collisions: -0.00022 (0.00018) -0.00230 (0.00190)
+Actiononto: -0.00019 (0.00016) -1.00129 (0.00232)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 -1.00
+----SqErrors:
+Collisions: 0.0000000468 0.0000053090
+Actiononto: 0.0000000343 0.0000016603
+
+STYPE 3
+----Estimations:
+Collisions: -1.00000 (0.00000) -4.99154 (0.01052)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000715277
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 3)
+sqerror sum 0.0003596410225
+sqerror average (total estimations): 5.99401704167e-05
+
+STYPE 0
+----Estimations:
+Collisions: 0.00028 (0.00016) 0.00704 (0.00270)
+Actiononto: 0.00017 (0.00010) -0.99478 (0.00269)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 -1.00
+----SqErrors:
+Collisions: 0.0000000811 0.0000495799
+Actiononto: 0.0000000284 0.0000272445
+
+STYPE 3
+----Estimations:
+Collisions: -1.00000 (0.00000) -4.98319 (0.01072)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -5.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0002827072
+Actiononto: - -
+-------------------------------------------------------------
+
+Results lemmings
+
+
+RANKING
+
+1)sampleonesteplookahead 221
+2)sampleRHEA 209
+3)olets 206
+4)sampleOLMCTS 204
+5)sampleRS 200
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_missilecommand.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_missilecommand.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['city' '3' '-' '-' '-' '-']
+ ['explosion' '4' '-' '-' '-' '-']
+ ['movable' '5' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['incoming' '6' '-' '-' '1' '2']
+ ['incoming_slow' '7' '-' '-' '1' '2']
+ ['incoming_fast' '8' '-' '-' '1' '2']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 1)
+sqerror sum 2.68398813606e-06
+sqerror average (total estimations): 1.34199406803e-06
+
+STYPE 0
+----Estimations:
+Collisions: -0.00052 (0.00003) -0.00155 (0.00009)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002684 0.0000024156
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 2)
+sqerror sum 0.739332375265
+sqerror average (total estimations): 0.184833093816
+
+STYPE 0
+----Estimations:
+Collisions: -0.01388 (0.00959) -0.04143 (0.00778)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0001925622 0.0017165206
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: - -
+Actiononto: 0.14127 (0.05566) 2.00000 (0.00000)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.7374232925 0.0000000000
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 1.00162641553
+sqerror average (total estimations): 0.250406603883
+
+STYPE 0
+----Estimations:
+Collisions: -0.01635 (0.00606) -0.03687 (0.01496)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0002673016 0.0013591139
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: - -
+Actiononto: 0.00000 (0.00000) 2.00000 (0.00000)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0000000000 0.0000000000
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 2)
+sqerror sum 0.765596308499
+sqerror average (total estimations): 0.191399077125
+
+STYPE 0
+----Estimations:
+Collisions: 0.01403 (0.03180) -0.09628 (0.05921)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0001969461 0.0092698494
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: - -
+Actiononto: 0.13044 (0.05053) 2.00148 (0.00102)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.7561273098 0.0000022032
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 2)
+sqerror sum 0.679815274695
+sqerror average (total estimations): 0.169953818674
+
+STYPE 0
+----Estimations:
+Collisions: -0.00386 (0.00982) -0.04128 (0.01719)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000148749 0.0017042016
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: - -
+Actiononto: 0.17859 (0.05716) 1.94181 (0.03297)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.6747104795 0.0033857186
+-------------------------------------------------------------
+
+Results missilecommand
+
+
+RANKING
+
+1)sampleonesteplookahead 231
+2)olets 231
+3)sampleRHEA 221
+4)sampleOLMCTS 219
+5)sampleRS 218
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_modality.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_modality.txt
+[['black' '2' '0' '0' '-' '-']
+ ['white' '3' '0' '0' '-' '-']
+ ['grey' '4' '0' '0' '-' '-']
+ ['target' '5' '-' '-' '-' '-']
+ ['winTarget' '6' '-' '-' '-' '-']
+ ['crate' '7' '0' '0' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['inBlack' '8' '-' '-' '-' '-']
+ ['inWhite' '9' '-' '-' '-' '-']
+ ['inGrey' '10' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 5)
+sqerror sum 1.32156571864e-06
+sqerror average (total estimations): 1.32156571864e-07
+
+STYPE 0
+----Estimations:
+Collisions: -0.00058 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003358 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.00009 (0.00002) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000079 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00012 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000156 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -0.00019 (0.00007) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000361 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00059 (0.00013) 0.00076 (0.00008)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003492 0.0000005769
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 5)
+sqerror sum 1.47705353441e-05
+sqerror average (total estimations): 1.47705353441e-06
+
+STYPE 0
+----Estimations:
+Collisions: -0.00046 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002115 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.00052 (0.00008) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002756 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00055 (0.00011) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003010 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -0.00062 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003876 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00246 (0.00085) 0.00275 (0.00086)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000060597 0.0000075351
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 2)
+sqerror sum 1.59964458266e-07
+sqerror average (total estimations): 3.99911145666e-08
+
+STYPE 0
+----Estimations:
+Collisions: -0.00040 (0.00003) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001600 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 5)
+sqerror sum 0.0748270069144
+sqerror average (total estimations): 0.00748270069144
+
+STYPE 0
+----Estimations:
+Collisions: -0.00030 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000871 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.00054 (0.00018) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002962 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00049 (0.00013) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002422 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -0.00046 (0.00011) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002106 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.19326 (0.04404) 0.19359 (0.04398)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0373487162 0.0374774546
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 5)
+sqerror sum 0.0425071288399
+sqerror average (total estimations): 0.00425071288399
+
+STYPE 0
+----Estimations:
+Collisions: -0.00046 (0.00002) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000002081 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.00041 (0.00005) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001687 0.0000000000
+Actiononto: - -
+
+STYPE 3
+----Estimations:
+Collisions: -0.00038 (0.00006) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001435 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -0.00058 (0.00005) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000003338 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.14554 (0.01394) 0.14603 (0.01397)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0211826100 0.0213236648
+Actiononto: - -
+-------------------------------------------------------------
+
+Results modality
+
+
+RANKING
+
+1)sampleonesteplookahead 256
+2)olets 249
+3)sampleOLMCTS 234
+4)sampleRHEA 231
+5)sampleRS 230
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_plaqueattack.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_plaqueattack.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['fullMolar' '3' '-' '-' '-' '-']
+ ['fullMolarInf' '4' '-' '-' '-' '-']
+ ['fullMolarSup' '5' '-' '-' '-' '-']
+ ['deadMolar' '6' '-' '-' '-' '-']
+ ['deadMolarInf' '7' '0' '1' '-' '-']
+ ['deadMolarSup' '8' '0' '1' '-' '-']
+ ['movable' '9' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['food' '10' '-' '-' '1' '2']
+ ['hotdog' '11' '-' '-' '1' '2']
+ ['burger' '12' '-' '-' '1' '2']
+ ['holes' '13' '-' '-' '-' '-']
+ ['hotdoghole' '14' '-' '-' '-' '-']
+ ['burgerhole' '15' '-' '-' '-' '-']
+ ['fluor' '16' '-' '-' '-' '-']
+ ['wall' '0' '0' '0' '0' '0']]
+ESTIMATIONS olets (total interactions: 4)
+sqerror sum 5.67538014484
+sqerror average (total estimations): 0.709422518105
+
+STYPE 0
+----Estimations:
+Collisions: -0.00051 (0.00014) -0.04123 (0.00180)
+Actiononto: -0.00049 (0.00039) -0.03477 (0.00388)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000002557 0.0017002302
+Actiononto: 0.0000002402 0.0012090182
+
+STYPE 11
+----Estimations:
+Collisions: - -
+Actiononto: -0.14417 (0.09502) 2.02607 (0.11965)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.3091186154 0.0006797051
+
+STYPE 7
+----Estimations:
+Collisions: 0.05475 (0.02741) -1.08798 (0.61034)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0029979973 4.3596740827
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 4)
+sqerror sum 1.72031647892
+sqerror average (total estimations): 0.215039559865
+
+STYPE 0
+----Estimations:
+Collisions: 0.00139 (0.00245) -0.01839 (0.00675)
+Actiononto: -0.00134 (0.00127) -0.00415 (0.00546)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000019259 0.0003383599
+Actiononto: 0.0000017952 0.0000171876
+
+STYPE 11
+----Estimations:
+Collisions: - -
+Actiononto: 0.02071 (0.00646) 2.01551 (0.03793)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.9590034883 0.0002406720
+
+STYPE 7
+----Estimations:
+Collisions: 0.03039 (0.02550) 0.12834 (0.18807)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0009233079 0.7597897421
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 4)
+sqerror sum 10.2979619934
+sqerror average (total estimations): 1.28724524918
+
+STYPE 0
+----Estimations:
+Collisions: -0.00181 (0.00057) -0.05334 (0.00508)
+Actiononto: -0.00307 (0.00071) -0.05905 (0.00838)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000032923 0.0028450036
+Actiononto: 0.0000094231 0.0034867597
+
+STYPE 11
+----Estimations:
+Collisions: - -
+Actiononto: 0.00000 (0.00000) 2.20171 (0.11539)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 1.0000000000 0.0406866589
+
+STYPE 7
+----Estimations:
+Collisions: 0.03899 (0.01130) -2.04128 (0.03575)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0015200317 9.2494108240
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 4)
+sqerror sum 2.05975829479
+sqerror average (total estimations): 0.257469786848
+
+STYPE 0
+----Estimations:
+Collisions: -0.00367 (0.00104) -0.01824 (0.00589)
+Actiononto: -0.00286 (0.00168) -0.01556 (0.00713)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000134645 0.0003327391
+Actiononto: 0.0000081786 0.0002419679
+
+STYPE 11
+----Estimations:
+Collisions: - -
+Actiononto: 0.01048 (0.00879) 1.99351 (0.03096)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.9791416544 0.0000420643
+
+STYPE 7
+----Estimations:
+Collisions: 0.00787 (0.00599) -0.03919 (0.21429)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000619867 1.0799162394
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 4)
+sqerror sum 2.32499792036
+sqerror average (total estimations): 0.290624740046
+
+STYPE 0
+----Estimations:
+Collisions: -0.00030 (0.00110) -0.01900 (0.00322)
+Actiononto: -0.00033 (0.00078) -0.00727 (0.00656)
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 0.00
+----SqErrors:
+Collisions: 0.0000000890 0.0003610718
+Actiononto: 0.0000001100 0.0000528866
+
+STYPE 11
+----Estimations:
+Collisions: - -
+Actiononto: 0.04455 (0.01419) 1.98426 (0.04792)
+----Real:
+Collisions: - -
+Actiononto: 1.00 2.00
+----SqErrors:
+Collisions: - -
+Actiononto: 0.9128872928 0.0002478637
+
+STYPE 7
+----Estimations:
+Collisions: 0.11677 (0.05167) -0.18229 (0.15977)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0136357604 1.3978128461
+Actiononto: - -
+-------------------------------------------------------------
+
+Results plaqueattack
+
+
+RANKING
+
+1)sampleonesteplookahead 266
+2)olets 261
+3)sampleOLMCTS 259
+4)sampleRHEA 249
+5)sampleRS 245
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_roguelike.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_roguelike.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['exit' '3' '1' '10' '-' '-']
+ ['sword' '4' '-' '-' '-' '-']
+ ['weapon' '5' '0' '2' '-' '-']
+ ['health' '6' '0' '0' '-' '-']
+ ['lock' '7' '0' '0' '-' '-']
+ ['gold' '8' '0' '1' '-' '-']
+ ['key' '9' '0' '1' '-' '-']
+ ['market' '10' '0' '0' '-' '-']
+ ['transaction' '11' '-' '-' '-' '-']
+ ['moving' '12' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['spider' '13' '-1' '0' '0' '2']
+ ['phantom' '14' '-1' '0' '0' '1']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 3)
+sqerror sum 3.83812089815e-08
+sqerror average (total estimations): 6.39686816358e-09
+
+STYPE 0
+----Estimations:
+Collisions: -0.00020 (0.00004) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000384 0.0000000000
+Actiononto: - -
+
+STYPE 13
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 5)
+sqerror sum 0.0642236886379
+sqerror average (total estimations): 0.00642236886379
+
+STYPE 0
+----Estimations:
+Collisions: -0.00124 (0.00015) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000015319 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.25342 (0.21553) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0642221568 0.0000000000
+Actiononto: - -
+
+STYPE 13
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 3)
+sqerror sum 5.54908631831e-07
+sqerror average (total estimations): 9.24847719718e-08
+
+STYPE 0
+----Estimations:
+Collisions: -0.00074 (0.00017) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000005549 0.0000000000
+Actiononto: - -
+
+STYPE 13
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 5)
+sqerror sum 0.0917579917788
+sqerror average (total estimations): 0.00917579917788
+
+STYPE 0
+----Estimations:
+Collisions: -0.00164 (0.00049) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000026739 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: -0.01818 (0.01626) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0003305785 0.0000000000
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.30234 (0.14443) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0914093606 0.0000000000
+Actiononto: - -
+
+STYPE 13
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00392 (0.00379)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000153787
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 6)
+sqerror sum 0.440440902309
+sqerror average (total estimations): 0.0367034085257
+
+STYPE 0
+----Estimations:
+Collisions: -0.00234 (0.00054) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000054548 0.0000000000
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.54167 (0.32409) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.2934027778 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.38112 (0.16952) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.1452544726 0.0000000000
+Actiononto: - -
+
+STYPE 13
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 2.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -0.95783 (0.04021) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0017781971 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results roguelike
+
+
+RANKING
+
+1)olets 286
+2)sampleonesteplookahead 284
+3)sampleOLMCTS 274
+4)sampleRHEA 261
+5)sampleRS 255
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_seaquest.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_seaquest.txt
+[['sky' '2' '0' '0' '-' '-']
+ ['water' '3' '-' '-' '-' '-']
+ ['saved' '4' '-' '-' '-' '-']
+ ['holes' '5' '-' '-' '-' '-']
+ ['sharkhole' '6' '-' '-' '-' '-']
+ ['whalehole' '7' '-' '-' '-' '-']
+ ['diverhole' '8' '-' '-' '-' '-']
+ ['normaldiverhole' '9' '-' '-' '-' '-']
+ ['oftendiverhole' '10' '-' '-' '-' '-']
+ ['moving' '11' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['torpedo' '12' '-' '-' '-' '-']
+ ['fish' '13' '-1' '0' '0' '1']
+ ['shark' '14' '-1' '0' '0' '1']
+ ['whale' '15' '-1' '0' '0' '1']
+ ['pirana' '16' '-1' '0' '0' '1']
+ ['diver' '17' '0' '0' '0' '1']
+ ['crew' '18' '-' '-' '-' '-']]
+ESTIMATIONS olets (total interactions: 8)
+sqerror sum 2.68587047647
+sqerror average (total estimations): 0.167866904779
+
+STYPE 16
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.04172 (0.01900)
+Actiononto: -0.00052 (0.00028) 1.34714 (0.08190)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0017406529
+Actiononto: 0.0000002749 0.1205083100
+
+STYPE 17
+----Estimations:
+Collisions: -0.00032 (0.00030) 1.42518 (0.74880)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000001009 2.0311435864
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00089 (0.00005) 0.56198 (0.11998)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000008006 0.3158218518
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.04488 (0.01403)
+Actiononto: -0.00078 (0.00033) 1.02787 (0.00993)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0020140924
+Actiononto: 0.0000006130 0.0007769714
+
+STYPE 15
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.03231 (0.02023)
+Actiononto: -0.00041 (0.00025) 1.46132 (0.30521)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0010441251
+Actiononto: 0.0000001681 0.2128189289
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 8)
+sqerror sum 6.38174626896
+sqerror average (total estimations): 0.39885914181
+
+STYPE 16
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.06354 (0.01394)
+Actiononto: -0.00125 (0.00042) 1.38428 (0.06226)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0040377594
+Actiononto: 0.0000015500 0.1476687922
+
+STYPE 17
+----Estimations:
+Collisions: -0.00098 (0.00142) 0.81100 (0.43685)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000009629 0.6577218678
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00154 (0.00012) 0.81042 (0.16640)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000023781 0.6567778150
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.11596 (0.00848)
+Actiononto: -0.00590 (0.00096) 1.78441 (0.46478)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0134473467
+Actiononto: 0.0000348123 0.6153008567
+
+STYPE 15
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.03484 (0.01208)
+Actiononto: -0.00097 (0.00033) 3.07015 (1.57620)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0012136434
+Actiononto: 0.0000009454 4.2855375388
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 8)
+sqerror sum 0.439933610253
+sqerror average (total estimations): 0.0274958506408
+
+STYPE 16
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.05556 (0.04811)
+Actiononto: -0.00270 (0.00256) 1.31809 (0.14187)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0030864198
+Actiononto: 0.0000073046 0.1011795419
+
+STYPE 17
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00112 (0.00004) 0.52591 (0.18056)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000012648 0.2765822717
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.01667 (0.01581)
+Actiononto: -0.05263 (0.05123) 1.00000 (0.00000)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0002777778
+Actiononto: 0.0027700831 0.0000000000
+
+STYPE 15
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: -0.01852 (0.01691) 1.23598 (0.08928)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: 0.0003429355 0.0556860110
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 8)
+sqerror sum 0.695119719491
+sqerror average (total estimations): 0.0434449824682
+
+STYPE 16
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.11350 (0.01879)
+Actiononto: -0.02588 (0.00902) 1.50707 (0.20129)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0128831773
+Actiononto: 0.0006695320 0.2571186786
+
+STYPE 17
+----Estimations:
+Collisions: -0.00156 (0.00201) 0.29445 (0.25870)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000024234 0.0867028602
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00064 (0.00020) 0.40358 (0.09813)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000004150 0.1628759381
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.11749 (0.01273)
+Actiononto: -0.04434 (0.02374) 1.22165 (0.08422)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0138048568
+Actiononto: 0.0019662900 0.0491285744
+
+STYPE 15
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.01497 (0.00998)
+Actiononto: -0.00158 (0.00086) 1.33127 (0.10300)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0002240091
+Actiononto: 0.0000025084 0.1097404562
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 8)
+sqerror sum 0.76464641501
+sqerror average (total estimations): 0.0477904009381
+
+STYPE 16
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.15664 (0.02269)
+Actiononto: -0.00680 (0.00145) 1.34008 (0.07125)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0245361776
+Actiononto: 0.0000462390 0.1156537690
+
+STYPE 17
+----Estimations:
+Collisions: -0.00349 (0.00137) 0.28709 (0.17927)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000121594 0.0824209762
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: 0.00136 (0.00018) 0.60005 (0.10704)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000018448 0.3600638988
+Actiononto: - -
+
+STYPE 14
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.12715 (0.01302)
+Actiononto: -0.01237 (0.00183) 1.03678 (0.00795)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0161658945
+Actiononto: 0.0001529358 0.0013529672
+
+STYPE 15
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.10123 (0.03904)
+Actiononto: -0.00787 (0.00331) 1.39234 (0.10645)
+----Real:
+Collisions: -1.00 0.00
+Actiononto: 0.00 1.00
+----SqErrors:
+Collisions: 0.0000000000 0.0102474179
+Actiononto: 0.0000619617 0.1539301730
+-------------------------------------------------------------
+
+Results seaquest
+
+
+RANKING
+
+1)sampleonesteplookahead 309
+2)olets 298
+3)sampleOLMCTS 284
+4)sampleRHEA 279
+5)sampleRS 270
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_survivezombies.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_survivezombies.txt
+[['floor' '2' '-' '-' '-' '-']
+ ['flower' '3' '-' '-' '-' '-']
+ ['hell' '4' '-1' '-1' '-' '-']
+ ['fastHell' '5' '-1' '-1' '-' '-']
+ ['slowHell' '6' '-1' '-1' '-' '-']
+ ['honey' '7' '0' '1' '-' '-']
+ ['moving' '8' '-' '-' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['bee' '9' '-' '-' '-' '-']
+ ['zombie' '10' '-1' '-1' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']]
+ESTIMATIONS olets (total interactions: 4)
+sqerror sum 1.08838724491
+sqerror average (total estimations): 0.136048405613
+
+STYPE 0
+----Estimations:
+Collisions: 0.00004 (0.00017) -0.00063 (0.00020)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000013 0.0000003944
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.13955 (0.03559) -1.08920 (0.03515)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.7403681242 0.0079559685
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.99243 (0.00473) -0.42901 (0.38526)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000572478 0.3260309289
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: -0.01902 (0.00976) 0.88333 (0.05393)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0003616112 0.0136129686
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 4)
+sqerror sum 0.828099669706
+sqerror average (total estimations): 0.103512458713
+
+STYPE 0
+----Estimations:
+Collisions: 0.00135 (0.00023) -0.00141 (0.00018)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000018153 0.0000019904
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.15616 (0.03395) -1.17833 (0.04841)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.7120660302 0.0318021655
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.99804 (0.00088) -0.93609 (0.30422)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000038520 0.0040850383
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: -0.04110 (0.01216) 0.71991 (0.07095)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0016893752 0.0784494028
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 3)
+sqerror sum 0.536533098456
+sqerror average (total estimations): 0.089422183076
+
+STYPE 0
+----Estimations:
+Collisions: -0.00019 (0.00032) -0.00065 (0.00025)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000378 0.0000004259
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.27070 (0.09158) -1.04936 (0.03016)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.5318849090 0.0024367594
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: -0.02857 (0.02785) 0.96266 (0.06482)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0008163265 0.0013946399
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 4)
+sqerror sum 0.729648177787
+sqerror average (total estimations): 0.0912060222233
+
+STYPE 0
+----Estimations:
+Collisions: -0.00008 (0.00004) -0.00124 (0.00016)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000063 0.0000015411
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.22345 (0.02909) -1.14619 (0.06685)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.6030319965 0.0213717090
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -1.00000 (0.00000) -1.05718 (0.22453)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0032693528
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: -0.10727 (0.02566) 0.69922 (0.05774)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0115076408 0.0904659313
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 4)
+sqerror sum 1.13284426431
+sqerror average (total estimations): 0.141605533039
+
+STYPE 0
+----Estimations:
+Collisions: 0.00034 (0.00035) -0.00355 (0.00048)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001151 0.0000126108
+Actiononto: - -
+
+STYPE 10
+----Estimations:
+Collisions: -0.39120 (0.04383) -1.43593 (0.11018)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.3706347158 0.1900339137
+Actiononto: - -
+
+STYPE 6
+----Estimations:
+Collisions: -0.99631 (0.00170) -0.42671 (0.29919)
+Actiononto: - -
+----Real:
+Collisions: -1.00 -1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000136454 0.3286652960
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: -0.23897 (0.04048) 0.56829 (0.08636)
+Actiononto: - -
+----Real:
+Collisions: 0.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0571076326 0.1863763350
+Actiononto: - -
+-------------------------------------------------------------
+
+Results survivezombies
+
+
+RANKING
+
+1)sampleonesteplookahead 334
+2)olets 310
+3)sampleOLMCTS 299
+4)sampleRHEA 297
+5)sampleRS 280
+
+Reading spritesInfo experiment4/spritesInfo/ExperimentValFunction_SpritesInfo_waitforbreakfast.txt
+Reading experiment4/results/ExperimentValFunction_results_KnowledgeEstimationHeuristic_waitforbreakfast.txt
+[['ground' '2' '-1' '0' '-' '-']
+ ['floor' '3' '-' '-' '-' '-']
+ ['exit' '4' '-1' '0' '-' '-']
+ ['wall' '0' '0' '0' '-' '-']
+ ['othertable' '5' '0' '0' '-' '-']
+ ['table' '6' '0' '0' '-' '-']
+ ['emptytable' '7' '0' '0' '-' '-']
+ ['tablewb' '8' '1' '1' '-' '-']
+ ['endtable' '9' '-' '-' '-' '-']
+ ['kitchen' '10' '-' '-' '-' '-']
+ ['chair' '11' '-' '-' '-' '-']
+ ['front' '12' '-' '-' '-' '-']
+ ['back' '13' '-' '-' '-' '-']
+ ['left' '14' '-' '-' '-' '-']
+ ['right' '15' '-' '-' '-' '-']
+ ['singlechair' '16' '-' '-' '-' '-']
+ ['singlefront' '17' '0' '0' '-' '-']
+ ['singleback' '18' '0' '0' '-' '-']
+ ['singleleft' '19' '0' '0' '-' '-']
+ ['singleright' '20' '0' '0' '-' '-']
+ ['avatar' '1' '-' '-' '-' '-']
+ ['standingavatar' '21' '-' '-' '-' '-']
+ ['leavingavatar' '22' '-' '-' '-' '-']
+ ['satavatar' '23' '-' '-' '-' '-']
+ ['satfront' '24' '-' '-' '-' '-']
+ ['satback' '25' '-' '-' '-' '-']
+ ['satleft' '26' '-' '-' '-' '-']
+ ['satright' '27' '-' '-' '-' '-']
+ ['waiter' '28' '-' '-' '-' '-']
+ ['waiterwb' '29' '-' '-' '-' '-']
+ ['waiternb' '30' '-' '-' '-' '-']]
+ESTIMATIONS olets (total interactions: 7)
+sqerror sum 1.68392272318
+sqerror average (total estimations): 0.120280194513
+
+STYPE 0
+----Estimations:
+Collisions: -0.85005 (0.07981) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.7225914681 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.01958 (0.00020) 0.01027 (0.00012)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.9612256402 0.0001055068
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00033 (0.00011) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001081 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 18
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleOLMCTS (total interactions: 7)
+sqerror sum 0.561714442701
+sqerror average (total estimations): 0.0401224601929
+
+STYPE 0
+----Estimations:
+Collisions: -0.39890 (0.10833) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.1591223054 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.36550 (0.05189) 0.00260 (0.00107)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.4025846832 0.0000067757
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00082 (0.00011) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000006784 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 18
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleonesteplookahead (total interactions: 5)
+sqerror sum 0.966251196205
+sqerror average (total estimations): 0.0966251196205
+
+STYPE 0
+----Estimations:
+Collisions: -0.55134 (0.11091) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.3039788898 0.0000000000
+Actiononto: - -
+
+STYPE 18
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.18620 (0.03734) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.6622721853 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00035 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000001210 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRHEA (total interactions: 7)
+sqerror sum 1.2784516992
+sqerror average (total estimations): 0.0913179785142
+
+STYPE 0
+----Estimations:
+Collisions: -0.78867 (0.06610) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.6219945831 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.22881 (0.04099) 0.02228 (0.01016)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.5947349016 0.0004963593
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 0.82503 (0.15600) 0.82503 (0.15600)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0306129276 0.0306129276
+Actiononto: - -
+
+STYPE 18
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+ESTIMATIONS sampleRS (total interactions: 7)
+sqerror sum 1.35656235386
+sqerror average (total estimations): 0.0968973109897
+
+STYPE 0
+----Estimations:
+Collisions: -0.73647 (0.08151) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.5423912921 0.0000000000
+Actiononto: - -
+
+STYPE 2
+----Estimations:
+Collisions: -0.09805 (0.02226) 0.02571 (0.00290)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.8135096782 0.0006609422
+Actiononto: - -
+
+STYPE 4
+----Estimations:
+Collisions: -1.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: -1.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 5
+----Estimations:
+Collisions: -0.00066 (0.00022) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000004413 0.0000000000
+Actiononto: - -
+
+STYPE 7
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 8
+----Estimations:
+Collisions: 1.00000 (0.00000) 1.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 1.00 1.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+
+STYPE 18
+----Estimations:
+Collisions: 0.00000 (0.00000) 0.00000 (0.00000)
+Actiononto: - -
+----Real:
+Collisions: 0.00 0.00
+Actiononto: - -
+----SqErrors:
+Collisions: 0.0000000000 0.0000000000
+Actiononto: - -
+-------------------------------------------------------------
+
+Results waitforbreakfast
+
+
+RANKING
+
+1)sampleonesteplookahead 349
+2)sampleOLMCTS 324
+3)olets 320
+4)sampleRHEA 315
+5)sampleRS 292
+
+
+RANKING
+
+1)sampleonesteplookahead 349
+2)sampleOLMCTS 324
+3)olets 320
+4)sampleRHEA 315
+5)sampleRS 292
+
