@@ -1,4 +1,4 @@
-package ExperimentValfunction.controllers;
+package tracks.ExperimentValfunction.controllers;
 
 import ExperimentValfunction.ValFunctions.StateHeuristic;
 import core.game.Game;

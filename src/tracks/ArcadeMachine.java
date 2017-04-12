@@ -20,6 +20,8 @@ import ontology.Types;
 import tools.ElapsedCpuTimer;
 import tools.StatSummary;
 
+import tracks.ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 06/11/13 Time: 11:24 This is a
  * Java port from Tom Schaul's VGDL - https://github.com/schaul/py-vgdl
@@ -914,6 +916,228 @@ public class ArcadeMachine {
 			|| agentName.equalsIgnoreCase("tracks.singlePlayer.tools.human.Agent"))
 			return true;
 		return false;
+	}
+
+	/**
+	 * FUNCTIONS RELATED WITH ExperimentValfunction
+	 * New function created in order to be able to play games with the heuristic to be used by the agent set as parameter
+	 * */
+
+
+	/**
+	 * Creates and initializes a new controller with the given name. Takes into
+	 * account the initialization time, calling the appropriate constructor with
+	 * the state observation and time due parameters.
+	 *
+	 * @param playerName
+	 *            Name of the controller to instantiate.
+	 * @param so
+	 *            Initial state of the game to be played by the agent.
+	 * @return the player if it could be created, null otherwise.
+	 */
+
+	protected static Player createHeuristicController(String playerName, int playerID, StateObservation so, String heuristicName)
+			throws RuntimeException {
+		Player player = null;
+		try {
+
+			// Determine the time due for the controller creation.
+			ElapsedCpuTimer ect = new ElapsedCpuTimer();
+			ect.setMaxTimeMillis(CompetitionParameters.INITIALIZATION_TIME);
+
+			if (so.getNoPlayers() < 2) { // single player
+				// Get the class and the constructor with arguments
+				// (StateObservation, long).
+				Class<? extends AbstractHeuristicPlayer> controllerClass = Class.forName(playerName)
+						.asSubclass(AbstractHeuristicPlayer.class);
+
+				Class[] gameArgClass = new Class[] { StateObservation.class, ElapsedCpuTimer.class, String.class };
+				Constructor controllerArgsConstructor = controllerClass.getConstructor(gameArgClass);
+
+				// Call the constructor with the appropriate parameters.
+				Object[] constructorArgs = new Object[] { so, ect.copy(), heuristicName };
+
+				player = (AbstractHeuristicPlayer) controllerArgsConstructor.newInstance(constructorArgs);
+				player.setPlayerID(playerID);
+
+			} else { // multi player TODO not heuristic supported yet
+				// Get the class and the constructor with arguments
+				// (StateObservation, long, int).
+				Class<? extends AbstractMultiPlayer> controllerClass = Class.forName(playerName)
+						.asSubclass(AbstractMultiPlayer.class);
+				Class[] gameArgClass = new Class[] { StateObservationMulti.class, ElapsedCpuTimer.class, int.class };
+				Constructor controllerArgsConstructor = controllerClass.getConstructor(gameArgClass);
+
+				// Call the constructor with the appropriate parameters.
+				Object[] constructorArgs = new Object[] { (StateObservationMulti) so.copy(), ect.copy(), playerID };
+
+				player = (AbstractMultiPlayer) controllerArgsConstructor.newInstance(constructorArgs);
+				player.setPlayerID(playerID);
+			}
+			// Check if we returned on time, and act in consequence.
+			long timeTaken = ect.elapsedMillis();
+			if (ect.exceededMaxTime()) {
+				long exceeded = -ect.remainingTimeMillis();
+				System.out.println("Controller initialization time out (" + exceeded + ").");
+
+				return null;
+			} else {
+				if (VERBOSE)
+					System.out.println("Controller initialization time: " + timeTaken + " ms.");
+			}
+
+			// This code can throw many exceptions (no time related):
+
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+			System.err.println("Constructor " + playerName + "(StateObservation,long) not found in controller class:");
+			System.exit(1);
+
+		} catch (ClassNotFoundException e) {
+			System.err.println("Class " + playerName + " not found for the controller:");
+			e.printStackTrace();
+			System.exit(1);
+
+		} catch (InstantiationException e) {
+			System.err.println("Exception instantiating " + playerName + ":");
+			e.printStackTrace();
+			System.exit(1);
+
+		} catch (IllegalAccessException e) {
+			System.err.println("Illegal access exception when instantiating " + playerName + ":");
+			e.printStackTrace();
+			System.exit(1);
+		} catch (InvocationTargetException e) {
+			System.err.println("Exception calling the constructor " + playerName + "(StateObservation,long):");
+			e.printStackTrace();
+			System.exit(1);
+		}
+
+		// System.out.println("Controller created. " + player.getPlayerID());
+
+		return player;
+	}
+
+
+	/**
+	 * Creates a player of type HeuristicPlayer, which has the heruristic independant from the main logic
+	 * of the algorithm. Used in order to be able to run the herusitic experiments
+	 * */
+
+	public static AbstractHeuristicPlayer createHeuristicPlayer(String playerName, String actionFile, StateObservation so,
+																int randomSeed, boolean isHuman, String heuristicName) {
+		AbstractHeuristicPlayer player = null;
+
+		try {
+			// create the controller.
+			player = (AbstractHeuristicPlayer) createHeuristicController(playerName, 0, so, heuristicName);
+			if (player != null)
+				player.setup(actionFile, randomSeed, isHuman);
+			// else System.out.println("No controller created.");
+
+		} catch (Exception e) {
+			// This probably happens because controller took too much time to be
+			// created.
+			e.printStackTrace();
+			System.exit(1);
+		}
+
+		// System.out.println("Created player.");
+
+		return player;
+	}
+
+
+	/**
+	 * Reads and launches a game for a bot to be played. Graphics can be on or
+	 * off.
+	 *
+	 * @param game_file
+	 * 			game description file.
+	 * @param level_file
+	 * 			file with the level to be played.
+	 * @param visuals
+	 * 			true to show the graphics, false otherwise.
+	 * @param agentNames
+	 * 			names (inc. package) where the controllers are otherwise.
+	 *          Names separated by space.
+	 * @param actionFile
+	 * 			filename of the files where the actions of these players, for
+	 * 			this game, should be recorded.
+	 * @param randomSeed
+	 *  		sampleRandom seed for the sampleRandom generator.
+	 * @param playerID
+	 * 			ID of the human player
+	 * @param heuristicName
+	 * 			Name (include packages) of the heuristic to be used
+	 */
+
+	public static double[] runOneGameUsingHeuristic(String game_file, String level_file, boolean visuals, String agentNames,
+													String actionFile, int randomSeed, int playerID, String heuristicName, String heuristicFile,
+													int[] recordIds) {
+		VGDLFactory.GetInstance().init(); // This always first thing to do.
+		VGDLRegistry.GetInstance().init();
+
+		// TODO NOTE ONLY ONE PLAYER SUPPORTED ATM
+
+		if (VERBOSE){
+			System.out.println(" ** Playing game " + game_file + ", level " + level_file + " **");
+		}
+
+		// First, we create the game to be played..
+		Game toPlay = new VGDLParser().parseGame(game_file);
+		toPlay.buildLevel(level_file, randomSeed);
+
+		// Warm the game up.
+		ArcadeMachine.warmUp(toPlay, CompetitionParameters.WARMUP_TIME);
+
+		// Create the player
+		String[] names = agentNames.split(" ");
+		int no_players = toPlay.no_players;
+
+		boolean humans[] = new boolean[no_players];
+		boolean anyHuman = false;
+
+		// System.out.println("Number of players: " + no_players);
+
+		AbstractHeuristicPlayer[] players;
+
+		// single player games
+		players = new AbstractHeuristicPlayer[no_players];
+
+		int playerId = 0;
+		// single player
+		players[playerId] = ArcadeMachine.createHeuristicPlayer(names[playerId], actionFile, toPlay.getObservation(), randomSeed,
+				humans[playerId], heuristicName);
+
+		if (players[playerId] == null) {
+			// Something went wrong in the constructor, controller
+			// disqualified
+			// single player
+			toPlay.disqualify();
+
+			// Get the score for the result.
+			return toPlay.handleResult();
+		}
+
+		// Then, play the game.
+		double[] score;
+		if (visuals)
+			score = toPlay.playGame(players, randomSeed, anyHuman, playerID);
+		else
+			score = toPlay.runGame(players, randomSeed);
+
+		// Finally, when the game is over, we need to tear the players down. We leave this code in case recording the actions are required for any reason
+		ArcadeMachine.tearPlayerDown(toPlay, players, actionFile, randomSeed, true);
+
+		// Heuristic data is recorded in the heuristicFile provided
+		players[playerId].recordHeuristicData(toPlay, heuristicFile, randomSeed, recordIds);
+
+		// This, the last thing to do in this method, always:
+		toPlay.handleResult();
+		toPlay.printResult();
+
+		return toPlay.getFullResult();
 	}
 
 }
