@@ -1,4 +1,4 @@
-package ExperimentValfunction.controllers.sampleRHEA;
+package tracks.ExperimentValfunction.controllers.sampleRHEA;
 
 import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
 import ExperimentValfunction.ValFunctions.StateHeuristic;

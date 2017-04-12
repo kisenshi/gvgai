@@ -1,3 +1,5 @@
+package tracks.ExperimentValfunction;
+
 import java.util.Random;
 
 import core.ArcadeMachine;

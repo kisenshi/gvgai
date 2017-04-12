@@ -1,6 +1,6 @@
 package tracks.ExperimentValfunction.controllers;
 
-import ExperimentValfunction.ValFunctions.StateHeuristic;
+import tracks.ExperimentValfunction.heuristics.StateHeuristic;
 import core.game.Game;
 import core.game.StateObservation;
 import core.player.AbstractPlayer;

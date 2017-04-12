@@ -1,4 +1,4 @@
-package ExperimentValfunction.controllers.sampleonesteplookahead;
+package tracks.ExperimentValfunction.controllers.sampleonesteplookahead;
 
 import core.game.StateObservation;
 import core.player.AbstractPlayer;

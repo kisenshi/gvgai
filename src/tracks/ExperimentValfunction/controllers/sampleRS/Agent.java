@@ -1,4 +1,4 @@
-package ExperimentValfunction.controllers.sampleRS;
+package tracks.ExperimentValfunction.controllers.sampleRS;
 
 import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
 import ExperimentValfunction.ValFunctions.StateHeuristic;
