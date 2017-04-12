@@ -2,7 +2,7 @@ package tracks.ExperimentValfunction;
 
 import java.util.Random;
 
-import core.ArcadeMachine;
+import tracks.ArcadeMachine;
 
 /**
  * Created by kisenshi on 03/03/17.
@@ -18,8 +18,8 @@ public class valFunctionExperiment {
 
         // PATHS
         String gamesPath = "examples/valFunction/";
-        String heuristicsPath = "ExperimentValfunction.heuristics.";
-        String controllersPath = "ExperimentValfunction.controllers.";
+        String heuristicsPath = "tracks.ExperimentValfunction.heuristics.";
+        String controllersPath = "tracks.ExperimentValfunction.controllers.";
 
         // EXPERIMENT SETUP
 
@@ -126,22 +126,23 @@ public class valFunctionExperiment {
         // TESTS
 
         // Execute each game once with the heuristic provided
-        for (game_id=0; game_id<games_experiment.length; game_id++){
-            seed = new Random().nextInt();
-
-            gameName = games_experiment[game_id];
-            game = gamesPath + gameName + ".txt";
-            level1 = gamesPath + gameName + "_lvl" + level_idx +".txt";
-
-            recordIds = new int[]{
-                game_id,
-                controller_id,
-            };
-
-            resultsHeuristicFile = "ExperimentValFunction_results_"+heuristicName+"_"+gameName+".txt";
-
-            ArcadeMachine.runOneGameUsingHeuristic(game, level1, visuals, controller, actionFile, seed, 0, heuristic, resultsHeuristicFile, recordIds);
-        }
+//        for (game_id=0; game_id<games_experiment.length; game_id++){
+//            seed = new Random().nextInt();
+//
+//            gameName = games_experiment[game_id];
+//            game = gamesPath + gameName + ".txt";
+//            level1 = gamesPath + gameName + "_lvl" + level_idx +".txt";
+//
+//            recordIds = new int[]{
+//                game_id,
+//                controller_id,
+//            };
+//
+//            resultsHeuristicFile = "ExperimentValFunction_results_"+heuristicName+"_"+gameName+".txt";
+//
+//            System.out.println("Running: "+heuristicName+" in "+gameName+" by "+controllerName+" seed "+seed);
+//            ArcadeMachine.runOneGameUsingHeuristic(game, level1, visuals, controller, actionFile, seed, 0, heuristic, resultsHeuristicFile, recordIds);
+//        }
 
         // This plays a game in a level by the controller using a certain heuristic
         //ArcadeMachine.runOneGameUsingHeuristic(game, level1, visuals, controller, actionFile, seed, 0, maximizeScoreHeuristic, recordMaximizeScoreFile);
@@ -170,10 +171,10 @@ public class valFunctionExperiment {
 
         // EXPERIMENT
 
-//       for (int i=0; i<n_games; i++){
-//            seed = new Random().nextInt();
-//            System.out.println("Running "+i+": "+heuristicName+" in "+gameName+" by "+controllerName+" seed "+seed);
-//            ArcadeMachine.runOneGameUsingHeuristic(game, level1, visuals, controller, actionFile, seed, 0, heuristic, resultsHeuristicFile, recordIds);
-//       }
+       for (int i=0; i<n_games; i++){
+            seed = new Random().nextInt();
+            System.out.println("Running "+i+": "+heuristicName+" in "+gameName+" by "+controllerName+" seed "+seed);
+            ArcadeMachine.runOneGameUsingHeuristic(game, level1, visuals, controller, actionFile, seed, 0, heuristic, resultsHeuristicFile, recordIds);
+       }
     }
 }

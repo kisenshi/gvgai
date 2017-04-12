@@ -1,17 +1,14 @@
 package tracks.ExperimentValfunction.heuristics;
 
-import core.VGDLRegistry;
 import core.game.Game;
 import core.game.StateObservation;
-import ontology.Types;
+import core.vgdl.VGDLRegistry;
 
 import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
 
 /**
  * Created by Cristina on 31/03/2017.

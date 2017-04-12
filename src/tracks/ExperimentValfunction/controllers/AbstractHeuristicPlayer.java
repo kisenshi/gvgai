@@ -4,17 +4,10 @@ import tracks.ExperimentValfunction.heuristics.StateHeuristic;
 import core.game.Game;
 import core.game.StateObservation;
 import core.player.AbstractPlayer;
-import ontology.Types;
-import tools.ElapsedCpuTimer;
 
 import java.awt.*;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Random;
 
 /**
  * Created by kisenshi on 03/03/17.

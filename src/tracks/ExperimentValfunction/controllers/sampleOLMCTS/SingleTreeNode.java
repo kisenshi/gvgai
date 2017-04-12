@@ -2,7 +2,8 @@ package tracks.ExperimentValfunction.controllers.sampleOLMCTS;
 
 import java.util.Random;
 
-import ExperimentValfunction.ValFunctions.StateHeuristic;
+import tracks.ExperimentValfunction.heuristics.StateHeuristic;
+
 import core.game.StateObservation;
 import ontology.Types;
 import tools.ElapsedCpuTimer;

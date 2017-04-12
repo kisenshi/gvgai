@@ -1,9 +1,9 @@
 package tracks.ExperimentValfunction.controllers.olets;
 
-import ExperimentValfunction.ValFunctions.StateHeuristic;
-import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import tracks.ExperimentValfunction.heuristics.StateHeuristic;
+import tracks.ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+
 import core.game.StateObservation;
-import core.player.AbstractPlayer;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
 
@@ -34,7 +34,7 @@ public class Agent extends AbstractHeuristicPlayer {
     /**
      * Public constructor with state observation and time due.
      *
-     * @param so           state observation of the current game.
+     * @param stateObs     state observation of the current game.
      * @param elapsedTimer Timer for the controller creation.
      */
     public Agent(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, String heuristicName) {

@@ -1,6 +1,5 @@
 package tracks.ExperimentValfunction.heuristics;
 
-import core.VGDLRegistry;
 import core.game.*;
 import core.game.Event;
 import ontology.Types;

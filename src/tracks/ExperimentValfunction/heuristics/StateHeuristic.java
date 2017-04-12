@@ -1,7 +1,6 @@
-package ExperimentValfunction.ValFunctions;
+package tracks.ExperimentValfunction.heuristics;
 
 import core.game.Game;
-import core.game.Observation;
 import core.game.StateObservation;
 
 import java.awt.*;

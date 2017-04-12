@@ -1,7 +1,8 @@
 package tracks.ExperimentValfunction.controllers.sampleRHEA;
 
-import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
-import ExperimentValfunction.ValFunctions.StateHeuristic;
+import tracks.ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import tracks.ExperimentValfunction.heuristics.StateHeuristic;
+
 import core.game.StateObservation;
 import ontology.Types;
 import tools.ElapsedCpuTimer;

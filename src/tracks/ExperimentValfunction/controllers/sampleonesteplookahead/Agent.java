@@ -6,9 +6,8 @@ import ontology.Types;
 import tools.ElapsedCpuTimer;
 import tools.Utils;
 
-import ExperimentValfunction.ValFunctions.StateHeuristic;
-import ExperimentValfunction.ValFunctions.MaximizeScoreHeuristic;
-import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import tracks.ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import tracks.ExperimentValfunction.heuristics.StateHeuristic;
 
 import java.awt.*;
 import java.util.Random;
