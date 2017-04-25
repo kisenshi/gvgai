@@ -20,7 +20,7 @@ import ontology.Types;
 import tools.ElapsedCpuTimer;
 import tools.StatSummary;
 
-import tracks.ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 06/11/13 Time: 11:24 This is a
