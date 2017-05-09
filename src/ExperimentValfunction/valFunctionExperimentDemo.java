@@ -14,7 +14,7 @@ public class valFunctionExperimentDemo {
 
         // PATHS
         String gamesPath = "examples/valFunction/";
-        String heuristicsPath = "ExperimentValfunction.ValFunctions.";
+        String heuristicsPath = "ExperimentValfunction.heuristics.";
         String controllersPath = "ExperimentValfunction.controllers.";
 
         // EXPERIMENT SETUP
