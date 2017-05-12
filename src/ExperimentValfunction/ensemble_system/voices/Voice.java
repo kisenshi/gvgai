@@ -1,7 +1,6 @@
 package ExperimentValfunction.ensemble_system.voices;
 
 import core.game.StateObservation;
-import ontology.Types;
 import tools.ElapsedCpuTimer;
 
 /**
@@ -12,5 +11,5 @@ import tools.ElapsedCpuTimer;
  * Created by Damorin on 11/05/2017.
  */
 public interface Voice {
-    Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer);
+    Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer);
 }

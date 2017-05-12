@@ -7,6 +7,7 @@ import tools.ElapsedCpuTimer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * The central arbitrator which houses the {@link Voice}s and makes the final decision on what action to take.
@@ -16,6 +17,7 @@ import java.util.List;
 public class CentralArbitrator {
 
     private List<Voice> voices;
+    private Random randomGenerator = new Random();
 
     public CentralArbitrator() {
         this.voices = new ArrayList<>();
@@ -26,6 +28,8 @@ public class CentralArbitrator {
     }
 
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
-        return this.voices.get(0).act(stateObs, elapsedTimer);
+        int voice = randomGenerator.nextInt(voices.size());
+        System.out.println("Voice selected: " + voice);
+        return this.voices.get(voice).askOpinion(stateObs, elapsedTimer).getAction();
     }
 }

@@ -14,16 +14,16 @@ import tools.ElapsedCpuTimer;
  */
 public class Agent extends AbstractPlayer {
 
-    private CentralArbitrator ensemble;
+    private CentralArbitrator ensemble = new CentralArbitrator();
 
     public Agent(StateObservation stateObs, ElapsedCpuTimer elapsedCpuTimer) {
-        ensemble = new CentralArbitrator();
-        ensemble.addVoice(new ExperimentValfunction.controllers.sampleOLMCTS.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeScoreHeuristic"));
-        ensemble.addVoice(new ExperimentValfunction.controllers.sampleOLMCTS.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeExplorationHeuristic"));
+        ensemble.addVoice(new ExperimentValfunction.ensemble_system.voices.mcts.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeScoreHeuristic"));
+        ensemble.addVoice(new ExperimentValfunction.ensemble_system.voices.mcts.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeExplorationHeuristic"));
     }
 
     @Override
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
+        // TODO: Need to specify how much processing time each voice has
         return ensemble.act(stateObs, elapsedTimer);
     }
 }

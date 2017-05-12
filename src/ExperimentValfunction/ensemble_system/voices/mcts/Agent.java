@@ -1,6 +1,8 @@
-package ExperimentValfunction.controllers.sampleOLMCTS;
+package ExperimentValfunction.ensemble_system.voices.mcts;
 
 import ExperimentValfunction.controllers.AbstractHeuristicPlayer;
+import ExperimentValfunction.ensemble_system.voices.Opinion;
+import ExperimentValfunction.ensemble_system.voices.Voice;
 import core.game.StateObservation;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
@@ -15,7 +17,7 @@ import java.util.Random;
  * Time: 21:45
  * This is a Java port from Tom Schaul's VGDL - https://github.com/schaul/py-vgdl
  */
-public class Agent extends AbstractHeuristicPlayer {
+public class Agent extends AbstractHeuristicPlayer implements Voice {
 
     public int num_actions;
     public Types.ACTIONS[] actions;
@@ -55,6 +57,11 @@ public class Agent extends AbstractHeuristicPlayer {
      * @param elapsedTimer Timer when the action returned is due.
      * @return An action for the current state
      */
+    public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
+        return new Opinion(this.act(stateObs, elapsedTimer), mctsPlayer.value);
+
+    }
+
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
 
         // The heuristic is updated if needed
@@ -69,5 +76,4 @@ public class Agent extends AbstractHeuristicPlayer {
         //... and return it.
         return actions[action];
     }
-
 }
