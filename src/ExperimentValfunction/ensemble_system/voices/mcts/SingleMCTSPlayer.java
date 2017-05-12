@@ -1,5 +1,6 @@
 package ExperimentValfunction.ensemble_system.voices.mcts;
 
+import ExperimentValfunction.ensemble_system.voices.Opinion;
 import ExperimentValfunction.heuristics.StateHeuristic;
 import core.game.StateObservation;
 import ontology.Types;
@@ -56,14 +57,13 @@ public class SingleMCTSPlayer {
      * @param elapsedTimer Timer when the action returned is due.
      * @return the action to execute in the game.
      */
-    public int run(ElapsedCpuTimer elapsedTimer) {
+    public Opinion run(ElapsedCpuTimer elapsedTimer) {
         //Do the search within the available time.
         m_root.mctsSearch(elapsedTimer);
 
         //Determine the best action to take and return it.
-        int action = m_root.mostVisitedAction();
-        value = m_root.children[action].totValue;
-        //int action = m_root.bestAction();
+        Opinion action = m_root.mostVisitedAction();
+//        int action = m_root.bestAction();
         return action;
     }
 

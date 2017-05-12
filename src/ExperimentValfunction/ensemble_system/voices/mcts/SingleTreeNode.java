@@ -1,5 +1,6 @@
 package ExperimentValfunction.ensemble_system.voices.mcts;
 
+import ExperimentValfunction.ensemble_system.voices.Opinion;
 import ExperimentValfunction.heuristics.StateHeuristic;
 import core.game.StateObservation;
 import ontology.Types;
@@ -196,7 +197,7 @@ public class SingleTreeNode {
     }
 
 
-    public int mostVisitedAction() {
+    public Opinion mostVisitedAction() {
         int selected = -1;
         double bestValue = -Double.MAX_VALUE;
         boolean allEqual = true;
@@ -227,7 +228,7 @@ public class SingleTreeNode {
             //If all are equal, we opt to choose for the one with the best Q.
             selected = bestAction();
         }
-        return selected;
+        return new Opinion(actions[selected], bestValue);
     }
 
     public int bestAction() {

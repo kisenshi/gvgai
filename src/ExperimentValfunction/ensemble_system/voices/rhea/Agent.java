@@ -42,6 +42,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
 
     private double acumTimeTakenEval = 0, avgTimeTakenEval = 0, avgTimeTaken = 0, acumTimeTaken = 0;
     private int numEvals = 0, numIters = 0;
+    private double value;
     private boolean keepIterating = true;
     private long remaining;
 
@@ -88,6 +89,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
 
         // RETURN ACTION
         Types.ACTIONS best = get_best_action(population);
+        value = population[0].value;
         return best;
     }
 
@@ -300,7 +302,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
     }
 
     @Override
-    public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
-        return null;
+    public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, int analysisTime) {
+        return new Opinion(this.act(stateObs, elapsedTimer), this.value);
     }
 }

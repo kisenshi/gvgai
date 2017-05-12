@@ -55,9 +55,10 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
      *
      * @param stateObs     Observation of the current state.
      * @param elapsedTimer Timer when the action returned is due.
+     * @param analysisTime
      * @return An action for the current state
      */
-    public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
+    public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, int analysisTime) {
         return new Opinion(this.act(stateObs, elapsedTimer), mctsPlayer.value);
 
     }
@@ -71,9 +72,9 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
         mctsPlayer.init(stateObs);
 
         //Determine the action using MCTS...
-        int action = mctsPlayer.run(elapsedTimer);
+        Opinion opinion = mctsPlayer.run(elapsedTimer);
 
         //... and return it.
-        return actions[action];
+        return opinion.getAction();
     }
 }

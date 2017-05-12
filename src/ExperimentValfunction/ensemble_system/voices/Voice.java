@@ -11,5 +11,5 @@ import tools.ElapsedCpuTimer;
  * Created by Damorin on 11/05/2017.
  */
 public interface Voice {
-    Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer);
+    Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, int analysisTime);
 }
