@@ -47,7 +47,7 @@ public class TestMultiPlayer {
 	int seed = new Random().nextInt();
 
 	// Game and level to play
-	int gameIdx = 0;
+	int gameIdx = 25;
 	int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
 	String game = gamesPath + games[gameIdx] + ".txt";
 	String level1 = gamesPath + games[gameIdx] + "_lvl" + levelIdx + ".txt";
@@ -102,20 +102,24 @@ public class TestMultiPlayer {
 //	 boolean saveActions = false;
 //	 String[] levels = new String[L];
 //	 String[] actionFiles = new String[L*M];
+//	 int actionIdx = 0;
 //
 //     //add all controllers that should play in this array
 //	 String[] cont = new String[]{doNothingController, randomController, oneStepController, sampleRHEAController, sampleMCTSController, sampleMCTSController};
 //     for(int i = 0; i < N; ++i)
 //     {
-//        int actionIdx = 0;
 //        game = gamesPath + games[i] + ".txt";
 //        for (int k = 0; k < cont.length - 1; k++) {
 //            for (int t = k + 1; t < cont.length; t++) {
 //                // set action files for the first controller order
 //                for(int j = 0; j < L; ++j){
 //                    levels[j] = gamesPath + games[i] + "_lvl" + j +".txt";
-//                    if(saveActions) for(int p = 0; p < M; ++p)
-//                        actionFiles[actionIdx++] = "actions_" + cont[k] + "_" + cont[t] + "_game_" + i + "_level_" + j + "_" + p + ".txt";
+//                    if(saveActions){ 
+//                        actionIdx = 0;
+//                        for(int p = 0; p < M; ++p) {
+//                          actionFiles[actionIdx++] = "actions_" + cont[k] + "_" + cont[t] + "_game_" + i + "_level_" + j + "_" + p + ".txt";
+//                        }
+//                    }
 //                }
 //
 //                controllers = cont[k] + " " + cont[t];
