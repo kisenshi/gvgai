@@ -47,6 +47,9 @@ public class TestRuleGeneration {
 
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
+
+        //String gamesDreamPath = "examples/EssexGameDesignModule/";
+
         // + levelIdx + "_" + seed + ".txt";
         // where to record the actions
         // executed. null if not to save.
@@ -56,13 +59,15 @@ public class TestRuleGeneration {
         int seed = new Random().nextInt();
         int gameIdx = 0;
         int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
+        //String game = gamesDreamPath + "dreamgame.txt";
+
         String game = generateRulePath + games[gameIdx] + ".txt";
         String level1 = gamesPath + games[gameIdx] + "_lvl" + levelIdx + ".txt";
         String recordGameFile = generateRulePath + games[gameIdx] + "_ggame.txt";
 
         // 1. Generate rules (Interaction and Terminations) for a fixed level
         if(RuleGenMachine.generateRules(game, level1, randomRuleGenerator, recordGameFile, seed)){
-            // RuleGenMachine.playOneGame(game, recordGameFile, level1, recordActionsFile, seed);
+           //RuleGenMachine.playOneGame(game, recordGameFile, level1, recordActionsFile, seed);
             RuleGenMachine.runOneGame(game, recordGameFile, level1, visuals, sampleMCTSController, recordActionsFile, seed, 0);
         }
     }
