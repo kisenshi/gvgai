@@ -1,4 +1,4 @@
-BasicGame no_players=2 square_size=25
+BasicGame no_players=2 rect_size=50,30
     SpriteSet
         floor > Immovable hidden=True img=oryx/floor3
         door > Door color=GREEN img=newset/lock1
