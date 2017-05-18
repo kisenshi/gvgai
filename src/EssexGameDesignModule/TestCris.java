@@ -12,12 +12,14 @@ public class TestCris {
     public static void main(String[] args) {
         // Available tracks:
         String dreamTeamAgent = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent";
+        String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
+
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = dreamTeamAgent + " " + humanController;
+        String controllers = dreamTeamAgent + " " + sampleMCTSController;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:

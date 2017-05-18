@@ -2,7 +2,9 @@ package EssexGameDesignModule.heuristics;
 
 import core.game.Game;
 import core.game.StateObservationMulti;
+import ontology.Types;
 import tools.ElapsedCpuTimer;
+import tools.Vector2d;
 
 import java.awt.*;
 import java.awt.Event;
@@ -12,11 +14,30 @@ import java.util.ArrayList;
  * Created by Cristina on 18/05/2017.
  */
 public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
+    double last_score;
     private ArrayList<Integer> sprites_acknowledge;
     private int last_spriteAcknowledge_tick;
+    private int block_size;
+    private int grid_width;
+    private int grid_height;
+    private boolean exploration_matrix[][];
+    private Vector2d last_position;
 
     public DreamTeamHeuristic(StateObservationMulti stateObs, int playerID) {
         super(stateObs, playerID);
+
+        // Exploration
+        block_size = stateObs.getBlockSize();
+        Dimension grid_dimension = stateObs.getWorldDimension();
+
+        grid_width = grid_dimension.width / block_size;
+        grid_height = grid_dimension.height / block_size;
+
+        exploration_matrix = new boolean[grid_width][grid_height];
+
+        Vector2d initialPosition = stateObs.getAvatarPosition(this.player_id);
+
+        markNewPositionAsVisited(initialPosition);
 
         // Acknowledge is initialised
         sprites_from_avatar_acknowledge = new ArrayList<>();
@@ -26,6 +47,52 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         interaction_history.setUseCuriosity(true);
         interaction_history.setUseStats(true);
     }
+
+    /*+++++ EXPLORATION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    private int getMapSize(){
+        return grid_width * grid_height;
+    }
+
+    /**
+     * Marks the position as visited in the exploration_matrix
+     * The position is provided as a Vector2d object so it is needed to
+     * calculate the valid coordinates to be considered for the matrix
+     * It would be used the block_size int set when initialised
+     * @param position The position as a Vector2d object
+     */
+    private void markNewPositionAsVisited(Vector2d position){
+        if (isOutOfBounds(position)){
+            return;
+        }
+
+        int x = (int)position.x / block_size;
+        int y = (int)position.y / block_size;
+
+        //System.out.println("Marking ("+x+" , "+y+") as VISITED");
+
+        exploration_matrix[x][y] = true;
+    }
+
+    /**
+     * Checks if the position has already been visited. As it is provided as Vector2d objects,
+     * it is needed to convert it to valid coordinates to be considered for the matrix
+     * @param position The position to be checked, as a Vector2d objects
+     * @return true or false depending if the position has already been visited or not
+     */
+    private boolean hasBeenBefore(Vector2d position){
+        if (isOutOfBounds(position)){
+            return false;
+        }
+
+        int x = (int)position.x / block_size;
+        int y = (int)position.y / block_size;
+
+        //System.out.println("Been before to ("+x+" , "+y+")? "+exploration_matrix[x][y]);
+
+        return exploration_matrix[x][y];
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     /*+++++ DISCOVERY HEURISTIC +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -169,12 +236,58 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
     @Override
     public double evaluateState(StateObservationMulti stateObs) {
-        return 0;
+
+        System.out.println("Exploring....");
+
+        boolean gameOver = stateObs.isGameOver();
+        Types.WINNER winner = stateObs.getMultiGameWinner()[this.player_id];
+        double rawScore = stateObs.getGameScore(this.player_id);
+
+        if(gameOver && winner == Types.WINNER.PLAYER_WINS) {
+            return HUGE_POSITIVE;
+        }
+
+        if(gameOver && winner == Types.WINNER.PLAYER_LOSES){
+            return HUGE_NEGATIVE;
+        }
+
+        // It is returned the score change as heuristic
+        Vector2d currentPosition = stateObs.getAvatarPosition(this.player_id);
+
+        if (isOutOfBounds(currentPosition)){
+            // If the new position is out of bounds then dont go there
+            return HUGE_NEGATIVE;
+        }
+
+        if (!hasBeenBefore(currentPosition)){
+            // If it hasnt been before, it is rewarded
+            return 100;
+        }
+
+        // If it has been before, it is penalised
+        if (currentPosition.equals(last_position)){
+            // As it is tried to reward exploration, it is penalised more if it is the last position visited
+            //System.out.println("Last position visited");
+            return -50;
+        }
+
+        return (rawScore - last_score);
     }
 
     @Override
     public void updateHeuristicBasedOnCurrentState(StateObservationMulti stateObs) {
+        // For EXPLORATION is needed to update the exploration_matrix to mark
+        Vector2d currentPosition = stateObs.getAvatarPosition();
 
+        last_position = currentPosition.copy();
+        if (!hasBeenBefore(currentPosition)) {
+            markNewPositionAsVisited(currentPosition);
+        }
+
+        // For SCORE
+        last_score = stateObs.getGameScore();
+
+        super.updateHeuristicBasedOnCurrentState(stateObs);
     }
 
     // TODO THIS IS NEVER CALLED
