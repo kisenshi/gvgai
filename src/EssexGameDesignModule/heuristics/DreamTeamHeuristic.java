@@ -237,7 +237,15 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
     @Override
     public double evaluateState(StateObservationMulti stateObs) {
 
-        System.out.println("Exploring....");
+        // ------------- KNOWLEDGE ACQUIREMENT
+        // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
+        ArrayList<core.game.Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
+
+        // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
+        boolean ack_update = updateSpriteAcknowledge(stateObs);
+        updateSpriteStats(last_gametick_events, stateObs, last_stateObs);
+
+        //-------------------------------
 
         boolean gameOver = stateObs.isGameOver();
         Types.WINNER winner = stateObs.getMultiGameWinner()[this.player_id];
@@ -259,19 +267,36 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             return HUGE_NEGATIVE;
         }
 
+        int reward_value = 0;
+
+        if (!last_gametick_events.isEmpty()){
+            if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType())){
+                reward_value = 1000;
+            } else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType())){
+                reward_value = 25;
+            } else if (isNewActionCuriosity(last_gametick_events, last_stateObs.getAvatarType())){
+                reward_value = 25;
+            }
+
+        }
+
         if (!hasBeenBefore(currentPosition)){
             // If it hasnt been before, it is rewarded
-            return 100;
+            reward_value = reward_value + 1000;
+        } else {
+            reward_value = reward_value - 100;
         }
 
         // If it has been before, it is penalised
         if (currentPosition.equals(last_position)){
             // As it is tried to reward exploration, it is penalised more if it is the last position visited
             //System.out.println("Last position visited");
-            return -50;
+            reward_value = reward_value -50;
         }
 
-        return (rawScore - last_score);
+        reward_value += (rawScore - last_score);
+
+        return reward_value;
     }
 
     @Override

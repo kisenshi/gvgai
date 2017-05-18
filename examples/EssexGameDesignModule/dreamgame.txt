@@ -25,7 +25,7 @@ BasicGame no_players=2
 
     InteractionSet
         weapon avatar   > collectResource scoreChange=2
-        key avatar      > collectResource scoreChange=1
+        key avatar      > collectResource
 
         door avatar > killIfOtherHasMore resource=key limit=1
         moving wall door > stepBack pixelPerfect=True
