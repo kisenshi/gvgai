@@ -1,4 +1,4 @@
-package tracks.EssexGameDesignModule;
+package EssexGameDesignModule;
 
 import tracks.ArcadeMachine;
 
