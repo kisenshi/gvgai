@@ -1,4 +1,4 @@
-package DreamTeam.controllers.dreamTeamMCTS;
+package DreamTeam;
 
 import java.util.Random;
 

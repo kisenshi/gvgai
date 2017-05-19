@@ -1,4 +1,4 @@
-package DreamTeam.controllers.dreamTeamMCTS;
+package DreamTeam;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,7 +6,6 @@ import java.util.Random;
 import core.game.StateObservationMulti;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
-import DreamTeam.AbstractHeuristicMultiPlayer;
 
 /**
  * sampleMCTS using general heuristic

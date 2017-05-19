@@ -21,7 +21,7 @@ public class DreamMain {
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
-        String dreamTeamAgent = "DreamTeam.controllers.dreamTeamMCTS.Agent";
+        String dreamTeamAgent = "DreamTeam.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
