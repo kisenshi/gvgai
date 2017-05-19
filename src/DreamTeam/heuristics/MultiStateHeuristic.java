@@ -38,14 +38,14 @@ public abstract class MultiStateHeuristic {
         if (stateObs != null){
             last_stateObs = stateObs.copy();
         }
-        System.out.println("Heuristic acc: "+heuristic_acc);
+        //System.out.println("Heuristic acc: "+heuristic_acc);
     }
 
     public double endHeuristicAccumulation(StateObservationMulti stateObs){
         double h = heuristic_acc;
         initHeuristicAccumulation();
-        System.out.println("Total heuristic: "+h);
-        System.out.println("");
+        //System.out.println("Total heuristic: "+h);
+        //System.out.println("");
         return h;
     }
 }

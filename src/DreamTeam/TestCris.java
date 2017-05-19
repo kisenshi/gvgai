@@ -12,15 +12,15 @@ public class TestCris {
     public static void main(String[] args) {
         // Available tracks:
         //String dreamTeamAgent = "DreamTeam.Agent";
-        String dreamTeamAgent = "DreamTeam.RS.Agent";
-        String dreamTeamAgent2 = "DreamTeam.Agent";
+        String dreamTeamRSAgent = "DreamTeam.RS.Agent";
+        String dreamTeamMCTSAgent = "DreamTeam.Agent";
 
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = dreamTeamAgent2 + " " + humanController;
+        String controllers = dreamTeamMCTSAgent + " " + dreamTeamMCTSAgent;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
