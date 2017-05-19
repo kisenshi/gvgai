@@ -13,14 +13,14 @@ public class TestCris {
         // Available tracks:
         //String dreamTeamAgent = "DreamTeam.Agent";
         String dreamTeamAgent = "DreamTeam.RS.Agent";
-        String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
+        String dreamTeamAgent2 = "DreamTeam.Agent";
 
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = dreamTeamAgent + " " + humanController;
+        String controllers = dreamTeamAgent2 + " " + humanController;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
