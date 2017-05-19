@@ -21,13 +21,18 @@ public class DreamMain {
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
+        String dreamTeamAgent = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent";
+
 
         // Set here the tracks used in the games (need 2 separated by space).
         //String controllers = humanController + " " + humanController;
-         String controllers = sampleRSController + " " + sampleRSController;
+         String controllers = dreamTeamAgent + " " + humanController;
 
         // Available games:
         String gamesPath = "examples/EssexGameDesignModule/";
+        String testgamesPath = "examples/2player/";
+        String game = testgamesPath + "egghunt.txt";
+        String level1 = testgamesPath + "egghunt_lvl0.txt";
 
 
         // Other settings
@@ -36,8 +41,8 @@ public class DreamMain {
 
         // Game and level to play
         int levelIdx = 1; // level names from 0 to 4 (game_lvlN.txt).
-        String game = gamesPath + "dreamgame.txt";
-        String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
+        //String game = gamesPath + "dreamgame.txt";
+        //String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
         // + levelIdx + "_" + seed + ".txt";

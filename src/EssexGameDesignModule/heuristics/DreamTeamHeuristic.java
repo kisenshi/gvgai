@@ -20,8 +20,9 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
     private int block_size;
     private int grid_width;
     private int grid_height;
-    private boolean exploration_matrix[][];
+    private int exploration_matrix[][];
     private Vector2d last_position;
+    private int n_positions_visited;
 
     public DreamTeamHeuristic(StateObservationMulti stateObs, int playerID) {
         super(stateObs, playerID);
@@ -33,11 +34,14 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         grid_width = grid_dimension.width / block_size;
         grid_height = grid_dimension.height / block_size;
 
-        exploration_matrix = new boolean[grid_width][grid_height];
+        exploration_matrix = new int[grid_width][grid_height];
+        intiExplorationMatrix();
 
         Vector2d initialPosition = stateObs.getAvatarPosition(this.player_id);
 
-        markNewPositionAsVisited(initialPosition);
+        //markNewPositionAsVisited(initialPosition);
+        n_positions_visited = 0;
+        increasePositionCounter(initialPosition);
 
         // Acknowledge is initialised
         sprites_from_avatar_acknowledge = new ArrayList<>();
@@ -45,12 +49,43 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         updateSpriteAcknowledge(stateObs);
 
         interaction_history.setUseCuriosity(true);
-        interaction_history.setUseStats(true);
+       // interaction_history.setUseStats(true);
     }
 
     /*+++++ EXPLORATION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
     private int getMapSize(){
         return grid_width * grid_height;
+    }
+
+    private void intiExplorationMatrix(){
+        for (int i=0; i<grid_width; i++){
+            for (int j=0; j<grid_height; j++){
+                exploration_matrix[i][j] = 0;
+            }
+        }
+    }
+
+    private void increasePositionCounter(Vector2d position){
+        if (isOutOfBounds(position)){
+            return;
+        }
+
+        int x = (int)position.x / block_size;
+        int y = (int)position.y / block_size;
+
+        exploration_matrix[x][y] = exploration_matrix[x][y] + 1;
+        n_positions_visited = n_positions_visited + 1;
+    }
+
+    private int calculateExplorationHeuristic(Vector2d position){
+        int x = (int)position.x / block_size;
+        int y = (int)position.y / block_size;
+
+        int n_times_visited = exploration_matrix[x][y];
+
+        //System.out.println("N visited" + n_positions_visited);
+
+        return -10*n_times_visited;
     }
 
     /**
@@ -60,7 +95,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
      * It would be used the block_size int set when initialised
      * @param position The position as a Vector2d object
      */
-    private void markNewPositionAsVisited(Vector2d position){
+    /*private void markNewPositionAsVisited(Vector2d position){
         if (isOutOfBounds(position)){
             return;
         }
@@ -71,15 +106,13 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         //System.out.println("Marking ("+x+" , "+y+") as VISITED");
 
         exploration_matrix[x][y] = true;
-    }
+    }*/
 
     /**
      * Checks if the position has already been visited. As it is provided as Vector2d objects,
      * it is needed to convert it to valid coordinates to be considered for the matrix
-     * @param position The position to be checked, as a Vector2d objects
-     * @return true or false depending if the position has already been visited or not
      */
-    private boolean hasBeenBefore(Vector2d position){
+    /*private boolean hasBeenBefore(Vector2d position){
         if (isOutOfBounds(position)){
             return false;
         }
@@ -90,7 +123,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         //System.out.println("Been before to ("+x+" , "+y+")? "+exploration_matrix[x][y]);
 
         return exploration_matrix[x][y];
-    }
+    }*/
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -199,14 +232,14 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
     /*+++++ ESTIMATION HEURISTIC +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-    private void updateSpriteStats(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
+    /*private void updateSpriteStats(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
         int avatar_stype =  last_stateObs.getAvatarType(this.player_id);
         for (core.game.Event last_event : last_gametick_events) {
             interaction_history.updateSpritesStatsKnowledge(last_event, stateObs, last_stateObs, avatar_stype, sprites_from_avatar_acknowledge);
         }
-    }
+    }*/
 
-    private double getHeuristicForInteractionsInState(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
+    /*private double getHeuristicForInteractionsInState(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
         int avatar_stype =  last_stateObs.getAvatarType(this.player_id);
         int min_n_times_checked = -1;
 
@@ -216,7 +249,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             if ((min_n_times_checked == -1) || (min_n_times_checked > n_times_checked)){
                 min_n_times_checked = n_times_checked;
             }
-        }
+        }*/
 
         /* The heuristic is obtained considering the total number of states checked already.
         * It is obtained the percentage of the times checked the current state onto the total
@@ -226,11 +259,11 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         * h = (1 - percentage)*100
         * It will always be returned a number between 0 an 100
         * */
-
+/*
         double percentage_checked = (double)min_n_times_checked/interaction_history.getNTotalStatesChecked();
 
         return (1 - percentage_checked)*100;
-    }
+    }*/
 
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -243,7 +276,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
         boolean ack_update = updateSpriteAcknowledge(stateObs);
-        updateSpriteStats(last_gametick_events, stateObs, last_stateObs);
+        //updateSpriteStats(last_gametick_events, stateObs, last_stateObs);
 
         //-------------------------------
 
@@ -269,7 +302,15 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
         int reward_value = 0;
 
-        if (!last_gametick_events.isEmpty()){
+        int n_positions_during_exploration;
+        if (currentPosition.equals(last_position)){
+
+        }
+
+        reward_value = calculateExplorationHeuristic(currentPosition);
+        //System.out.println(reward_value);
+
+        /*if (!last_gametick_events.isEmpty()){
             if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 //System.out.println("Is new");
                 reward_value = 1000;
@@ -280,9 +321,9 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
                 reward_value = 25;
             }
 
-        }
+        }*/
 
-        if (!hasBeenBefore(currentPosition)){
+        /*if (!hasBeenBefore(currentPosition)){
             // If it hasnt been before, it is rewarded
             reward_value = reward_value + 1000;
         } else {
@@ -294,7 +335,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             // As it is tried to reward exploration, it is penalised more if it is the last position visited
             //System.out.println("Last position visited");
             reward_value = reward_value -50;
-        }
+        }*/
 
         reward_value += (rawScore - last_score);
 
@@ -306,10 +347,13 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         // For EXPLORATION is needed to update the exploration_matrix to mark
         Vector2d currentPosition = stateObs.getAvatarPosition(this.player_id);
 
-        last_position = currentPosition.copy();
-        if (!hasBeenBefore(currentPosition)) {
+        /*if (!hasBeenBefore(currentPosition)) {
             markNewPositionAsVisited(currentPosition);
-        }
+        }*/
+
+        // For EXPLORATION
+        last_position = currentPosition.copy();
+        increasePositionCounter(currentPosition);
 
         // For SCORE
         last_score = stateObs.getGameScore(this.player_id);
