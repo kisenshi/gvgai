@@ -31,7 +31,7 @@ public class TestCris {
         int seed = new Random().nextInt();
 
         // Game and level to play
-        int levelIdx = 1; // level names from 0 to 4 (game_lvlN.txt).
+        int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
         String game = gamesPath + "dreamgame.txt";
         String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
 

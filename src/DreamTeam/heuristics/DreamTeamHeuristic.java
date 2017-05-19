@@ -75,15 +75,13 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         n_positions_visited = n_positions_visited + 1;
     }
 
-    private int calculateExplorationHeuristic(Vector2d position){
+    private double calculateExplorationHeuristic(Vector2d position, int n_pos_explored){
         int x = (int)position.x / block_size;
         int y = (int)position.y / block_size;
 
         int n_times_visited = exploration_matrix[x][y];
 
-        //System.out.println("N visited" + n_positions_visited);
-
-        return -10*n_times_visited;
+        return ((double)(n_pos_explored - n_times_visited)/n_pos_explored)*100;
     }
 
     /**
@@ -298,28 +296,25 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             return HUGE_NEGATIVE;
         }
 
-        int reward_value = 0;
+        double reward_value = 0;
 
-        int n_positions_during_exploration;
-        if (currentPosition.equals(last_position)){
+        int aprox_n_positions_explored = stateObs.getGameTick();
 
-        }
-
-        reward_value = calculateExplorationHeuristic(currentPosition);
+        reward_value = calculateExplorationHeuristic(currentPosition, aprox_n_positions_explored);
         //System.out.println(reward_value);
 
-        /*if (!last_gametick_events.isEmpty()){
+        if (!last_gametick_events.isEmpty()){
             if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 //System.out.println("Is new");
-                reward_value = 1000;
-            } else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
+                reward_value = reward_value + 5000;
+            } /*else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 //System.out.println("New collision");
                 reward_value = 25;
             } else if (isNewActionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 reward_value = 25;
-            }
+            }*/
 
-        }*/
+        }
 
         /*if (!hasBeenBefore(currentPosition)){
             // If it hasnt been before, it is rewarded
