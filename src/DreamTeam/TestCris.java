@@ -11,7 +11,8 @@ public class TestCris {
 
     public static void main(String[] args) {
         // Available tracks:
-        String dreamTeamAgent = "DreamTeam.Agent";
+        //String dreamTeamAgent = "DreamTeam.Agent";
+        String dreamTeamAgent = "DreamTeam.RS.Agent";
         String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
 
 
