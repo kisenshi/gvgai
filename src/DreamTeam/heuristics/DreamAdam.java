@@ -1,4 +1,4 @@
-package EssexGameDesignModule.heuristics;
+package DreamTeam.heuristics;
 
 import tracks.ArcadeMachine;
 
@@ -19,7 +19,7 @@ public class DreamAdam {
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
-        String agent47 = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent47";
+        String agent47 = "DreamTeam.controllers.dreamTeamMCTS.Agent47";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
@@ -27,7 +27,7 @@ public class DreamAdam {
         String tracks = agent47 + " " + agent47;
 
         // Available games:
-        String gamesPath = "examples/EssexGameDesignModule/";
+        String gamesPath = "examples/DreamTeam/";
 
 
         // Other settings

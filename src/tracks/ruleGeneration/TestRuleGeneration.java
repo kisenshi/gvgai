@@ -48,7 +48,7 @@ public class TestRuleGeneration {
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
 
-        //String gamesDreamPath = "examples/EssexGameDesignModule/";
+        //String gamesDreamPath = "examples/DreamTeam/";
 
         // + levelIdx + "_" + seed + ".txt";
         // where to record the actions

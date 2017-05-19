@@ -1,4 +1,4 @@
-package EssexGameDesignModule;
+package DreamTeam;
 
 import tracks.ArcadeMachine;
 
@@ -21,7 +21,7 @@ public class DreamMain {
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
-        String dreamTeamAgent = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent";
+        String dreamTeamAgent = "DreamTeam.controllers.dreamTeamMCTS.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
@@ -29,7 +29,7 @@ public class DreamMain {
          String controllers = dreamTeamAgent + " " + humanController;
 
         // Available games:
-        String gamesPath = "examples/EssexGameDesignModule/";
+        String gamesPath = "examples/DreamTeam/";
         String testgamesPath = "examples/2player/";
         String game = testgamesPath + "egghunt.txt";
         String level1 = testgamesPath + "egghunt_lvl0.txt";

@@ -1,13 +1,12 @@
-package EssexGameDesignModule.controllers.dreamTeamMCTS;
+package DreamTeam.controllers.dreamTeamMCTS;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import core.game.Game;
 import core.game.StateObservationMulti;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
-import EssexGameDesignModule.AbstractHeuristicMultiPlayer;
+import DreamTeam.AbstractHeuristicMultiPlayer;
 
 /**
  * sampleMCTS using general heuristic

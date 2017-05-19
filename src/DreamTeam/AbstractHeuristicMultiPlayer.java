@@ -1,10 +1,10 @@
-package EssexGameDesignModule;
+package DreamTeam;
 
 import core.game.Game;
 import core.game.StateObservationMulti;
 import core.player.AbstractMultiPlayer;
 import tools.ElapsedCpuTimer;
-import EssexGameDesignModule.heuristics.MultiStateHeuristic;
+import DreamTeam.heuristics.MultiStateHeuristic;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public abstract class AbstractHeuristicMultiPlayer extends AbstractMultiPlayer {
 
-    private String heuristicsPath = "EssexGameDesignModule.heuristics.";
+    private String heuristicsPath = "DreamTeam.heuristics.";
     private String heuristicName = heuristicsPath + "DreamTeamHeuristic";
     protected MultiStateHeuristic heuristic;
 

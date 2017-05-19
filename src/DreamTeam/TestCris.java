@@ -1,4 +1,4 @@
-package EssexGameDesignModule;
+package DreamTeam;
 
 import tracks.ArcadeMachine;
 
@@ -11,7 +11,7 @@ public class TestCris {
 
     public static void main(String[] args) {
         // Available tracks:
-        String dreamTeamAgent = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent";
+        String dreamTeamAgent = "DreamTeam.controllers.dreamTeamMCTS.Agent";
         String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
 
 
@@ -23,7 +23,7 @@ public class TestCris {
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
-        String gamesPath = "examples/EssexGameDesignModule/";
+        String gamesPath = "examples/DreamTeam/";
 
 
         // Other settings

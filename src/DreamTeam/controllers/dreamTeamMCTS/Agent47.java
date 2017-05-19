@@ -1,17 +1,13 @@
-package EssexGameDesignModule.controllers.dreamTeamMCTS;
+package DreamTeam.controllers.dreamTeamMCTS;
 
-import EssexGameDesignModule.AbstractHeuristicMultiPlayer;
 import core.game.Observation;
-import core.game.StateObservation;
 import core.game.StateObservationMulti;
 import core.player.AbstractMultiPlayer;
-import ontology.Types;
 import ontology.Types.*;
 import tools.ElapsedCpuTimer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Created by Adam(andy) on 18/05/2017.

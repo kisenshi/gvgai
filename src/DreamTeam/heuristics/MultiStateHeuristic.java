@@ -1,4 +1,4 @@
-package EssexGameDesignModule.heuristics;
+package DreamTeam.heuristics;
 
 import core.game.Game;
 import core.game.StateObservationMulti;

@@ -1,8 +1,7 @@
-package EssexGameDesignModule.heuristics;
+package DreamTeam.heuristics;
 
 import core.game.Observation;
 import core.game.StateObservationMulti;
-import tools.ElapsedCpuTimer;
 import tools.Vector2d;
 
 import java.awt.*;
