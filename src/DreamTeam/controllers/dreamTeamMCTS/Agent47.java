@@ -8,6 +8,7 @@ import tools.ElapsedCpuTimer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * Created by Adam(andy) on 18/05/2017.
@@ -19,6 +20,30 @@ public class Agent47 extends AbstractMultiPlayer {
     public Agent47(StateObservationMulti stateObs, ElapsedCpuTimer elapsedTimer, int playerID) {
         this.playerID = playerID;
     }
+
+
+    void createHeatMap(StateObservationMulti stateObs){
+        ArrayList<Observation>[][] obsGrid = stateObs.getObservationGrid();
+        int width = obsGrid.length;
+        int height = obsGrid[0].length;
+
+        HashSet<Integer> itypeWalls = new HashSet<>();
+        HashMap<Integer, Float> itypeValues = new HashMap<>();
+
+        float[][] heatmap = new float[width][height];
+
+        for(int x=0;x<obsGrid.length; x++){
+            ArrayList<Observation>[] col = obsGrid[x];
+            for(int y=0;y<col.length; y++){
+                ArrayList<Observation> obs = col[y];
+                for(Observation o : obs){
+
+                }
+            }
+        }
+
+    }
+
 
     @Override
     public ACTIONS act(StateObservationMulti stateObs, ElapsedCpuTimer elapsedTimer) {
