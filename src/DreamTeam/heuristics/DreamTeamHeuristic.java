@@ -75,15 +75,17 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         n_positions_visited = n_positions_visited + 1;
     }
 
-    private int calculateExplorationHeuristic(Vector2d position){
+    private double calculateExplorationHeuristic(Vector2d position){
         int x = (int)position.x / block_size;
         int y = (int)position.y / block_size;
 
         int n_times_visited = exploration_matrix[x][y];
 
-        //System.out.println("N visited" + n_positions_visited);
+        if (n_times_visited > 0){
+            return -10*n_times_visited;
+        }
 
-        return -10*n_times_visited;
+        return 10;
     }
 
     /**
@@ -132,9 +134,9 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         boolean ack_updated = false;
 
         // NPC sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getNPCPositions(), sprites_acknowledge)){
+        /*if (addObservationToAcknowledgeSprites(stateObs.getNPCPositions(), sprites_acknowledge)){
             ack_updated = true;
-        }
+        }*/
         // Fixed sprites
         if (addObservationToAcknowledgeSprites(stateObs.getImmovablePositions(), sprites_acknowledge)){
             ack_updated = true;
@@ -230,12 +232,12 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
     /*+++++ ESTIMATION HEURISTIC +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-    /*private void updateSpriteStats(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
+    private void updateSpriteStats(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
         int avatar_stype =  last_stateObs.getAvatarType(this.player_id);
         for (core.game.Event last_event : last_gametick_events) {
             interaction_history.updateSpritesStatsKnowledge(last_event, stateObs, last_stateObs, avatar_stype, sprites_from_avatar_acknowledge);
         }
-    }*/
+    }
 
     /*private double getHeuristicForInteractionsInState(ArrayList<core.game.Event> last_gametick_events, StateObservationMulti stateObs, StateObservationMulti last_stateObs){
         int avatar_stype =  last_stateObs.getAvatarType(this.player_id);
@@ -270,10 +272,10 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
         // ------------- KNOWLEDGE ACQUIREMENT
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
-        ArrayList<core.game.Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
+        //ArrayList<core.game.Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
 
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
-        boolean ack_update = updateSpriteAcknowledge(stateObs);
+        //boolean ack_update = updateSpriteAcknowledge(stateObs);
         //updateSpriteStats(last_gametick_events, stateObs, last_stateObs);
 
         //-------------------------------
@@ -298,20 +300,11 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             return HUGE_NEGATIVE;
         }
 
-        int reward_value = 0;
-
-        int n_positions_during_exploration;
-        if (currentPosition.equals(last_position)){
-
-        }
-
-        reward_value = calculateExplorationHeuristic(currentPosition);
-        //System.out.println(reward_value);
+        double reward_value = calculateExplorationHeuristic(currentPosition);
 
         /*if (!last_gametick_events.isEmpty()){
             if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
-                //System.out.println("Is new");
-                reward_value = 1000;
+                reward_value = reward_value + 1000;
             } else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 //System.out.println("New collision");
                 reward_value = 25;
@@ -321,21 +314,7 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
         }*/
 
-        /*if (!hasBeenBefore(currentPosition)){
-            // If it hasnt been before, it is rewarded
-            reward_value = reward_value + 1000;
-        } else {
-            reward_value = reward_value - 100;
-        }
-
-        // If it has been before, it is penalised
-        if (currentPosition.equals(last_position)){
-            // As it is tried to reward exploration, it is penalised more if it is the last position visited
-            //System.out.println("Last position visited");
-            reward_value = reward_value -50;
-        }*/
-
-        reward_value += (rawScore - last_score);
+        reward_value += (rawScore - last_score)*10;
 
         return reward_value;
     }
@@ -344,10 +323,6 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
     public void updateHeuristicBasedOnCurrentState(StateObservationMulti stateObs) {
         // For EXPLORATION is needed to update the exploration_matrix to mark
         Vector2d currentPosition = stateObs.getAvatarPosition(this.player_id);
-
-        /*if (!hasBeenBefore(currentPosition)) {
-            markNewPositionAsVisited(currentPosition);
-        }*/
 
         // For EXPLORATION
         last_position = currentPosition.copy();

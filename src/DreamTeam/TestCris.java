@@ -11,15 +11,16 @@ public class TestCris {
 
     public static void main(String[] args) {
         // Available tracks:
-        String dreamTeamAgent = "DreamTeam.Agent";
-        String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
+        //String dreamTeamAgent = "DreamTeam.Agent";
+        String dreamTeamRSAgent = "DreamTeam.RS.Agent";
+        String dreamTeamMCTSAgent = "DreamTeam.Agent";
 
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = dreamTeamAgent + " " + humanController;
+        String controllers = dreamTeamMCTSAgent + " " + dreamTeamMCTSAgent;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
@@ -31,7 +32,7 @@ public class TestCris {
         int seed = new Random().nextInt();
 
         // Game and level to play
-        int levelIdx = 1; // level names from 0 to 4 (game_lvlN.txt).
+        int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
         String game = gamesPath + "dreamgame.txt";
         String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
 
