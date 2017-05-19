@@ -75,13 +75,17 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
         n_positions_visited = n_positions_visited + 1;
     }
 
-    private double calculateExplorationHeuristic(Vector2d position, int n_pos_explored){
+    private double calculateExplorationHeuristic(Vector2d position){
         int x = (int)position.x / block_size;
         int y = (int)position.y / block_size;
 
         int n_times_visited = exploration_matrix[x][y];
 
-        return ((double)(n_pos_explored - n_times_visited)/n_pos_explored)*100;
+        if (n_times_visited > 0){
+            return -10*n_times_visited;
+        }
+
+        return 10;
     }
 
     /**
@@ -268,10 +272,10 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
 
         // ------------- KNOWLEDGE ACQUIREMENT
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
-        ArrayList<core.game.Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
+        //ArrayList<core.game.Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
 
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
-        boolean ack_update = updateSpriteAcknowledge(stateObs);
+        //boolean ack_update = updateSpriteAcknowledge(stateObs);
         //updateSpriteStats(last_gametick_events, stateObs, last_stateObs);
 
         //-------------------------------
@@ -296,19 +300,19 @@ public class DreamTeamHeuristic extends KnowledgeHeuristicMulti {
             return HUGE_NEGATIVE;
         }
 
-        double reward_value = calculateExplorationHeuristic(currentPosition, stateObs.getGameTick());
+        double reward_value = calculateExplorationHeuristic(currentPosition);
 
-        if (!last_gametick_events.isEmpty()){
+        /*if (!last_gametick_events.isEmpty()){
             if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 reward_value = reward_value + 1000;
-            } /*else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
+            } else if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 //System.out.println("New collision");
                 reward_value = 25;
             } else if (isNewActionCuriosity(last_gametick_events, last_stateObs.getAvatarType(this.player_id))){
                 reward_value = 25;
-            }*/
+            }
 
-        }
+        }*/
 
         reward_value += (rawScore - last_score)*10;
 
