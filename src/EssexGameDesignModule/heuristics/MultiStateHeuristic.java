@@ -18,6 +18,7 @@ public abstract class MultiStateHeuristic {
     protected double heuristic_acc;
     protected StateObservationMulti last_stateObs;
     protected StateObservationMulti last_visited_stateObs;
+    protected int player_id;
 
     abstract public double evaluateState(StateObservationMulti stateObs);
 

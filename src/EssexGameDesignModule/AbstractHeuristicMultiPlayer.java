@@ -1,8 +1,8 @@
 package EssexGameDesignModule;
 
+import core.game.Game;
 import core.game.StateObservationMulti;
 import core.player.AbstractMultiPlayer;
-import ontology.Types;
 import tools.ElapsedCpuTimer;
 import EssexGameDesignModule.heuristics.MultiStateHeuristic;
 
@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 /**
  * Created by Cristina on 18/05/2017.
  */
-public class AbstractHeuristicMultiPlayer extends AbstractMultiPlayer {
+public abstract class AbstractHeuristicMultiPlayer extends AbstractMultiPlayer {
 
     private String heuristicsPath = "EssexGameDesignModule.heuristics.";
     private String heuristicName = heuristicsPath + "DreamTeamHeuristic";
@@ -20,22 +20,26 @@ public class AbstractHeuristicMultiPlayer extends AbstractMultiPlayer {
 
     public AbstractHeuristicMultiPlayer(StateObservationMulti stateObs, ElapsedCpuTimer elapsedTimer, int playerID){
         setPlayerHeuristic(heuristicName);
-        this.heuristic = createPlayerHeuristic(stateObs);
+        this.heuristic = createPlayerHeuristic(stateObs, playerID);
+    }
+
+    public void recordHeuristicData(Game played, String fileName, int randomSeed, int[] recordIds) {
+        heuristic.recordDataOnFile(played, fileName, randomSeed, recordIds);
     }
 
     protected void setPlayerHeuristic(String heuristicName){
         this.heuristicName = heuristicName;
     }
 
-    protected MultiStateHeuristic createPlayerHeuristic(StateObservationMulti stateObs) {
+    protected MultiStateHeuristic createPlayerHeuristic(StateObservationMulti stateObs, int playerID) {
         MultiStateHeuristic heuristic = null;
         try {
             Class<? extends MultiStateHeuristic> heuristicClass = Class.forName(heuristicName)
                     .asSubclass(MultiStateHeuristic.class);
 
             // It is pass the stateObs as argument when instantiating the class
-            Class[] heuristicArgsClass = new Class[] { StateObservationMulti.class };
-            Object[] constructorArgs = new Object[] { stateObs };
+            Class[] heuristicArgsClass = new Class[] { StateObservationMulti.class, int.class };
+            Object[] constructorArgs = new Object[] { stateObs, playerID };
 
             Constructor heuristicArgsConstructor = heuristicClass.getConstructor(heuristicArgsClass);
 
@@ -66,10 +70,5 @@ public class AbstractHeuristicMultiPlayer extends AbstractMultiPlayer {
         }
 
         return heuristic;
-    }
-
-    @Override
-    public Types.ACTIONS act(StateObservationMulti stateObs, ElapsedCpuTimer elapsedTimer) {
-        return null;
     }
 }

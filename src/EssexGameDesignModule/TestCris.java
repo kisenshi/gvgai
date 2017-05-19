@@ -12,6 +12,8 @@ public class TestCris {
     public static void main(String[] args) {
         // Available tracks:
         String dreamTeamAgent = "EssexGameDesignModule.controllers.dreamTeamMCTS.Agent";
+        String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
+
 
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
