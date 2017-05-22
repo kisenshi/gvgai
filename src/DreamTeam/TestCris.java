@@ -20,7 +20,7 @@ public class TestCris {
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = dreamTeamMCTSAgent + " " + dreamTeamMCTSAgent;
+        String controllers = humanController + " " + humanController;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
