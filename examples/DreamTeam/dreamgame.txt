@@ -17,8 +17,8 @@ BasicGame no_players=2
     InteractionSet
         key avatar > collectResource
 
-        door avatar1 > killIfOtherHasMore resource=key limit=1 scoreChange=10,0
-        door avatar2 > killIfOtherHasMore resource=key limit=1 scoreChange=0,10
+        door avatar > killIfOtherHasMore resource=key limit=1 scoreChange=10,10
+        avatar1 door > changeResource resource=key value=-1
         moving wall door > stepBack pixelPerfect=True
 
     TerminationSet
