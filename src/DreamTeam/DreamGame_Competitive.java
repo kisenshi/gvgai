@@ -22,7 +22,7 @@ public class DreamGame_Competitive {
         //String controllers = sampleMCTSController + " " + dreamTeamMCTSAgent;
         //String controllers = humanController + " " + dreamTeamMCTSAgent;
         //String controllers = dreamTeamMCTSAgent + " " + sampleMCTSController;
-        String controllers = humanController + " " + sampleMCTSController;
+        String controllers = humanController + " " + dreamTeamMCTSAgent;
 
         // Available games:
         String gamesPath = "examples/DreamTeam/";

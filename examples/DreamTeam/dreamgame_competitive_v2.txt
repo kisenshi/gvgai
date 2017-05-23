@@ -41,6 +41,7 @@ BasicGame no_players=2 square_size=50
 
     TerminationSet
         SpriteCounter stype=door_noplayer limit=0 count_score=True
+        MultiSpriteCounter stype1=key stype2=avatar1_skull stype3=avatar2_skull limit=0 count_score=True
         Timeout limit=1500 count_score=True
 
     LevelMapping
