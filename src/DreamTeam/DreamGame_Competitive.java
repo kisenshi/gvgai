@@ -19,7 +19,10 @@ public class DreamGame_Competitive {
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = humanController + " " + dreamTeamMCTSAgent;
+        //String controllers = sampleMCTSController + " " + dreamTeamMCTSAgent;
+        //String controllers = humanController + " " + dreamTeamMCTSAgent;
+        //String controllers = dreamTeamMCTSAgent + " " + sampleMCTSController;
+        String controllers = humanController + " " + sampleMCTSController;
 
         // Available games:
         String gamesPath = "examples/DreamTeam/";
@@ -31,7 +34,7 @@ public class DreamGame_Competitive {
 
         // Game and level to play
         String game = gamesPath + "dreamgame_competitive.txt";
-        String level1 = gamesPath + "dreamgame_lvl_competitive.txt";
+        String level1 = gamesPath + "dreamgame_lvl_experiment_small.txt";
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
 

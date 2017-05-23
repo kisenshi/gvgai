@@ -30,7 +30,7 @@ public class DreamGame_B {
 
         // Game and level to play
         String game = gamesPath + "dreamgame_competitive.txt";
-        String level1 = gamesPath + "dreamgame_lvl_competitive.txt";
+        String level1 = gamesPath + "dreamgame_lvl_experiment.txt";
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
 
