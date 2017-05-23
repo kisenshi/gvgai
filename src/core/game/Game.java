@@ -7,6 +7,7 @@ import java.util.*;
 
 import javax.swing.JOptionPane;
 
+import DreamTeam.DreamTeamDataCollection;
 import core.vgdl.SpriteGroup;
 import core.vgdl.VGDLFactory;
 import core.vgdl.VGDLRegistry;
@@ -38,6 +39,12 @@ import tools.pathfinder.PathFinder;
  * Java port from Tom Schaul's VGDL - https://github.com/schaul/py-vgdl
  */
 public abstract class Game {
+
+	/**
+	 * Unethical data harvesting
+	 * TODO: webcam
+	 */
+	private DreamTeamDataCollection dataCollection = new DreamTeamDataCollection();
 
 	/**
 	 * indicates if player i is human or not
@@ -949,6 +956,9 @@ public abstract class Game {
 		}
 
 		if (isHuman && !wi.windowClosed && CompetitionParameters.killWindowOnEnd) {
+			// Log the final stats and write the log file
+			dataCollection.CollectFinalStats(this);
+
 			if (CompetitionParameters.dialogBoxOnStartAndEnd) {
 				if (no_players == 1) {
 					String sb = "GAMEOVER: YOU LOSE.";
@@ -1051,6 +1061,9 @@ public abstract class Game {
 		// the current game state.
 		fwdModel.update(this);
 		// System.out.println(avatars[0].rect);
+
+		// Collect statistics for DreamTeam experiment
+		dataCollection.UpdateStatsOnTick(this);
 
 		// Execute a game cycle:
 		this.tick(); // update for all entities.
