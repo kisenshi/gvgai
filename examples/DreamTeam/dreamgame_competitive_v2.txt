@@ -1,0 +1,52 @@
+BasicGame no_players=2 square_size=50
+    SpriteSet
+        floor > Immovable hidden=True img=oryx/backBlack
+        door > Door
+            door_noplayer > img=oryx/tombstone1
+            door_player1 > img=oryx/tomb_player1
+            door_player2 > img=oryx/tomb_player2
+
+        key > Resource img=oryx/skull1 limit=1 shrinkfactor=0.7
+
+        moving > MovingAvatar
+            avatar >
+                avatar1 > img=oryx/reaper1_blue
+                avatar2 > img=oryx/necromancer1
+
+            avatar_skull >
+                avatar1_skull > img=oryx/reaper1_blue_skull
+                avatar2_skull > img=oryx/necromancer1_skull
+
+        wall > Immovable img=oryx/tree2 #autotiling=True
+
+    InteractionSet
+        avatar1 key > transformTo stype=avatar1_skull
+        avatar2 key > transformTo stype=avatar2_skull
+        key avatar > killSprite
+
+        door_noplayer avatar1_skull > transformTo stype=door_player1 scoreChange=10,0
+        avatar1_skull door_noplayer > transformTo stype=avatar1
+
+        door_player2 avatar1_skull > transformTo stype=door_player1 scoreChange=10,-10
+        avatar1_skull door_player2 > transformTo stype=avatar1
+
+        door_noplayer avatar2_skull > transformTo stype=door_player2 scoreChange=0,10
+        avatar2_skull door_noplayer > transformTo stype=avatar2
+
+        door_player1 avatar2_skull > transformTo stype=door_player2 scoreChange=-10,10
+        avatar2_skull door_player1 > transformTo stype=avatar2
+
+        moving wall > stepBack pixelPerfect=True
+        avatar door > stepBack pixelPerfect=True
+
+    TerminationSet
+        SpriteCounter stype=door_noplayer limit=0 count_score=True
+        Timeout limit=1500 count_score=True
+
+    LevelMapping
+        d > door_noplayer floor
+        k > key floor
+        A > avatar1 floor
+        B > avatar2 floor
+        . > floor
+        w > floor wall
