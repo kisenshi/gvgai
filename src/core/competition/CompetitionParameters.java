@@ -96,7 +96,7 @@ public class CompetitionParameters
     /**
      * Longer delay for human play.
      */
-    public static int LONG_DELAY = 90;
+    public static int LONG_DELAY = 60;
 
 
     /**
