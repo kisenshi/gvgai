@@ -8,31 +8,31 @@ BasicGame no_players=2
         transaction > Immovable invisible=True
 
         moving >
-            avatar > MovingAvatar frameRate=8
-                avatar1 > img=oryx/swordman1
-                avatar2 > img=oryx/swordman1
+            avatar > MovingAvatar
+                avatar1 > img=oryx/princess1
+                avatar2 > img=oryx/dragon1
+            enemy > Chaser stype=avatar1 img=oryx/freak3 speed=0.3
 
         wall > Immovable img=oryx/wall3 autotiling=True
 
     InteractionSet
         key avatar > collectResource
 
-        door avatar > killIfOtherHasMore resource=key limit=1 scoreChange=10,10
+        door avatar1 > killIfOtherHasMore resource=key limit=1 scoreChange=10,0
+        door avatar2 > killIfOtherHasMore resource=key limit=1 scoreChange=0,10
         avatar door > changeResource resource=key value=-1
         moving wall door > stepBack pixelPerfect=True
 
     TerminationSet
         SpriteCounter stype=avatar1 limit=0 win=False,True
         SpriteCounter stype=avatar2 limit=0 win=True,False
-        SpriteCounter stype=door  limit=0 win=True,True
+        SpriteCounter stype=door  limit=0 win=True,True count_score=True
+        Timeout limit=1500 count_score=True
 
     LevelMapping
         d > door floor
-        s > weapon floor
-        r > spider floor
-        p > phantom floor
-        h > health floor
         k > key floor
         A > avatar1 floor
         B > avatar2 floor
+        e > enemy floor
         . > floor

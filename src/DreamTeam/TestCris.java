@@ -16,11 +16,12 @@ public class TestCris {
         String dreamTeamMCTSAgent = "DreamTeam.Agent";
 
 
+        String sampleMCTSController = "tracks.multiPlayer.advanced.sampleMCTS.Agent";
         String humanController = "tracks.multiPlayer.tools.human.Agent";
 
 
         // Set here the tracks used in the games (need 2 separated by space).
-        String controllers = humanController + " " + humanController;
+        String controllers = humanController + " " + dreamTeamMCTSAgent;
         // String tracks = sampleMCTSController + " " + sampleMCTSController;
 
         // Available games:
@@ -33,8 +34,10 @@ public class TestCris {
 
         // Game and level to play
         int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
-        String game = gamesPath + "dreamgame.txt";
-        String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
+        //String game = gamesPath + "dreamgame.txt";
+        String game = gamesPath + "dreamgame_competitive.txt";
+        //String level1 = gamesPath + "dreamgame_lvl" + levelIdx + ".txt";
+        String level1 = gamesPath + "dreamgame_lvl_competitive.txt";
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
         // + levelIdx + "_" + seed + ".txt";
