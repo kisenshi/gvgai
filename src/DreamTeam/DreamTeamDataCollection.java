@@ -53,15 +53,20 @@ public class DreamTeamDataCollection {
         HashMap<String, Object> stats = new HashMap<>();
         double score_human = score(game, 0);
         double score_ai = score(game, 1);
+
         stats.put("final_score_human", score_human);
         stats.put("final_score_ai", score_ai);
         stats.put("winner", score_ai == score_human ? "draw" : (score_ai > score_human ? "ai" : "human")); // sorry
         stats.put("ticks_elapsed", game.getGameTick());
         stats.put("score_over_time_human", scoresHuman);
         stats.put("score_over_time_ai", scoresAI);
+        stats.put("ai_controller", game.getAvatars()[1].player.getClass().toString());
 
+        // Convert it to json
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(stats);
+
+        // Write json to disk
         WriteLogFile(json);
     }
 }
