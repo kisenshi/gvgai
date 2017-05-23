@@ -1,4 +1,4 @@
-BasicGame no_players=2 square_size=50
+BasicGame no_players=2 square_size=35
     SpriteSet
         floor > Immovable hidden=True img=oryx/backBlack
         door > Door
@@ -40,9 +40,9 @@ BasicGame no_players=2 square_size=50
         avatar door > stepBack pixelPerfect=True
 
     TerminationSet
-        SpriteCounter stype=door_noplayer limit=0 count_score=True
+        #SpriteCounter stype=door_noplayer limit=0 count_score=True
         MultiSpriteCounter stype1=key stype2=avatar1_skull stype3=avatar2_skull limit=0 count_score=True
-        Timeout limit=1500 count_score=True
+        Timeout limit=400 count_score=True
 
     LevelMapping
         d > door_noplayer floor

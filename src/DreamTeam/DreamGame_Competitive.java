@@ -20,9 +20,9 @@ public class DreamGame_Competitive {
 
         // Set here the tracks used in the games (need 2 separated by space).
         //String controllers = sampleMCTSController + " " + dreamTeamMCTSAgent;
-        //String controllers = humanController + " " + dreamTeamMCTSAgent;
-        //String controllers = dreamTeamMCTSAgent + " " + sampleMCTSController;
         String controllers = humanController + " " + dreamTeamMCTSAgent;
+        //String controllers = dreamTeamMCTSAgent + " " + sampleMCTSController;
+        //String controllers = humanController + " " + sampleMCTSController;
 
         // Available games:
         String gamesPath = "examples/DreamTeam/";
