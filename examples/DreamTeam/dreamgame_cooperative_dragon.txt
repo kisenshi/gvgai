@@ -5,26 +5,33 @@ BasicGame no_players=2
 
         key > Resource img=oryx/key2 limit=1 shrinkfactor=0.7
 
-        transaction > Immovable invisible=True
-
         moving >
             avatar > MovingAvatar
-                player > img=oryx/princess1
                 pet > img=oryx/dragon1
-            enemy > RandomNPC img=oryx/freak3 speed=0.1
+                player > img=oryx/princess1 singleton=True
+            enemy > RandomNPC img=oryx/freak3 speed=0.4
+
+        freezed_avatar > NullAvatar img=oryx/queen1 singleton=True
+        freezed_avatar_t > NullAvatar img=oryx/queen1 singleton=True
 
         wall > Immovable img=oryx/wall3 autotiling=True
+        enemyPoint > SpawnPoint stype=enemy hidden=True invisible=True prob=0.01
 
     InteractionSet
         key player > collectResource
 
         door player > killIfOtherHasMore resource=key limit=1 scoreChange=10,0
-        enemy pet > killSprite scoreChange=0,10
+        enemy pet > killSprite scoreChange=0,0
         player door > changeResource resource=key value=-1
-
         moving wall door > stepBack pixelPerfect=True
 
 
+        #player enemy > killAll stype=freezed_avatar
+        #player enemy > addTimer timer=10 ftype=transformToAll stype=freezed_avatar stypeTo=player
+        #player enemy > addTimer timer=10 ftype=transformToSingleton stype=freezed_avatar stype_other=player
+        player enemy > transformToSingleton stype=player stype_other=freezed_avatar
+
+        #freezed_avatar enemy > killAll stype=player
 
     TerminationSet
         SpriteCounter stype=door  limit=0 win=True,True
@@ -35,5 +42,5 @@ BasicGame no_players=2
         k > key floor
         A > player floor
         B > pet floor
-        e > enemy floor
+        e > enemyPoint floor
         . > floor

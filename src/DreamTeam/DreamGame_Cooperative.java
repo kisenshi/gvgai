@@ -30,7 +30,7 @@ public class DreamGame_Cooperative {
         int seed = new Random().nextInt();
 
         // Game and level to play
-        String game = gamesPath + "dreamgame_cooperative.txt";
+        String game = gamesPath + "dreamgame_cooperative_dragon.txt";
         String level1 = gamesPath + "dreamgame_lvl_cooperative.txt";
 
         String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
