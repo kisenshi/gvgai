@@ -1,18 +1,16 @@
-BasicGame no_players=2
+BasicGame no_players=2 square_size=50
     SpriteSet
-        floor > Immovable hidden=True img=oryx/floor3
-        door > Door color=GREEN img=newset/lock1
+        floor > Immovable hidden=True img=oryx/backBlack
+        door > Door color=GREEN img=oryx/tombstone1
 
-        key > Resource img=oryx/key2 limit=1 shrinkfactor=0.7
-
-        transaction > Immovable invisible=True
+        key > Resource img=oryx/skull1 limit=1 shrinkfactor=0.7
 
         moving >
-            avatar > MovingAvatar frameRate=8
-                avatar1 > img=oryx/swordman1
-                avatar2 > img=oryx/swordman1
+            avatar > MovingAvatar
+                avatar1 > img=oryx/reaper1
+                avatar2 > img=oryx/necromancer1
 
-        wall > Immovable img=oryx/wall3 autotiling=True
+        wall > Immovable img=oryx/tree2 #autotiling=True
 
     InteractionSet
         key avatar > collectResource
@@ -23,9 +21,7 @@ BasicGame no_players=2
         moving wall door > stepBack pixelPerfect=True
 
     TerminationSet
-        SpriteCounter stype=avatar1 limit=0 win=False,True
-        SpriteCounter stype=avatar2 limit=0 win=True,False
-        SpriteCounter stype=door  limit=0 win=True,True count_score=True
+        SpriteCounter stype=door limit=0 count_score=True
         Timeout limit=1500 count_score=True
 
     LevelMapping
@@ -34,3 +30,4 @@ BasicGame no_players=2
         A > avatar1 floor
         B > avatar2 floor
         . > floor
+        w > floor wall
