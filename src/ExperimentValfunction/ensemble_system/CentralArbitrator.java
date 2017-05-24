@@ -32,17 +32,18 @@ public class CentralArbitrator {
 
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
         opinions.clear();
-        int analysisTime = 12;
-        elapsedTimer.setMaxTimeMillis(analysisTime);
+        int analysisTime = 18;
         for (Voice voice : voices) {
+            elapsedTimer.setMaxTimeMillis(analysisTime);
             this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, analysisTime));
         }
         return selectHighestValueOpinion().getAction();
+        // return selectRandomOpinion().getAction();
     }
 
     private Opinion selectHighestValueOpinion() {
         double bestValue = -Double.MAX_VALUE;
-        Opinion bestOpinion = new Opinion(Types.ACTIONS.ACTION_NIL, 0);
+        Opinion bestOpinion = null;
         for (int i = 0; i < opinions.size(); i++) {
             double value = opinions.get(i).getActionValue();
             if (value > bestValue) {
@@ -51,5 +52,9 @@ public class CentralArbitrator {
             }
         }
         return bestOpinion;
+    }
+
+    private Opinion selectRandomOpinion() {
+        return opinions.get(randomGenerator.nextInt(opinions.size()));
     }
 }

@@ -70,8 +70,8 @@ public class ensembleSystemTest {
         };
 
         //Game and level to play
+        int game_id = 9;//Integer.parseInt(args[1]); //2
         int level_idx = 0; // This experiment runs just for the first level
-        int game_id = 0;//Integer.parseInt(args[1]); //2
 
         String gameName = games_experiment[game_id];
         String game = gamesPath + gameName + ".txt";
