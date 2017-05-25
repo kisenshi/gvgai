@@ -86,24 +86,85 @@ def munge(x, condition):
 		'condition': condition
 	}
 
-all_data = (
-	[ (id, munge(x, '0')) for id, x in data_a ] +
-	[ (id, munge(x, '1')) for id, x in data_b ])
-
 def to_csv_str(data):
 	ks = list(data[0][1].keys())
 	top_row = "id, " + ", ".join(ks) + "\n"
 	rows = "\n".join([id + ", " + ", ".join([str(d[k]) for k in ks]) for id, d in data])
 	return top_row + rows
 
-ordered_data = []
-data_dict = dict(all_data)
-for x in user_ids:
-	id = x[0]
-	if not (id in all_excluded):
-		ordered_data.append((id, data_dict[id]))
+def write_csv_file(data, file_name):
+	ordered_data = []
+	data_dict = dict(data)
+	for x in user_ids:
+		id = x[0]
+		if not (id in all_excluded):
+			ordered_data.append((id, data_dict[id]))
 
-csv_str = to_csv_str(ordered_data)
+	csv_str = to_csv_str(ordered_data)
 
-with open('munged_game_logs.csv', 'w') as f:
-	f.write(csv_str)
+	with open('munged_game_logs.csv', 'w') as f:
+		f.write(csv_str)
+
+all_data = (
+	[ (id, munge(x, '0')) for id, x in data_a ] +
+	[ (id, munge(x, '1')) for id, x in data_b ])
+
+# write_csv_file(all_data, 'munged_game_logs.csv')
+
+def unzip(tups):
+	a = []
+	b = []
+	for x, y in tups:
+		a.append(x)
+		b.append(y)
+	return (a, b)
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+from collections import Counter
+from collections import defaultdict
+
+def median(lst):
+	return np.median(np.array(lst))
+
+def plot_data(data, colour):
+	xgroups = defaultdict(list)
+	points = []
+	for d in data:
+		attempt = d[1][2]
+		human = attempt['score_over_time_human']
+		ai = attempt['score_over_time_ai']
+		for i in range(0, len(human), 20):
+			x = i
+			y = human[i] - ai[i]
+			xgroups[x].append(y)
+			points.append((x, y))
+
+	(points, counts) = unzip(list(Counter(points).items()))
+	(x, y) = unzip(points)
+
+	plt.scatter(x, y, s=counts, color=colour)
+
+	plotpoints = [ (x, median(ys) ) for x, ys in xgroups.items() ]
+	(px, py) = unzip(plotpoints)
+	plt.plot(px, py, "r--", color=colour)
+	
+
+	#z = np.polyfit(x, y, 1)
+	#p = np.poly1d(z)
+	#plt.plot(x,p(x),"r--", color=colour)
+
+plot_data(data_a, 'orange')
+plot_data(data_b, 'blue')
+
+plt.xlabel('Game tick')
+plt.ylabel('Score difference')
+#plt.title("Difference between player and AI scores over time")
+plt.grid(True)
+#plt.savefig(file_name)
+
+plt.interactive(True)
+plt.show()
+
