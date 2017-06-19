@@ -109,6 +109,7 @@ public class SingleMCTSPlayer {
      */
     public int run(ElapsedCpuTimer elapsedTimer) {
         mctsSearch(elapsedTimer, this.rootObservation);    //Do the search within the available time.
+        this.value = rootNode.totValue;
         int action = rootNode.mostVisitedAction();  //Determine the best action to take and return it.
         salvagedTree = rootNode.children[action];
         salvagedTree.parent = null;

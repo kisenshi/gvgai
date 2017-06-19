@@ -36,7 +36,7 @@ public class SingleTreeNode {
     /**
      * The cumulated value of a node (i.e. the sum of all observed rewards in this node)
      */
-    private double totValue;
+    public double totValue;
     /**
      * The expectimax value of a node (i.e. we back up the max value from its children nodes, plus the instant values
      * observed when a simulation exited in this node, weighted proportionally to the number of exits

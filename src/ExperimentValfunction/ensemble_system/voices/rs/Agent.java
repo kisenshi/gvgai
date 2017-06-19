@@ -33,6 +33,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
     private double acumTimeTakenEval = 0, avgTimeTakenEval = 0;
     private int numEvals = 0;
     private long remaining;
+    private double actionValue;
 
     /**
      * Public constructor with state observation and time due.
@@ -181,6 +182,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
      */
     private Types.ACTIONS get_best_action(ArrayList<Individual> pop) {
         int bestAction = pop.get(0).actions[0];
+        actionValue = pop.get(0).value;
         return action_mapping.get(bestAction);
     }
 
@@ -191,6 +193,6 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
 
     @Override
     public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, int analysisTime) {
-        return null;
+        return new Opinion(this.act(stateObs, elapsedTimer), this.actionValue);
     }
 }

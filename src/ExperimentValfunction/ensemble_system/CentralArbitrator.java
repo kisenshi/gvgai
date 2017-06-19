@@ -32,7 +32,7 @@ public class CentralArbitrator {
 
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
         opinions.clear();
-        int analysisTime = 350;
+        int analysisTime = 18;
         for (Voice voice : voices) {
             elapsedTimer.setMaxTimeMillis(analysisTime);
             this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, analysisTime));
@@ -43,14 +43,17 @@ public class CentralArbitrator {
 
     private Opinion selectHighestValueOpinion() {
         double bestValue = -Double.MAX_VALUE;
+        int bestVoice = -1;
         Opinion bestOpinion = null;
         for (int i = 0; i < opinions.size(); i++) {
             double value = opinions.get(i).getActionValue();
             if (value > bestValue) {
                 bestValue = value;
                 bestOpinion = opinions.get(i);
+                bestVoice = i;
             }
         }
+        System.out.println("Best Voice: " + bestVoice);
         return bestOpinion;
     }
 
