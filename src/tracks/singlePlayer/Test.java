@@ -1,8 +1,8 @@
 package tracks.singlePlayer;
 
-import java.util.Random;
-
 import tracks.ArcadeMachine;
+
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 04/10/13 Time: 16:29 This is a
@@ -28,7 +28,7 @@ public class Test {
         String contGamesPath = "examples/contphysics/";
         String gamesPath;
 		String games[];
-        boolean GRID_PHYSICS = true;
+        boolean GRID_PHYSICS = false;
 
         // All public games (gridphysics)
 		if(GRID_PHYSICS) {
@@ -65,8 +65,8 @@ public class Test {
 		int seed = new Random().nextInt();
 
 		// Game and level to play
-		int gameIdx = 0;
-		int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
+        int gameIdx = 13;
+        int levelIdx = 0; // level names from 0 to 4 (game_lvlN.txt).
 		String game = gamesPath + games[gameIdx] + ".txt";
 		String level1 = gamesPath + games[gameIdx] + "_lvl" + levelIdx + ".txt";
 

@@ -24,7 +24,7 @@ public class SingleTreeNode {
 
     public int num_actions;
     Types.ACTIONS[] actions;
-    public int ROLLOUT_DEPTH = 10;
+    public int ROLLOUT_DEPTH = 20;
     public double K = Math.sqrt(2);
 
     public StateObservation rootState;
@@ -58,7 +58,7 @@ public class SingleTreeNode {
         int numIters = 0;
         heuristic.initHeuristicAccumulation();
 
-        int remainingLimit = 8;
+        int remainingLimit = 5;
 
         while (remaining > 2 * avgTimeTaken && remaining > remainingLimit) {
             //while(numIters < Agent.MCTS_ITERATIONS){
@@ -75,6 +75,7 @@ public class SingleTreeNode {
             avgTimeTaken = acumTimeTaken / numIters;
             remaining = elapsedTimer.remainingTimeMillis();
         }
+        System.out.println("-- " + numIters + " -- ( " + avgTimeTaken + ")");
     }
 
     public SingleTreeNode treePolicy(StateObservation state) {

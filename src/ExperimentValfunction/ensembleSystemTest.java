@@ -70,7 +70,7 @@ public class ensembleSystemTest {
         };
 
         //Game and level to play
-        int game_id = 9;//Integer.parseInt(args[1]); //2
+        int game_id = 2;//Integer.parseInt(args[1]); //2
         int level_idx = 0; // This experiment runs just for the first level
 
         String gameName = games_experiment[game_id];
