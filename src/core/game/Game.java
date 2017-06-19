@@ -808,12 +808,6 @@ public abstract class Game {
 
 		if (sprite.is_stochastic)
 			this.is_stochastic = true;
-
-		if (itype == wallId) {
-			sprite.loadImage("wall.png");
-		} else if (itype == avatarId) {
-			sprite.loadImage("avatar.png");
-		}
 	}
 
 	/**
@@ -1182,6 +1176,16 @@ public abstract class Game {
 		isEnded = true;
 	}
 
+
+	/**
+	 * Aborts a game. Game is lost and game over.
+	 */
+	public void abort() {
+		isEnded = true;
+	}
+
+
+
 	/**
 	 * Method to create the array of avatars from the sprites.
 	 */
@@ -1282,7 +1286,7 @@ public abstract class Game {
 		for (int i = 0; i < no_players; i++) {
 			if (avatars[i] != null && !avatars[i].is_disabled()) {
 				avatars[i].preMovement();
-				avatars[i].update(this);
+				avatars[i].updateAvatar(this, true, null);
 			} else if (avatars[i] == null) {
 				System.out.println(gameTick + ": Something went wrong, no avatar, ID = " + i);
 			}
