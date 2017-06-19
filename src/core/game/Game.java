@@ -808,12 +808,6 @@ public abstract class Game {
 
 		if (sprite.is_stochastic)
 			this.is_stochastic = true;
-
-		if (itype == wallId) {
-			sprite.loadImage("wall.png");
-		} else if (itype == avatarId) {
-			sprite.loadImage("avatar.png");
-		}
 	}
 
 	/**
@@ -1181,6 +1175,16 @@ public abstract class Game {
 			avatars[id].disqualify(true);
 		isEnded = true;
 	}
+
+
+	/**
+	 * Aborts a game. Game is lost and game over.
+	 */
+	public void abort() {
+		isEnded = true;
+	}
+
+
 
 	/**
 	 * Method to create the array of avatars from the sprites.

@@ -1,12 +1,14 @@
 package ontology;
-
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.lang.reflect.Field;
 import java.util.Random;
-
 import tools.Direction;
 import tools.Vector2d;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.lang.reflect.Field;
 
 /**
  * Created with IntelliJ IDEA.
@@ -43,6 +45,11 @@ public class Types {
     public static final Direction DDOWN = new Direction(0, 1);
     public static final Direction[] DBASEDIRS = new Direction[]{DUP, DLEFT, DDOWN, DRIGHT};
 
+    public static final int NUM_LEARNING_LEVELS = 5;
+    public static final int NUM_TRAINING_LEVELS = 3; //NUM_EVALUATION = NUM_LEARNING_LEVELS - NUM_TRAINING_LEVELS
+    public static final int LEARNING_RESULT_DISQ = -1;
+    public static final int LEARNING_FINISH_ROUND = -2;
+
     //This is a small method to automatically link and parse vectors to directions.
     public static Field processField(String value)
     {
@@ -57,6 +64,17 @@ public class Types {
             }
         }catch(Exception e) { }
         return cfield;
+    }
+
+    public static String v2DirStr(Vector2d v)
+    {
+        if (v.equals(NIL)) return "NIL";
+        if (v.equals(NONE)) return "NONE";
+        if (v.equals(UP)) return "UP";
+        if (v.equals(DOWN)) return "DOWN";
+        if (v.equals(LEFT)) return "LEFT";
+        if (v.equals(RIGHT)) return "RIGHT";
+        return null;
     }
 
     private static String _v2DirStr(Vector2d v)
@@ -158,6 +176,13 @@ public class Types {
         private int key;
         WINNER(int val) {key=val;}
         public int key() {return key;}
+    }
+
+    /**
+     * This is an enum type that describes the potential states of the game
+     */
+    public static enum GAMESTATES{
+        INIT_STATE, ACT_STATE, END_STATE, ABORT_STATE, CHOOSE_LEVEL
     }
 
     public static enum MOVEMENT {
