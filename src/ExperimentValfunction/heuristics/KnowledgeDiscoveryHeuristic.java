@@ -153,13 +153,14 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
         // The different sprites in the evaluated state are added to the 'sprite acknowledgement' of the agent
         boolean ack_update = updateSpriteAcknowledge(stateObs);
 
-        // For this heuristic is penalised finishing the game, either when winning or losing it
+        // If it is game over and it has lost, it's bad
         if(gameOver && win == Types.WINNER.PLAYER_LOSES){
             return HUGE_NEGATIVE;
         }
 
+        // This heuristic has been updated to always reward winning
         if(gameOver && win == Types.WINNER.PLAYER_WINS) {
-            return LESS_HUGE_NEGATIVE;
+            return HUGE_POSITIVE;
         }
 
         Vector2d currentPosition = stateObs.getAvatarPosition();
@@ -178,7 +179,7 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
 
         // New sprite has appeared, this is GOOD
         if (ack_update){
-            return HUGE_POSITIVE;
+            return (HUGE_POSITIVE/2);
         }
 
         ArrayList<Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);

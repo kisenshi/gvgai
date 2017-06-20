@@ -151,11 +151,16 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
      */
     public double evaluateState(StateObservation stateObs) {
         boolean gameOver = stateObs.isGameOver();
-        double gameOverPenalisation = 0;
+        Types.WINNER win = stateObs.getGameWinner();
 
-        // For this heuristic is penalised finishing the game, either when winning or losing it
-        if (gameOver){
+        // If it is game over and it has lost, it's bad
+        if(gameOver && win == Types.WINNER.PLAYER_LOSES){
             return HUGE_NEGATIVE;
+        }
+
+        // This heuristic has been updated to always reward winning
+        if(gameOver && win == Types.WINNER.PLAYER_WINS) {
+            return HUGE_POSITIVE;
         }
 
         Vector2d currentPosition = stateObs.getAvatarPosition();
