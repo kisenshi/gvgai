@@ -17,10 +17,9 @@ public class Agent extends AbstractPlayer {
     private CentralArbitrator ensemble = new CentralArbitrator();
 
     public Agent(StateObservation stateObs, ElapsedCpuTimer elapsedCpuTimer) {
-//        ensemble.addVoice(new ExperimentValfunction.ensemble_system.voices.mcts.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeScoreHeuristic"));
-//        ensemble.addVoice(new ExperimentValfunction.ensemble_system.voices.rhea.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeExplorationHeuristic"));
         ensemble.addVoice((new ExperimentValfunction.ensemble_system.voices.rs.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeScoreHeuristic")));
-        ensemble.addVoice((new ExperimentValfunction.ensemble_system.voices.olets.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.MaximizeScoreHeuristic")));
+        ensemble.addVoice((new ExperimentValfunction.ensemble_system.voices.rs.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.KnowledgeEstimationHeuristic")));
+        ensemble.addVoice((new ExperimentValfunction.ensemble_system.voices.rs.Agent(stateObs, elapsedCpuTimer, "ExperimentValfunction.heuristics.KnowledgeDiscoveryHeuristic")));
     }
 
     @Override

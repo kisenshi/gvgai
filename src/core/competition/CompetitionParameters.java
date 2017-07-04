@@ -38,22 +38,22 @@ public class CompetitionParameters {
      * Milliseconds allowed for the level generator disqualification, if it returns a level after this time.
      */
     public static final int LEVEL_ACTION_TIME_DISQ = 21600000;
-    
+
     /**
      * Milliseconds allowed for level generator to initialize
      */
     public static final int LEVEL_INITIALIZATION_TIME = 60000;
-    
+
     /**
      * Milliseconds allowed for the rule generator to generate rules
      */
-    public static final int RULE_ACTION_TIME = 1800000*10;
-    
+    public static final int RULE_ACTION_TIME = 1800000 * 10;
+
     /**
      * Milliseconds allowed for the rule generator disqualification, if it returns rules after this time.
      */
     public static final int RULE_ACTION_TIME_DISQ = 21600000;
-    
+
     /**
      * Milliseconds allowed for rule generator to initialize
      */
@@ -91,12 +91,12 @@ public class CompetitionParameters {
      * Max number of evaluations that can be done
      */
     public static final int OPTIMIZATION_EVALUATION = 5;
-    
+
     /**
      * Max number of warning then the system consider the game unplayable.
      */
     public static final int MAX_ALLOWED_WARNINGS = 25;
-    
+
     /**
      * Path to sprite images.
      */

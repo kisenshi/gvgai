@@ -17,6 +17,7 @@ import java.util.Random;
  */
 public class CentralArbitrator {
 
+    public static final int ANALYSIS_TIME = 12; // Constant to define the amount of analysis time per voice
     private List<Voice> voices;
     private List<Opinion> opinions;
     private Random randomGenerator = new Random();
@@ -28,14 +29,14 @@ public class CentralArbitrator {
 
     public void addVoice(Voice voice) {
         this.voices.add(voice);
+        System.out.println(this.voices.size());
     }
 
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
         opinions.clear();
-        int analysisTime = 18;
         for (Voice voice : voices) {
-            elapsedTimer.setMaxTimeMillis(analysisTime);
-            this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, analysisTime));
+            elapsedTimer.setMaxTimeMillis(ANALYSIS_TIME);
+            this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, ANALYSIS_TIME));
         }
         return selectHighestValueOpinion().getAction();
 //        return selectRandomOpinion().getAction();
