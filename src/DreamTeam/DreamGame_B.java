@@ -23,7 +23,7 @@ public class DreamGame_B {
         String controllers = humanController + " " + sampleMCTSController;
 
         // Available games:
-        String gamesPath = "examples/DreamTeam/";
+        String gamesPath = "/examples/DreamTeam/";
 
 
         // Other settings
