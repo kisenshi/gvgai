@@ -3,6 +3,7 @@ package tools;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.io.InputStreamReader;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,7 +28,9 @@ public class IO
     {
         ArrayList<String> lines = new ArrayList<String>();
         try{
-            BufferedReader in = new BufferedReader(new FileReader(filename));
+//            BufferedReader in = new BufferedReader(new FileReader(filename));
+            BufferedReader in = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(filename)));
+
             String line = null;
             while ((line = in.readLine()) != null) {
                 lines.add(line);
