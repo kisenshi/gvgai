@@ -29,7 +29,6 @@ public class CentralArbitrator {
 
     public void addVoice(Voice voice) {
         this.voices.add(voice);
-        System.out.println(this.voices.size());
     }
 
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
@@ -38,27 +37,40 @@ public class CentralArbitrator {
             elapsedTimer.setMaxTimeMillis(ANALYSIS_TIME);
             this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, ANALYSIS_TIME));
         }
+        for (Opinion opinion : opinions) {
+            System.out.println(opinion.getActionValue());
+        }
         return selectHighestValueOpinion().getAction();
 //        return selectRandomOpinion().getAction();
     }
 
     private Opinion selectHighestValueOpinion() {
+        List<Opinion> bestActions = new ArrayList<>();
         double bestValue = -Double.MAX_VALUE;
         int bestVoice = -1;
         Opinion bestOpinion = null;
         for (int i = 0; i < opinions.size(); i++) {
             double value = opinions.get(i).getActionValue();
             if (value > bestValue) {
+                bestActions.clear();
                 bestValue = value;
                 bestOpinion = opinions.get(i);
                 bestVoice = i;
+                bestActions.add(opinions.get(i));
+            } else if (value == bestValue) {
+                bestActions.add(opinions.get(i));
             }
         }
-        System.out.println("Best Voice: " + bestVoice);
+
+        if (bestActions.size() > 1) {
+            return bestActions.get(randomGenerator.nextInt(bestActions.size()));
+        }
         return bestOpinion;
     }
 
     private Opinion selectRandomOpinion() {
-        return opinions.get(randomGenerator.nextInt(opinions.size()));
+        int opinion = randomGenerator.nextInt(opinions.size());
+        System.out.println("Random voice: " + opinion);
+        return opinions.get(opinion);
     }
 }
