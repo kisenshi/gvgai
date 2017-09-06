@@ -38,7 +38,7 @@ public class CentralArbitrator {
             this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, ANALYSIS_TIME));
         }
         for (Opinion opinion : opinions) {
-            System.out.println(opinion.getActionValue());
+            System.out.println(opinion.getEstimatedValue());
         }
         return selectHighestValueOpinion().getAction();
 //        return selectRandomOpinion().getAction();
@@ -50,7 +50,7 @@ public class CentralArbitrator {
         int bestVoice = -1;
         Opinion bestOpinion = null;
         for (int i = 0; i < opinions.size(); i++) {
-            double value = opinions.get(i).getActionValue();
+            double value = opinions.get(i).getEstimatedValue();
             if (value > bestValue) {
                 bestActions.clear();
                 bestValue = value;
@@ -70,7 +70,6 @@ public class CentralArbitrator {
 
     private Opinion selectRandomOpinion() {
         int opinion = randomGenerator.nextInt(opinions.size());
-        System.out.println("Random voice: " + opinion);
         return opinions.get(opinion);
     }
 }

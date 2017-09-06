@@ -10,19 +10,19 @@ import ontology.Types;
 public class Opinion {
 
     private Types.ACTIONS action;
-    private double actionValue;
+    private double estimatedValue;
 
-    public Opinion(Types.ACTIONS action, double actionValue) {
+    public Opinion(Types.ACTIONS action, double estimatedValue) {
         this.action = action;
-        this.actionValue = actionValue;
+        this.estimatedValue = estimatedValue;
     }
 
     public Types.ACTIONS getAction() {
         return this.action;
     }
 
-    public double getActionValue() {
-        return this.actionValue;
+    public double getEstimatedValue() {
+        return this.estimatedValue;
     }
 
 }

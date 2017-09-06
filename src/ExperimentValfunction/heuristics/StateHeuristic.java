@@ -17,7 +17,7 @@ public abstract class StateHeuristic {
 
     protected static final double HUGE_NEGATIVE = -10000.0;
     protected static final double LESS_HUGE_NEGATIVE = -5000.0;
-    protected static final double HUGE_POSITIVE =  10000.0;
+    protected static final double HUGE_POSITIVE = 10000.0;
     protected BufferedWriter writer;
     protected double heuristic_acc;
     protected StateObservation last_stateObs;
@@ -31,23 +31,23 @@ public abstract class StateHeuristic {
 
     abstract public void drawInScreen(Graphics2D g);
 
-    public void initHeuristicAccumulation(){
+    public void initHeuristicAccumulation() {
         heuristic_acc = 0;
         last_stateObs = last_visited_stateObs;
     }
 
-    public void accumulateHeuristic(StateObservation stateObs){
+    public void accumulateHeuristic(StateObservation stateObs) {
         heuristic_acc += evaluateState(stateObs);
-        if (stateObs != null){
+        if (stateObs != null) {
             last_stateObs = stateObs.copy();
         }
         //System.out.println("Heuristic acc: "+heuristic_acc);
     }
 
-    public double endHeuristicAccumulation(StateObservation stateObs){
+    public double endHeuristicAccumulation(StateObservation stateObs) {
         double h = heuristic_acc;
         initHeuristicAccumulation();
-        //System.out.println("Total heuristic: "+h);
+        System.out.println("Total heuristic: " + h);
         return h;
     }
 }
