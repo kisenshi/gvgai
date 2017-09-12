@@ -33,10 +33,10 @@ public class LearningMachine {
      * @param randomSeed sampleRandom seed for the sampleRandom generator.
      */
     public static double[] runOneGame(String game_file, String level_file, boolean visuals,
-                                    String[] cmd, String actionFile, int randomSeed) throws IOException {
-//        int trainingPlays = 0;// TODO: 22/05/17 to be removed?
+                                      String[] cmd, String actionFile, int randomSeed) throws IOException {
         VGDLFactory.GetInstance().init(); //This always first thing to do.
         VGDLRegistry.GetInstance().init();
+        CompetitionParameters.IS_LEARNING = true;
 
         System.out.println(" ** Playing game " + game_file + ", level " + level_file + " **");
 
@@ -44,7 +44,6 @@ public class LearningMachine {
         LearningPlayer player = LearningMachine.createPlayer(cmd);
 //
         //2. Play the training games.
-//        System.out.print(trainingPlays + " ");// TODO: 22/05/17 to be removed?
         double[] finalScore = playOnce(player, actionFile, game_file, level_file, visuals, randomSeed);
 
         return finalScore;
@@ -60,18 +59,15 @@ public class LearningMachine {
      * @param actionFiles filename of the file where the actions of this player, for this game, should be recorded.
      */
     public static void runMultipleGames(String game_file, String[] level_files,
-                                            String cmd[], String[] actionFiles) throws IOException {
-//        int trainingPlays = 0;// TODO: 22/05/17 to be removed?
-
+                                        String cmd[], String[] actionFiles, boolean visuals) throws IOException {
         VGDLFactory.GetInstance().init(); //This always first thing to do.
         VGDLRegistry.GetInstance().init();
-
+        CompetitionParameters.IS_LEARNING = true;
         //Create the player.
         LearningPlayer player = LearningMachine.createPlayer(cmd);
 
         // Play the training games.
-//        System.out.print(trainingPlays + "\n");// TODO: 22/05/17 to be removed?
-        runGames(game_file, level_files, 1, player, actionFiles);
+        runGames(game_file, level_files, 1, player, actionFiles, visuals);
     }
 
     /**
@@ -86,7 +82,7 @@ public class LearningMachine {
      * @throws IOException
      */
     private static double[] playOnce(LearningPlayer player, String actionFile, String game_file, String level_file,
-                                   boolean visuals, int randomSeed) throws IOException {
+                                     boolean visuals, int randomSeed) throws IOException {
         //Create the game.
         Game toPlay = new VGDLParser().parseGame(game_file);
         toPlay.buildLevel(level_file, randomSeed);
@@ -105,7 +101,6 @@ public class LearningMachine {
         Player[] players = new Player[]{player};
         if (visuals)
             score = toPlay.playGame(players, randomSeed, true, 0);
-//            score = toPlay.playGame(players, randomSeed, false, 0);// TODO: 22/05/17 why false???
         else
             score = toPlay.runGame(players, randomSeed);
 
@@ -116,7 +111,6 @@ public class LearningMachine {
     }
 
 
-    // TODO: 22/05/17 why "Graphics always on"?
     /**
      * Reads and launches a game for a bot to be played. It specifies which levels to play and how many times.
      * Filenames for saving actions can be specified. Graphics always on.
@@ -129,17 +123,16 @@ public class LearningMachine {
      */
     public static StatSummary performance;
     public static void runGames(String game_file, String[] level_files, int level_times,
-                                LearningPlayer player, String[] actionFiles) throws IOException {
+                                LearningPlayer player, String[] actionFiles, boolean visual) throws IOException {
         VGDLFactory.GetInstance().init(); //This always first thing to do.
         VGDLRegistry.GetInstance().init();
-
-        boolean visual = false;
+        CompetitionParameters.IS_LEARNING = true;
         boolean recordActions = false;
         if (actionFiles != null) {
             recordActions = true;
             assert actionFiles.length >= level_files.length * level_times :
-                    "runGames (actionFiles.length<level_files.length*level_times): " +
-                            "you must supply an action file for each game instance to be played, or null.";
+                "runGames (actionFiles.length<level_files.length*level_times): " +
+                    "you must supply an action file for each game instance to be played, or null.";
         }
 
         Game toPlay = new VGDLParser().parseGame(game_file);
@@ -172,13 +165,13 @@ public class LearningMachine {
 
         level_idx = 0;
         int levelOutcome = 0;
-        System.out.println("Starting First Phase of Training in " + Types.NUM_TRAINING_LEVELS + " levels.");
+        System.out.println("[PHASE] Starting First Phase of Training in " + Types.NUM_TRAINING_LEVELS + " levels.");
         while(keepPlaying && level_idx < trainingLevels.length)
         {
             String level_file = trainingLevels[level_idx];
             for (int i = 0; keepPlaying && i < level_times; ++i) {
-                levelOutcome = playOneLevel(game_file,level_file,i,false, recordActions,levelIdx,
-                                                players,actionFiles,toPlay,scores,victories);
+                levelOutcome = playOneLevel(game_file,level_file,i,false, visual, recordActions,level_idx,
+                    players,actionFiles,toPlay,scores,victories);
 //                System.err.println("levelOutcome="+levelOutcome);
                 keepPlaying = (levelOutcome>=0);
             }
@@ -190,11 +183,11 @@ public class LearningMachine {
 
         if(levelOutcome != Types.LEARNING_FINISH_ROUND) {
             //We only continue playing if the round is not over.
-            System.out.println("Starting Second Phase of Training in " + Types.NUM_TRAINING_LEVELS + " levels.");
+            System.out.println("[PHASE] Starting Second Phase of Training in " + Types.NUM_TRAINING_LEVELS + " levels.");
             while (levelOutcome >= 0) {
                 // Play the selected level once
-                levelOutcome = playOneLevel(game_file, level_files[levelOutcome], 0, false, recordActions,
-                        0, players, actionFiles, toPlay, scores, victories);
+                levelOutcome = playOneLevel(game_file, level_files[levelOutcome], 0, false, visual, recordActions,
+                    levelOutcome, players, actionFiles, toPlay, scores, victories);
             }
         }
 
@@ -203,22 +196,25 @@ public class LearningMachine {
 
         // Validation time
         // Establish the level files for level 3 and 4
-        System.out.println("Starting Validation in " + validationLevels.length + " levels.");
-        level_idx = 0; levelOutcome = 0;
-        keepPlaying=true;
-//        System.err.println("At beginning, keepPlaying="+keepPlaying + ",level_idx="+level_idx);
-        while(keepPlaying && level_idx < validationLevels.length)
-        {
-            String validation_level = validationLevels[level_idx];
-            for (int i = 0; keepPlaying && i < level_times; ++i) {
-//                System.err.println("validation_level=" + validation_level);
-                levelOutcome = playOneLevel(game_file,validation_level,i, true, recordActions,levelIdx,players,actionFiles,toPlay,scores,victories);
-                keepPlaying = (levelOutcome!=Types.LEARNING_RESULT_DISQ);
-//                System.err.println("levelOutcome=" + levelOutcome + ", keepPlaying="+keepPlaying);
-            }
-            level_idx++;
-        }
+        System.out.println("[PHASE] Starting Validation in " + validationLevels.length + " levels.");
 
+        for (int valid_idx=0; valid_idx<CompetitionParameters.validation_times; valid_idx++) {
+            level_idx = 0;
+            levelOutcome = 0;
+            keepPlaying = true;
+//        System.err.println("At beginning, keepPlaying="+keepPlaying + ",level_idx="+level_idx);
+            while (keepPlaying && level_idx < validationLevels.length) {
+                String validation_level = validationLevels[level_idx];
+                for (int i = 0; keepPlaying && i < level_times; ++i) {
+//                System.err.println("validation_level=" + validation_level);
+                    levelOutcome = playOneLevel(game_file, validation_level, i, true, visual, recordActions, level_idx + Types.NUM_TRAINING_LEVELS, players, actionFiles, toPlay, scores, victories);
+                    keepPlaying = (levelOutcome != Types.LEARNING_RESULT_DISQ);
+//                System.err.println("levelOutcome=" + levelOutcome + ", keepPlaying="+keepPlaying);
+                }
+                level_idx++;
+            }
+        }
+        System.out.println("[PHASE] End Validation in " + validationLevels.length + " levels.");
         String vict = "", sc = "";
         for (int i = 0; i < toPlay.no_players; i++) {
             vict += victories[i].mean();
@@ -229,8 +225,11 @@ public class LearningMachine {
             }
         }
 
-        System.out.println("Results in game " + game_file + ", " +
-                vict + " , " + sc);
+//        System.out.println("[LOG] Results in game " + game_file + ", " +
+//                vict + " , " + sc);
+
+        //Finally, when the game is over, we need to finish the communication with the client.
+        player.finishPlayerCommunication();
     }
 
     /**
@@ -252,9 +251,9 @@ public class LearningMachine {
      * @return Next level to be played as chosen by the player, or a random substituent.
      * @throws IOException
      */
-    public static int playOneLevel(String game_file, String level_file, int level_time, boolean isValidation, boolean recordActions,
-                                    int levelIdx, LearningPlayer[] players, String[] actionFiles, Game toPlay, StatSummary[] scores,
-                                    StatSummary[] victories) throws IOException{
+    public static int playOneLevel(String game_file, String level_file, int level_time, boolean isValidation, boolean isVisual, boolean recordActions,
+                                   int levelIdx, LearningPlayer[] players, String[] actionFiles, Game toPlay, StatSummary[] scores,
+                                   StatSummary[] victories) throws IOException{
         if (VERBOSE)
             System.out.println(" ** Playing game " + game_file + ", level " + level_file + " (" + level_time + ") **");
 
@@ -264,7 +263,7 @@ public class LearningMachine {
         //build the level in the game.
         toPlay.buildLevel(level_file, randomSeed);
 
-        String filename = recordActions ? actionFiles[levelIdx * level_time] : null; // TODO: 22/05/17 check this 
+        String filename = recordActions ? actionFiles[levelIdx * level_time] : null; // TODO: 22/05/17 check this
 
         // Score array to hold handled results.
         double[] score;
@@ -274,19 +273,24 @@ public class LearningMachine {
 
         // If the player cannot be initialized, disqualify the controller
         if (learningPlayer == null) {
+            System.out.println("Something went wrong in the constructor, controller disqualified");
             //Something went wrong in the constructor, controller disqualified
             toPlay.getAvatars()[0].disqualify(true);
             toPlay.handleResult();
-            toPlay.printResult();
+            toPlay.printLearningResult(levelIdx, isValidation);
             return -1;
         }
         players[0] = learningPlayer;
 
         //Play the game
         //Get array of scores back.
-//        score = toPlay.playGame(players, randomSeed, false, 0);
-        score = toPlay.runGame(players, randomSeed);
-        toPlay.printResult();
+        if(isVisual) {
+            score = toPlay.playGame(players, randomSeed, false, 0);
+        } else {
+            score = toPlay.playOnlineGame(players, randomSeed, false, 0);
+//            score = toPlay.runGame(players, randomSeed);
+        }
+        toPlay.printLearningResult(levelIdx, isValidation);
 
         //Finally, when the game is over, we need to tear the player down.
         LearningMachine.tearPlayerDown(players[0], toPlay);
@@ -303,7 +307,7 @@ public class LearningMachine {
 
         // Sends results to player and retrieve the next level to be played
         int level = players[0].result(so);
-
+//        System.out.println("LearningMachine required level="+level);
         //reset the game.
         toPlay.reset();
 
@@ -320,19 +324,16 @@ public class LearningMachine {
      * @return the player, created but NOT initialized, ready to start playing the game.
      */
     private static LearningPlayer createPlayer(String[] cmd) throws IOException {
-
-//        Process client;
-//        ProcessBuilder builder = new ProcessBuilder(cmd[0], cmd[1], cmd[2]);
-//        builder.redirectErrorStream(true);
-//        client = builder.start();
-//        return new LearningPlayer(client, cmd[2]);
-
         String scriptName = cmd[0];
 
-        if(scriptName != null)
-        {
+        if(scriptName != null) {
             Process client;
-            ProcessBuilder builder = new ProcessBuilder(cmd[0], cmd[1], cmd[2]);
+            ProcessBuilder builder;
+            if (cmd.length == 5) {
+                builder = new ProcessBuilder(cmd[0], cmd[1], cmd[2], cmd[3], cmd[4]);
+            } else {
+                builder = new ProcessBuilder(cmd[0], cmd[1], cmd[2]);
+            }
             builder.redirectErrorStream(true);
             client = builder.start();
             return new LearningPlayer(client, cmd[2]);
@@ -375,7 +376,6 @@ public class LearningMachine {
      * @return the player, created and initialized, ready to start playing the game.
      */
     // Not useful for singleLearning
-    // TODO: 23/05/17  Unfinished
     private static LearningPlayer initMultiPlayer(LearningPlayer playerName, String actionFile, StateObservationMulti so, int randomSeed, int id, boolean isHuman)
     {
         return playerName;

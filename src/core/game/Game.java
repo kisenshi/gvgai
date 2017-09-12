@@ -1,19 +1,5 @@
 package core.game;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.util.*;
-
-import javax.swing.JOptionPane;
-
-import core.vgdl.SpriteGroup;
-import core.vgdl.VGDLFactory;
-import core.vgdl.VGDLRegistry;
-import core.vgdl.VGDLSprite;
-import core.vgdl.VGDLViewer;
-import core.logging.Logger;
-import core.logging.Message;
 import core.competition.CompetitionParameters;
 import core.content.Content;
 import core.content.GameContent;
@@ -22,8 +8,11 @@ import core.content.SpriteContent;
 import core.game.GameDescription.InteractionData;
 import core.game.GameDescription.SpriteData;
 import core.game.GameDescription.TerminationData;
+import core.logging.Logger;
+import core.logging.Message;
 import core.player.Player;
 import core.termination.Termination;
+import core.vgdl.*;
 import ontology.Types;
 import ontology.avatar.MovingAvatar;
 import ontology.effects.Effect;
@@ -32,6 +21,10 @@ import ontology.sprites.Resource;
 import tools.*;
 import tools.pathfinder.Node;
 import tools.pathfinder.PathFinder;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 17/10/13 Time: 13:42 This is a
@@ -340,6 +333,7 @@ public abstract class Game {
 	 * @param constructors
 	 *            map of sprite constructor's information.
 	 */
+	@SuppressWarnings("unchecked")
 	public void initSprites(ArrayList<Integer> spOrder, ArrayList<Integer> sings,
 							HashMap<Integer, SpriteContent> constructors) {
 		ArrayList<Resource> resources = new ArrayList<Resource>();
@@ -972,6 +966,54 @@ public abstract class Game {
 		return handleResult();
 	}
 
+	public double[] playOnlineGame(Player[] players, int randomSeed, boolean isHuman, int humanID) {
+		// Prepare some structures and references for this game.
+		prepareGame(players, randomSeed, humanID);
+
+		// Create and initialize the panel for the graphics.
+		VGDLViewer view = new VGDLViewer(this, players[humanID]);
+		view.justImage = true;
+		wi.windowClosed = false;
+
+		// Determine the delay for playing with a good fps.
+		double delay = CompetitionParameters.LONG_DELAY;
+		for (Player player : players)
+			if (player instanceof tracks.singlePlayer.tools.human.Agent) {
+				delay = 1000.0 / CompetitionParameters.DELAY; // in milliseconds
+				break;
+			}
+
+		boolean firstRun = true;
+
+		// Play until the game is ended
+		while (!isEnded && !wi.windowClosed) {
+			// Determine the time to adjust framerate.
+			long then = System.currentTimeMillis();
+
+			this.gameCycle(); // Execute a game cycle.
+
+			// Get the remaining time to keep fps.
+			long now = System.currentTimeMillis();
+			int remaining = (int) Math.max(0, delay - (now - then));
+
+			// Wait until de next cycle.
+			waitStep(remaining);
+
+			// Draw all sprites in the panel.
+			view.paint(this.spriteGroups);
+
+			if (firstRun && isHuman) {
+				firstRun = false;
+			}
+		}
+
+
+		// Update the forward model for the game state sent to the controller.
+		fwdModel.update(this);
+
+		return handleResult();
+	}
+
 	/**
 	 * Sets the title of the game screen, depending on the game ending state.
 	 *
@@ -1131,6 +1173,29 @@ public abstract class Game {
 		System.out.println("Result (1->win; 0->lose): " + sb1 + sb2 + "timesteps:" + this.getGameTick());
 		// System.out.println("Result (1->win; 0->lose):"+ winner.key() + ",
 		// Score:" + score + ", timesteps:" + this.getGameTick());
+	}
+
+	/**
+	 * Prints the result of the game, indicating the game id, level id, winner, the score and the
+	 * number of game ticks played, in this order.
+	 */
+	public void printLearningResult(int levelIdx, boolean isValidation) {
+		String sb1 = "";
+		String sb2 = "";
+		for (int i = 0; i < no_players; i++) {
+			if (avatars[i] != null) {
+				sb1 += "Player" + i + ":" + avatars[i].getWinState().key() + ", ";
+				sb2 += "Player" + i + "-Score:" + avatars[i].getScore() + ", ";
+			} else {
+				sb1 += "Player" + i + ":-100, ";
+				sb2 += "Player" + i + "-Score:" + Types.SCORE_DISQ + ", ";
+			}
+		}
+		if (isValidation) {
+			System.out.println("[VALIDATION] Result (1->win; 0->lose): level:" + levelIdx + ", " + sb1 + sb2 + "timesteps:" + this.getGameTick());
+		} else {
+			System.out.println("[TRAINING] Result (1->win; 0->lose): level:" + levelIdx + ", " + sb1 + sb2 + "timesteps:" + this.getGameTick());
+		}
 	}
 
 	/**
@@ -1312,6 +1377,7 @@ public abstract class Game {
 	/**
 	 * Handles collisions and triggers events.
 	 */
+	@SuppressWarnings("unchecked")
 	protected void eventHandling() {
 		// Array to indicate that the sprite type has no representative in
 		// collisions.
@@ -1573,6 +1639,13 @@ public abstract class Game {
 				}
 			}
 		}
+		if(Logger.getInstance().getMessageCount() > CompetitionParameters.MAX_ALLOWED_WARNINGS){
+			System.out.println("Finishing the game due to number of warnings: " + Logger.getInstance().getMessageCount() +
+			 ". Messages will be flushed.");
+			Logger.getInstance().printMessages();
+		    isEnded = true;
+		    Logger.getInstance().flushMessages();
+		}
 	}
 
 	/**
@@ -1626,6 +1699,7 @@ public abstract class Game {
 	 * @param functHash
 	 *            Hash of the effect name to shield.
 	 */
+	@SuppressWarnings("unchecked")
 	public void addShield(int type1, int type2, long functHash) {
 		Pair newShield = new Pair(type2, functHash);
 		shieldedEffects[type1].add(newShield);
@@ -1671,6 +1745,7 @@ public abstract class Game {
 	 * @param force
 	 *            If true, forces the creation ignoring singleton restrictions
 	 */
+	@SuppressWarnings("unchecked")
 	public VGDLSprite addSprite(SpriteContent content, Vector2d position, int itype, boolean force) {
 		if (num_sprites > MAX_SPRITES) {
 			Logger.getInstance().addMessage(new Message(Message.WARNING, "Sprite limit reached."));
@@ -1680,13 +1755,12 @@ public abstract class Game {
 		// Check for singleton Sprites
 		boolean anyother = false;
 		if (!force) {
-
 			for (Integer typeInt : content.itypes) {
 				// If this type is a singleton and we have one already
 				if (singletons[typeInt] && getNumSprites(typeInt) > 0) {
 					// that's it, no more creations of this type.
-					anyother = true;
-					break;
+				    anyother = true;
+				    break;
 				}
 			}
 		}
@@ -1721,8 +1795,7 @@ public abstract class Game {
 			this.addSprite(newSprite, itype);
 			return newSprite;
 		}
-
-		Logger.getInstance().addMessage(new Message(Message.WARNING, "You can't have multiple objects of singleton."));
+		
 		return null;
 	}
 

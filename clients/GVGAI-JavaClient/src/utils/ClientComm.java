@@ -1,9 +1,10 @@
 package utils;
 
-import utils.com.google.gson.Gson;
 import serialization.SerializableStateObservation;
+import serialization.Types.LEARNING_SSO_TYPE;
+import utils.com.google.gson.Gson;
 
-import java.io.*;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 
 /**
@@ -57,6 +58,11 @@ public class ClientComm {
     private String agentName;
 
     /**
+     * Type of last required sso
+     */
+    private LEARNING_SSO_TYPE lastSsoType = LEARNING_SSO_TYPE.JSON;
+
+    /**
      * Creates the client.
      */
     public ClientComm(String agentName) {
@@ -64,7 +70,6 @@ public class ClientComm {
         io = CompetitionParameters.USE_SOCKETS ? new IOSocket(CompetitionParameters.SOCKET_PORT) : new IOPipe();
         sso = new SerializableStateObservation();
         this.agentName = agentName;
-
     }
 
 
@@ -115,10 +120,13 @@ public class ClientComm {
                 this.act();
 
             }else if( (sso.phase == SerializableStateObservation.Phase.ABORT) ||
-                      (sso.phase == SerializableStateObservation.Phase.END) ){
+                (sso.phase == SerializableStateObservation.Phase.END) ){
 
 //                io.writeToFile(lastMessageId + "#in result");
                 this.result();
+
+            }else if(sso.phase == SerializableStateObservation.Phase.FINISH) {
+                line = null; //That's it.
 
             } else {
                 io.writeToServer(lastMessageId, "null", LOG);
@@ -140,14 +148,12 @@ public class ClientComm {
     public void processLine(String msg) throws IOException{
 
         try {
-
             //Separate ID and message:
-            if (msg==null) {
+            if (msg == null) {
                 System.err.println("ClientComm: msg==null");
             }
             String message[] = msg.split(TOKEN_SEP);
-
-            if(message.length < 2)
+            if (message.length < 2)
                 return;
 
             lastMessageId = Integer.parseInt(message[0]);
@@ -155,19 +161,33 @@ public class ClientComm {
 
             //io.writeToFile("message received " + lastMessageId + "#" + json);
 
-            //Gson gson = new GsonBuilder().registerTypeAdapterFactory(new ArrayAdapterFactory()).create();
             Gson gson = new Gson();
 
             // Set the state to "START" in case the connexion (not game) is in the initialization phase.
             // Happens only on one-time setup
-            if (json.equals("START")){
+            if (json.equals("START")) {
                 this.sso.phase = SerializableStateObservation.Phase.START;
+                return;
+            }
+
+            if (json.equals("FINISH")) {
+                this.sso.phase = SerializableStateObservation.Phase.FINISH;
                 return;
             }
 
             // Else, deserialize the json using GSon
             this.sso = gson.fromJson(json, SerializableStateObservation.class);
 
+            // If expect image
+            if (lastSsoType == LEARNING_SSO_TYPE.IMAGE || lastSsoType == LEARNING_SSO_TYPE.BOTH) {
+                if ((sso.phase != SerializableStateObservation.Phase.INIT
+                    && sso.phase != SerializableStateObservation.Phase.ABORT)) {
+                    // If an image has been received, then save its PNG equivalent
+                    sso.convertBytesToPng(sso.imageArray);
+                }
+            }
+            // Used for debugging
+//            io.writeToFile(sso.toString());
         } catch (Exception e){
             io.logStackTrace(e);
         }
@@ -199,7 +219,7 @@ public class ClientComm {
             io.writeToServer(lastMessageId, "START_FAILED", LOG);
         }else {
             //io.writeToFile("start done");
-            io.writeToServer(lastMessageId, "START_DONE", LOG);
+            io.writeToServer(lastMessageId, "START_DONE" + TOKEN_SEP + player.lastSsoType, LOG);
         }
 
     }
@@ -210,6 +230,7 @@ public class ClientComm {
             Class<? extends AbstractPlayer> controllerClass = Class.forName(agentName).asSubclass(AbstractPlayer.class);
             Constructor controllerArgsConstructor = controllerClass.getConstructor();
             player = (AbstractPlayer) controllerArgsConstructor.newInstance();
+            this.lastSsoType = player.lastSsoType;
         }catch (Exception e)
         {
             io.writeToFile(e.toString());
@@ -227,12 +248,12 @@ public class ClientComm {
 
         // Perform level-entry initialization here
         player.init(sso, ect.copy());
-
+        this.lastSsoType = player.lastSsoType;
         if(ect.exceededMaxTime())
         {
             io.writeToServer(lastMessageId, "INIT_FAILED", LOG);
         }else {
-            io.writeToServer(lastMessageId, "INIT_DONE", LOG);
+            io.writeToServer(lastMessageId, "INIT_DONE"+TOKEN_SEP + player.lastSsoType, LOG);
         }
     }
 
@@ -248,17 +269,20 @@ public class ClientComm {
 
         // Save the player's action in a string
         String action = player.act(sso, ect.copy()).toString();
-        //io.writeToFile("init done");
-
+        if (action == null || action == "") {
+            action = "ACTION_NIL";
+        }
+        this.lastSsoType = player.lastSsoType;
         if(ect.exceededMaxTime()) {
-            if (ect.elapsedMillis() > CompetitionParameters.ACTION_TIME_DISQ) {
+//            System.out.println("spent:"+ect.elapsedMillis() + ">" + CompetitionParameters.ACTION_TIME_DISQ);
+            if (ect.elapsedNanos() > CompetitionParameters.ACTION_TIME_DISQ*1000000.0) {
                 io.writeToServer(lastMessageId, "END_OVERSPENT", LOG);
             } else {
                 //Overspent.
                 io.writeToServer(lastMessageId, "ACTION_NIL", LOG);
             }
         } else {
-            io.writeToServer(lastMessageId, action, LOG);
+            io.writeToServer(lastMessageId, action + TOKEN_SEP + player.lastSsoType, LOG);
         }
     }
 
@@ -267,22 +291,26 @@ public class ClientComm {
      * or EXTRA_LEARNING_TIME if current global time is beyond TOTAL_LEARNING_TIME.
      * The agent is assumed to return the next level to play. It will be ignored if
      *    a) All training levels have not been played yet (in which case the starting sequence 0-1-2 continues).
-     *    b) It's outside the range [0,4] (in which case we play one at random)
+     *    b) It's outside the range [0,4] (in which case we play one at sampleRandom)
      *    c) or we are in the validation phase (in which case the starting sequence 3-4 continues).
      */
     private void result()
     {
         ElapsedCpuTimer ect = new ElapsedCpuTimer();
 
-        if(!global_ect.exceededMaxTime())
+        if(!global_ect.exceededMaxTime()) {
             ect = global_ect.copy();
-        else
+        }
+        else {
             ect.setMaxTimeMillis(CompetitionParameters.EXTRA_LEARNING_TIME);
-
+        }
         // Submit result and wait for next level.
         int nextLevel = player.result(sso, ect.copy());
-
+        this.lastSsoType = player.lastSsoType;
 //        io.writeToFile("result timers: global: " + global_ect.elapsedSeconds()  + "(" + global_ect.exceededMaxTime() + ")" +
+//                ", local: " + ect.elapsedSeconds() + "(" + ect.exceededMaxTime() + ")" );
+
+//        System.out.println("result timers: global: " + global_ect.elapsedSeconds()  + "(" + global_ect.exceededMaxTime() + ")" +
 //                ", local: " + ect.elapsedSeconds() + "(" + ect.exceededMaxTime() + ")" );
 
         if(ect.exceededMaxTime())
@@ -297,11 +325,10 @@ public class ClientComm {
                 //Note this is okay, TOTAL_LEARNING_TIME is over, within the rules
                 io.writeToServer(lastMessageId, end_message, LOG);
             }else {
-                io.writeToServer(lastMessageId, nextLevel + "", LOG);
+                io.writeToServer(lastMessageId, nextLevel + TOKEN_SEP + player.lastSsoType, LOG);
             }
         }
     }
 
 
 }
-

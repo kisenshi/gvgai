@@ -57,6 +57,7 @@ public class CompetitionParameters
     /**
      * Milliseconds allowed per controller action.
      */
-    public static final int SOCKET_PORT = 3000;
+    public static final int SOCKET_PORT = 8080;//3000;
 
+    public static String SCREENSHOT_FILENAME = "gameStateByBytes.png";
 }

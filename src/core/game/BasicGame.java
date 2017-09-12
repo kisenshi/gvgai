@@ -4,16 +4,18 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+import core.competition.CompetitionParameters;
 import core.vgdl.VGDLFactory;
 import core.vgdl.VGDLRegistry;
 import core.vgdl.VGDLSprite;
 import core.logging.Logger;
 import core.logging.Message;
 import core.content.GameContent;
-import ontology.Types;
 import tools.IO;
 import tools.Vector2d;
 import tools.pathfinder.PathFinder;
+
+import static tools.Utils.findMaxDivisor;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 16/10/13 Time: 14:00 This is a
@@ -112,7 +114,11 @@ public class BasicGame extends Game {
 		if (square_size != -1) {
 			block_size = square_size;
 		} else {
-			block_size = Math.max(2, (int) 800.0 / Math.max(size.width, size.height));
+			block_size = Math.max(2, (int) CompetitionParameters.MAX_WINDOW_SIZE / Math.max(size.width, size.height));
+		}
+
+		if (CompetitionParameters.IS_LEARNING) {
+			block_size =CompetitionParameters.LEARNING_BLOCK_SIZE;
 		}
 		screenSize = new Dimension(size.width * block_size, size.height * block_size);
 
@@ -178,7 +184,7 @@ public class BasicGame extends Game {
 					}
 				}
 				else if(c != ' '){
-					Logger.getInstance().addMessage(new Message(Message.WARNING, "\"" + c + "\" isnot defined in the level mapping."));
+					Logger.getInstance().addMessage(new Message(Message.WARNING, "\"" + c + "\" is not defined in the level mapping."));
 				}
 			}
 		}
@@ -272,4 +278,7 @@ public class BasicGame extends Game {
 		return base;
 	}
 
+	public int getSquareSize() {
+		return square_size;
+	}
 }
