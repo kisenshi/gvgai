@@ -1,11 +1,17 @@
 package core.game;
 
+import core.competition.CompetitionParameters;
 import tools.com.google.gson.Gson;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
 
+import javax.imageio.ImageIO;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -20,6 +26,8 @@ public class SerializableStateObservation {
         START, INIT, ACT, ABORT, END
     }
 
+    // State Observation variables
+    public byte[] imageArray;
     public boolean isValidation;
     public float gameScore;
     public int gameTick;
@@ -27,8 +35,10 @@ public class SerializableStateObservation {
     public boolean isGameOver;
     public double[] worldDimension;
     public int blockSize;
+    public int noOfPlayers;
     public float avatarSpeed;
     public double[] avatarOrientation;
+    public double[] avatarPosition;
     public Types.ACTIONS avatarLastAction;
     public int avatarType;
     public int avatarHealthPoints;
@@ -39,23 +49,78 @@ public class SerializableStateObservation {
 
     public ArrayList<Types.ACTIONS> availableActions;
     public HashMap<Integer, Integer> avatarResources;
-    public Observation[][][] observationGridArray;
-    public Observation[][] NPCPositionsArray;
-    public Observation[][] immovablePositionsArray;
-    public Observation[][] movablePositionsArray;
-    public Observation[][] resourcesPositionsArray;
-    public Observation[][] portalsPositionsArray;
-    public Observation[][] fromAvatarSpritesPositionsArray;
+    public Observation[][][] observationGrid;
+    public int observationGridNum;
+    public int observationGridMaxRow;
+    public int observationGridMaxCol;
+    public Observation[][] NPCPositions;
+    public int NPCPositionsNum;
+    public int NPCPositionsMaxRow;
+    public Observation[][] immovablePositions;
+    public int immovablePositionsNum;
+    public int immovablePositionsMaxRow;
+    public Observation[][] movablePositions;
+    public int movablePositionsNum;
+    public int movablePositionsMaxRow;
+    public Observation[][] resourcesPositions;
+    public int resourcesPositionsNum;
+    public int resourcesPositionsMaxRow;
+    public Observation[][] portalsPositions;
+    public int portalsPositionsNum;
+    public int portalsPositionsMaxRow;
+    public Observation[][] fromAvatarSpritesPositions;
+    public int fromAvatarSpritesPositionsNum;
+    public int fromAvatarSpritesPositionsMaxRow;
+
+    public SerializableStateObservation(StateObservation s, Boolean both){
+        try {
+            if (!both) {
+                // Fill in the persistent variables (Score, tick)
+                buildGameData(s);
+                if(phase != Phase.START) {
+                    // Create the image bytearray
+                    imageArray = imageToByteArray();
+                }
+            } else {
+                // Fill in the persistent variables (Score, tick)
+                buildGameData(s);
+                if(phase != Phase.START) {
+                    // Create the image bytearray
+                    imageArray = imageToByteArray();
+                }
+                // Fill in the simple data variables
+                buildDataVariables(s);
+
+                // Fill in the data array lists
+                buildDataArraylists(s);
+            }
+        }catch(IOException e){
+            System.out.println("Transforming image to byte array failed. Original error: " + e);
+        }
+    }
 
     public SerializableStateObservation(StateObservation s)
     {
+        // Fill in the persistent variables (Score, tick)
+        buildGameData(s);
+
+        // Fill in the simple data variables
+        buildDataVariables(s);
+
+        // Fill in the data array lists
+        buildDataArraylists(s);
+    }
+
+    private void buildGameData(StateObservation s){
         setPhase(s.getGameState());
         availableActions = s.getAvailableActions();
         gameScore = (float) s.getGameScore();
         gameTick = s.getGameTick();
         gameWinner = s.getGameWinner();
         isGameOver = s.isGameOver();
+    }
 
+    private void buildDataVariables(StateObservation s){
         worldDimension = new double[2];
         worldDimension[0] = s.getWorldDimension().getWidth();
         worldDimension[1] = s.getWorldDimension().getHeight();
@@ -67,6 +132,12 @@ public class SerializableStateObservation {
         avatarOrientation[0] = s.getAvatarOrientation().x;
         avatarOrientation[1] = s.getAvatarOrientation().y;
 
+        avatarPosition = new double[2];
+        avatarPosition[0] = s.getAvatarPosition().x;
+        avatarPosition[1] = s.getAvatarPosition().y;
+
+        noOfPlayers = s.getNoPlayers();
+
         avatarResources = s.getAvatarResources();
         avatarLastAction = s.getAvatarLastAction();
         avatarType = s.getAvatarType();
@@ -74,11 +145,13 @@ public class SerializableStateObservation {
         avatarMaxHealthPoints = s.getAvatarMaxHealthPoints();
         avatarLimitHealthPoints = s.getAvatarLimitHealthPoints();
         isAvatarAlive = s.isAvatarAlive();
+    }
+
+    private void buildDataArraylists(StateObservation s){
+        ElapsedCpuTimer ect = new ElapsedCpuTimer();
 
         // Create a row to be used for translation from ArrayList to array
         ArrayList<Observation> row;
-
-        ElapsedCpuTimer ect = new ElapsedCpuTimer();
 
         /*
         * The following block is a sequence of iterative attributions
@@ -88,77 +161,144 @@ public class SerializableStateObservation {
 
         // Observation grid
         if (s.getObservationGrid()!=null) {
-            observationGridArray = new Observation[s.getObservationGrid().length][s.getObservationGrid()[0].length][];
-
-            for (int i = 0; i < s.getObservationGrid().length; i++) {
-                for (int j = 0; j < s.getObservationGrid()[i].length; j++) {
+            observationGridNum = s.getObservationGrid().length;
+            observationGridMaxRow = s.getObservationGrid()[0].length;
+            observationGridMaxCol = 0;
+            for (int i = 0; i < observationGridNum; i++) {
+                for (int j = 0; j < observationGridMaxRow; j++) {
+                    int rowSize = s.getObservationGrid()[i][j].size();
+                    if (rowSize>observationGridMaxCol) {
+                        observationGridMaxCol = rowSize;
+                    }
+                }
+            }
+            observationGrid = new Observation[observationGridNum][observationGridMaxRow][observationGridMaxCol];
+            for (int i = 0; i < observationGridNum; i++) {
+                for (int j = 0; j < observationGridMaxRow; j++) {
                     row = s.getObservationGrid()[i][j];
-                    observationGridArray[i][j] = row.toArray(new Observation[row.size()]);
+                    observationGrid[i][j] = row.toArray(new Observation[row.size()]);
                 }
             }
         }
 
         // NPC positions
         if (s.getNPCPositions()!=null) {
-            NPCPositionsArray = new Observation[s.getNPCPositions().length][];
-
-            for (int i = 0; i < s.getNPCPositions().length; i++) {
+            NPCPositionsNum = s.getNPCPositions().length;
+            NPCPositionsMaxRow = 0;
+            for (int i = 0; i < NPCPositionsNum; i++) {
+                int rowSize = s.getNPCPositions()[i].size();
+                if (rowSize>NPCPositionsMaxRow) {
+                    NPCPositionsMaxRow = rowSize;
+                }
+            }
+            NPCPositions = new Observation[NPCPositionsNum][NPCPositionsMaxRow];
+            for (int i = 0; i < NPCPositionsNum; i++) {
                 row = s.getNPCPositions()[i];
-                NPCPositionsArray[i] = row.toArray(new Observation[row.size()]);
+                NPCPositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
 
         // Immovable positions
         if (s.getImmovablePositions()!=null) {
-            immovablePositionsArray = new Observation[s.getImmovablePositions().length][];
-
+            immovablePositionsNum = s.getImmovablePositions().length;
+            immovablePositionsMaxRow = 0;
+            for (int i = 0; i < s.getImmovablePositions().length; i++) {
+                int rowSize = s.getImmovablePositions()[i].size();
+                if (rowSize>immovablePositionsMaxRow) {
+                    immovablePositionsMaxRow = rowSize;
+                }
+            }
+            immovablePositions = new Observation[immovablePositionsNum][immovablePositionsMaxRow];
             for (int i = 0; i < s.getImmovablePositions().length; i++) {
                 row = s.getImmovablePositions()[i];
-                immovablePositionsArray[i] = row.toArray(new Observation[row.size()]);
+                immovablePositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
 
         // Movable positions
         if(s.getMovablePositions()!=null) {
-            movablePositionsArray = new Observation[s.getMovablePositions().length][];
-
-            for (int i = 0; i < s.getMovablePositions().length; i++) {
+            movablePositionsNum = s.getMovablePositions().length;
+            movablePositionsMaxRow = 0;
+            for (int i = 0; i < movablePositionsNum; i++) {
+                int rowSize = s.getMovablePositions()[i].size();
+                if (rowSize>movablePositionsMaxRow) {
+                    movablePositionsMaxRow = rowSize;
+                }
+            }
+            movablePositions = new Observation[movablePositionsNum][movablePositionsMaxRow];
+            for (int i = 0; i < movablePositionsNum; i++) {
                 row = s.getMovablePositions()[i];
-                movablePositionsArray[i] = row.toArray(new Observation[row.size()]);
+                movablePositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
 
         // Resource position
         if(s.getResourcesPositions()!=null) {
-            resourcesPositionsArray = new Observation[s.getResourcesPositions().length][];
-
-            for (int i = 0; i < s.getResourcesPositions().length; i++) {
+            resourcesPositionsNum = s.getResourcesPositions().length;
+            resourcesPositionsMaxRow = 0;
+            for (int i = 0; i < resourcesPositionsNum; i++) {
+                int rowSize = s.getResourcesPositions()[i].size();
+                if (rowSize>resourcesPositionsMaxRow) {
+                    resourcesPositionsMaxRow = rowSize;
+                }
+            }
+            resourcesPositions = new Observation[resourcesPositionsNum][resourcesPositionsMaxRow];
+            for (int i = 0; i < resourcesPositionsNum; i++) {
                 row = s.getResourcesPositions()[i];
-                resourcesPositionsArray[i] = row.toArray(new Observation[row.size()]);
+                resourcesPositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
 
         // Portal position
         if(s.getPortalsPositions()!=null) {
-            portalsPositionsArray = new Observation[s.getPortalsPositions().length][];
-
-            for (int i = 0; i < s.getPortalsPositions().length; i++) {
+            portalsPositionsNum = s.getPortalsPositions().length;
+            portalsPositionsMaxRow = 0;
+            for (int i = 0; i < portalsPositionsNum; i++) {
+                int rowSize = s.getPortalsPositions()[i].size();
+                if (rowSize>portalsPositionsMaxRow) {
+                    portalsPositionsMaxRow = rowSize;
+                }
+            }
+            portalsPositions = new Observation[portalsPositionsNum][portalsPositionsMaxRow];
+            for (int i = 0; i < portalsPositionsNum; i++) {
                 row = s.getPortalsPositions()[i];
-                portalsPositionsArray[i] = row.toArray(new Observation[row.size()]);
+                portalsPositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
 
         // Avatar sprite position
         if(s.getFromAvatarSpritesPositions()!=null) {
-            fromAvatarSpritesPositionsArray = new Observation[s.getFromAvatarSpritesPositions().length][];
-
-            for (int i = 0; i < s.getFromAvatarSpritesPositions().length; i++) {
+            fromAvatarSpritesPositionsNum = s.getFromAvatarSpritesPositions().length;
+            fromAvatarSpritesPositionsMaxRow = 0;
+            for (int i=0; i<fromAvatarSpritesPositionsNum; i++) {
+                int rowSize = s.getFromAvatarSpritesPositions()[i].size();
+                if (rowSize>fromAvatarSpritesPositionsMaxRow) {
+                    fromAvatarSpritesPositionsMaxRow = rowSize;
+                }
+            }
+            fromAvatarSpritesPositions = new Observation[fromAvatarSpritesPositionsNum][fromAvatarSpritesPositionsMaxRow];
+            for (int i = 0; i < fromAvatarSpritesPositionsNum; i++) {
                 row = s.getFromAvatarSpritesPositions()[i];
-                fromAvatarSpritesPositionsArray[i] = row.toArray(new Observation[row.size()]);
+                fromAvatarSpritesPositions[i] = row.toArray(new Observation[row.size()]);
             }
         }
+    }
 
-        //System.out.println(ect.elapsedMillis() + " ms taken to build SSO");
+
+
+    public byte[] imageToByteArray() throws IOException {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        File pngfile = new File(CompetitionParameters.SCREENSHOT_FILENAME);
+        if (pngfile != null) {
+            ImageIO.write(ImageIO.read(pngfile), "png", output);
+            imageArray = output.toByteArray();
+            if (imageArray == null) {
+                System.out.println("SerializableStateObservation: imageToByteArray(): imageArray is null");
+            }
+        } else {
+            System.err.println("SerializableStateObservation: imageToByteArray(): pngfile is null");
+        }
+        return imageArray;
     }
 
     /***
@@ -180,7 +320,6 @@ public class SerializableStateObservation {
                 gson.toJson(this, new FileWriter(filename));
             }catch (Exception e){}
         }
-
         return message;
     }
 
@@ -196,5 +335,51 @@ public class SerializableStateObservation {
         } else {
             phase = Phase.START;
         }
+    }
+
+    @Override
+    public String toString() {
+        String observation = "ObservationGrid{\n";
+        if (observationGrid != null) {
+            for (int i = 0; i < observationGrid.length; i++) {
+                for (int j = 0; j < observationGrid[i].length; j++) {
+                    for (Observation obs : observationGrid[i][j]) {
+                        observation += obs.toString();
+                    }
+                }
+            }
+        }
+        observation += "}";
+
+        return "SerializableStateObservation{" +
+                "imageArray=" + Arrays.toString(imageArray) +
+                ", isValidation=" + isValidation +
+                ", gameScore=" + gameScore +
+                ", gameTick=" + gameTick +
+                ", gameWinner=" + gameWinner +
+                ", isGameOver=" + isGameOver +
+                ", worldDimension=" + Arrays.toString(worldDimension) +
+                ", blockSize=" + blockSize +
+                ", noOfPlayers=" + noOfPlayers +
+                ", avatarSpeed=" + avatarSpeed +
+                ", avatarOrientation=" + Arrays.toString(avatarOrientation) +
+                ", avatarPosition=" + Arrays.toString(avatarPosition) +
+                ", avatarLastAction=" + avatarLastAction +
+                ", avatarType=" + avatarType +
+                ", avatarHealthPoints=" + avatarHealthPoints +
+                ", avatarMaxHealthPoints=" + avatarMaxHealthPoints +
+                ", avatarLimitHealthPoints=" + avatarLimitHealthPoints +
+                ", isAvatarAlive=" + isAvatarAlive +
+                ", phase=" + phase +
+                ", availableActions=" + availableActions +
+                ", avatarResources=" + avatarResources +
+                ", observationGrid=" + Arrays.toString(observationGrid) +
+                ", NPCPositions=" + Arrays.toString(NPCPositions) +
+                ", immovablePositions=" + Arrays.toString(immovablePositions) +
+                ", movablePositions=" + Arrays.toString(movablePositions) +
+                ", resourcesPositions=" + Arrays.toString(resourcesPositions) +
+                ", portalsPositions=" + Arrays.toString(portalsPositions) +
+                ", fromAvatarSpritesPositions=" + Arrays.toString(fromAvatarSpritesPositions) +
+                "}\n" + observation;
     }
 }

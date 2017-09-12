@@ -9,6 +9,8 @@ import core.content.*;
 import core.game.BasicGame;
 import core.game.Game;
 import core.game.GameSpace;
+import core.logging.Logger;
+import core.logging.Message;
 import core.termination.*;
 import ontology.Types;
 import ontology.avatar.*;
@@ -73,15 +75,15 @@ public class VGDLFactory
      */
     private String[] effectStrings = new String[]
             {
-                "stepBack", "turnAround", "killSprite", "killBoth", "killAll", "transformTo", "transformToSingleton", "transformIfCount",
+                    "stepBack", "turnAround", "killSprite", "killBoth", "killAll", "transformTo", "transformToSingleton", "transformIfCount",
                     "wrapAround", "changeResource", "killIfHasLess", "killIfHasMore", "cloneSprite",
                     "flipDirection", "reverseDirection", "shieldFrom", "undoAll", "spawn", "spawnIfHasMore", "spawnIfHasLess",
-                "pullWithIt", "wallStop", "collectResource", "collectResourceIfHeld", "killIfOtherHasMore", "killIfFromAbove",
-                "teleportToExit", "bounceForward", "attractGaze", "align", "subtractHealthPoints", "addHealthPoints",
+                    "pullWithIt", "wallStop", "collectResource", "collectResourceIfHeld", "killIfOtherHasMore", "killIfFromAbove",
+                    "teleportToExit", "bounceForward", "attractGaze", "align", "subtractHealthPoints", "addHealthPoints",
                     "transformToAll", "addTimer", "killIfFrontal", "killIfNotFrontal", "spawnBehind",
                     "updateSpawnType", "removeScore", "increaseSpeedToAll", "decreaseSpeedToAll", "setSpeedForAll", "transformToRandomChild",
-                    "addHealthPointsToMax", "spawnIfCounterSubTypes", "bounceDirection", "wallBounce", "killIfSlow", "killIfAlive", 
-                    "waterPhysics", "halfSpeed", "killIfNotUpright", "killIfFast", "wallReverse"
+                    "addHealthPointsToMax", "spawnIfCounterSubTypes", "bounceDirection", "wallBounce", "killIfSlow", "killIfAlive",
+                    "waterPhysics", "halfSpeed", "killIfNotUpright", "killIfFast", "wallReverse", "spawnAbove", "spawnLeft", "spawnRight", "spawnBelow"
             };
 
     /**
@@ -89,15 +91,16 @@ public class VGDLFactory
      */
     private Class[] effectClasses = new Class[]
             {
-                StepBack.class, TurnAround.class, KillSprite.class, KillBoth.class, KillAll.class, TransformTo.class, TransformToSingleton.class, TransformIfCount.class,
+                    StepBack.class, TurnAround.class, KillSprite.class, KillBoth.class, KillAll.class, TransformTo.class, TransformToSingleton.class, TransformIfCount.class,
                     WrapAround.class,ChangeResource.class, KillIfHasLess.class, KillIfHasMore.class, CloneSprite.class,
                     FlipDirection.class, ReverseDirection.class, ShieldFrom.class, UndoAll.class, Spawn.class, SpawnIfHasMore.class, SpawnIfHasLess.class,
-                PullWithIt.class, WallStop.class, CollectResource.class, CollectResourceIfHeld.class, KillIfOtherHasMore.class, KillIfFromAbove.class,
-                TeleportToExit.class, BounceForward.class, AttractGaze.class, Align.class, SubtractHealthPoints.class, AddHealthPoints.class,
+                    PullWithIt.class, WallStop.class, CollectResource.class, CollectResourceIfHeld.class, KillIfOtherHasMore.class, KillIfFromAbove.class,
+                    TeleportToExit.class, BounceForward.class, AttractGaze.class, Align.class, SubtractHealthPoints.class, AddHealthPoints.class,
                     TransformToAll.class, AddTimer.class, KillIfFrontal.class, KillIfNotFrontal.class, SpawnBehind.class, UpdateSpawnType.class,
                     RemoveScore.class, IncreaseSpeedToAll.class, DecreaseSpeedToAll.class, SetSpeedForAll.class, TransformToRandomChild.class,
-                    AddHealthPointsToMax.class, SpawnIfCounterSubTypes.class, BounceDirection.class, WallBounce.class, KillIfSlow.class, 
+                    AddHealthPointsToMax.class, SpawnIfCounterSubTypes.class, BounceDirection.class, WallBounce.class, KillIfSlow.class,
                     KillIfAlive.class, WaterPhysics.class, HalfSpeed.class, KillIfNotUpright.class, KillIfFast.class, WallReverse.class,
+                    SpawnAbove.class, SpawnLeft.class, SpawnRight.class, SpawnBelow.class
             };
 
 
@@ -192,6 +195,7 @@ public class VGDLFactory
      * @param content potential parameters for the class.
      * @return The game just created.
      */
+    @SuppressWarnings("unchecked")
     public Game createGame(GameContent content)
     {
         try{
@@ -220,6 +224,7 @@ public class VGDLFactory
      * @param dim dimensions of the sprite on the world.
      * @return the new sprite, created and initialized, ready for play!
      */
+    @SuppressWarnings("unchecked")
     public VGDLSprite createSprite(Game game, SpriteContent content, Vector2d position, Dimension dim)
     {
 
@@ -235,7 +240,10 @@ public class VGDLFactory
         {
             e.printStackTrace();
             System.out.println("Error creating sprite " + content.identifier + " of class " + content.referenceClass);
-        }catch (Exception e)
+        }
+        catch (NullPointerException e){
+        }
+        catch (Exception e)
         {
             e.printStackTrace();
             System.out.println("Error creating sprite " + content.identifier + " of class " + content.referenceClass);
@@ -266,6 +274,7 @@ public class VGDLFactory
      * @return the new effect, created and initialized, ready to be triggered!
      * @throws Exception 
      */
+    @SuppressWarnings("unchecked")
     public Effect createEffect(Game game, InteractionContent content) throws Exception
     {
         if(game != null)
@@ -311,6 +320,7 @@ public class VGDLFactory
      * @return the new termination, created and initialized, ready to be checked!
      * @throws Exception 
      */
+    @SuppressWarnings("unchecked")
     public Termination createTermination(Game game, TerminationContent content) throws Exception
     {
         decorateContent(game, content);
@@ -324,13 +334,9 @@ public class VGDLFactory
 
         }catch (NoSuchMethodException e)
         {
-            e.printStackTrace();
-            System.out.println("Error creating termination condition " + content.identifier);
             throw new Exception("Line: " + content.lineNumber + " Error creating termination condition " + content.identifier);
         }catch (Exception e)
         {
-            e.printStackTrace();
-            System.out.println("Error creating termination condition " + content.identifier);
             throw new Exception("Line: " + content.lineNumber + " Error creating termination condition " + content.identifier);
         }
     }
@@ -410,9 +416,10 @@ public class VGDLFactory
                     if(isTimeEffect) warn = false;
                 }
 
-                if( warn )
-                    System.out.println("Unknown field (" + parameter + "=" + value +
-                        ") from " + content.toString());
+                if( warn ){
+                    Logger.getInstance().addMessage(new Message(Message.ERROR, "Unknown field (" + parameter + "=" + value +
+                            ") from " + content.toString()));
+                }
             }
         }
 

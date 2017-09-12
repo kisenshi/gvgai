@@ -7,12 +7,17 @@ import ontology.Types;
 
 import java.io.IOException;
 import java.util.Random;
-import java.util.logging.Logger;
 
 /**
  * Created by dperez on 01/06/2017.
  */
 public abstract class Comm extends Thread {
+
+
+    /**
+     * Variable to store the message type
+     */
+    protected Types.LEARNING_SSO_TYPE lastSsoType = Types.LEARNING_SSO_TYPE.JSON; // Type of message chosen by player (JSON/Image)
 
     /**
      * Line separator for messages.
@@ -128,6 +133,25 @@ public abstract class Comm extends Thread {
 
     }
 
+
+    /**
+     * This function is called at the end of the whole process. Closes the communication.
+     * Will give up if no "START_DONE" received after having received 11 responses
+     */
+    public boolean endComm() {
+
+        try {
+
+            //Send the finish message and don't wait for any response.
+            commSend("FINISH");
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return false;
+    }
+
     /**
      * Creates the buffers for communication.
      */
@@ -147,5 +171,7 @@ public abstract class Comm extends Thread {
      */
     public abstract void commSend(String msg) throws IOException;
 
-
+    public Types.LEARNING_SSO_TYPE getLastSsoType() {
+        return this.lastSsoType;
+    }
 }

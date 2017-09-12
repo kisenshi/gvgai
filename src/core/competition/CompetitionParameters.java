@@ -78,7 +78,7 @@ public class CompetitionParameters {
     /**
      * Milliseconds allowed per controller action.
      */
-    public static final int SOCKET_PORT = 3000;
+    public static final int SOCKET_PORT = 8080;
 
     /**
      * Indicates if the overspend should be taken into account or not.
@@ -102,6 +102,11 @@ public class CompetitionParameters {
      */
     public static String IMG_PATH = "sprites/";
 
+
+    /**
+     * Path to the temporary game screenshot.
+     */
+    public static String SCREENSHOT_FILENAME = "gameStateByBytes.png";
 
     /**
      * Delay for human play.
@@ -147,4 +152,9 @@ public class CompetitionParameters {
     public static final int KEY_INPUT = 0;
     public static final int KEY_PULSE = 1;
     public static int KEY_HANDLER = KEY_INPUT;
+
+    public static double MAX_WINDOW_SIZE = 800.0;
+    public static int LEARNING_BLOCK_SIZE = 10;
+    public static boolean IS_LEARNING = false;
+    public static final int validation_times = 10;
 }

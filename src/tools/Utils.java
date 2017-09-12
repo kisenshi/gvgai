@@ -73,7 +73,7 @@ public class Utils
 
     public static Polygon roundedPoints(Rectangle rect)
     {
-        System.out.println("Utils.roundedPoints not implemented yet");
+        System.out.println("utils.roundedPoints not implemented yet");
         return null;
     }
 
@@ -135,7 +135,7 @@ public class Utils
         if(input != -epsilon) {
             return (input + epsilon) * (1.0 + epsilon * (random - 0.5));
         }else {
-            //System.out.format("Utils.tiebreaker(): WARNING: value equal to epsilon: %f\n",input);
+            //System.out.format("utils.tiebreaker(): WARNING: value equal to epsilon: %f\n",input);
             return (input + epsilon) * (1.0 + epsilon * (random - 0.5));
         }
     }
@@ -175,5 +175,42 @@ public class Utils
         }
     }
 
+    public static int findMaxDivisor(int value) {
+        int divisor = 1;
+        for (int i=1; i<=Math.sqrt(value)+1; i++) {
+            if (value % i == 0) {
+                divisor = i;
+            }
+        }
+        return divisor;
+    }
+
+    /**
+     * Processes a file with game names (containing full path).
+     * Assumes that the input is csv, with each line with the format:
+     *   N, fullPath
+     * Where N is the index and fullPath the full path to the file, including extension (.txt).
+     * @returns double String array, such as [fullPath][gameName]
+     */
+    public static String[][] readGames(String filename)
+    {
+        String[] lines = new IO().readFile(filename);
+        String[][] allGames = new String[lines.length][2];
+        int idx = 0;
+
+        for(String line : lines)
+        {
+            String path = line.split(",")[1];
+            int loc = path.lastIndexOf("/");
+            String gameName = path.substring(loc + 1, path.length() - 4);
+
+            allGames[idx][0] = path;
+            allGames[idx][1] = gameName;
+
+            idx++;
+        }
+
+        return allGames;
+    }
 
 }
