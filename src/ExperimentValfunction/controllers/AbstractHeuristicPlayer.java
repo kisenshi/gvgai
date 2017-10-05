@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
  * Created by kisenshi on 03/03/17.
  * Abstract player that allows using a certain heuristic that needs to be set up
  */
-public abstract class AbstractHeuristicPlayer extends AbstractPlayer{
+public abstract class AbstractHeuristicPlayer extends AbstractPlayer {
 
     private String heuristicName = "YouForgotToSetTheHeuristic";
     protected StateHeuristic heuristic;
@@ -31,7 +31,7 @@ public abstract class AbstractHeuristicPlayer extends AbstractPlayer{
         heuristic.recordDataOnFile(played, fileName, randomSeed, recordIds);
     }
 
-    protected void setPlayerHeuristic(String heuristicName){
+    protected void setPlayerHeuristic(String heuristicName) {
         this.heuristicName = heuristicName;
     }
 
@@ -42,8 +42,8 @@ public abstract class AbstractHeuristicPlayer extends AbstractPlayer{
                     .asSubclass(StateHeuristic.class);
 
             // It is pass the stateObs as argument when instantiating the class
-            Class[] heuristicArgsClass = new Class[] { StateObservation.class };
-            Object[] constructorArgs = new Object[] { stateObs };
+            Class[] heuristicArgsClass = new Class[]{StateObservation.class};
+            Object[] constructorArgs = new Object[]{stateObs};
 
             Constructor heuristicArgsConstructor = heuristicClass.getConstructor(heuristicArgsClass);
 
@@ -76,9 +76,13 @@ public abstract class AbstractHeuristicPlayer extends AbstractPlayer{
         return heuristic;
     }
 
+    public String getHeuristicName() {
+        return this.heuristicName;
+    }
+
     /**
      * For some heuristics it would be helpful to print info in the screen
-     * */
+     */
     public void draw(Graphics2D g) {
         heuristic.drawInScreen(g);
     }

@@ -26,13 +26,13 @@ public class MaximizeScoreHeuristic extends StateHeuristic {
         Types.WINNER win = stateObs.getGameWinner();
         double rawScore = stateObs.getGameScore();
 
-        //System.out.println("MaximizeScoreHeuristic called");
+        System.out.println("MaximizeScoreHeuristic called");
 
-        if(gameOver && win == Types.WINNER.PLAYER_LOSES){
+        if (gameOver && win == Types.WINNER.PLAYER_LOSES) {
             return HUGE_NEGATIVE;
         }
 
-        if(gameOver && win == Types.WINNER.PLAYER_WINS) {
+        if (gameOver && win == Types.WINNER.PLAYER_WINS) {
             return HUGE_POSITIVE;
         }
 
@@ -52,7 +52,7 @@ public class MaximizeScoreHeuristic extends StateHeuristic {
         // gameId controllerId randomSeed winnerId score gameTicks
 
         try {
-            if(fileName != null && !fileName.equals("")) {
+            if (fileName != null && !fileName.equals("")) {
                 writer = new BufferedWriter(new FileWriter(new File(fileName), true));
                 writer.write(recordIds[0] + " " + recordIds[1] + " " + randomSeed +
                         " " + (played.getWinner() == Types.WINNER.PLAYER_WINS ? 1 : 0) +

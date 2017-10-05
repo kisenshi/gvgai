@@ -113,7 +113,6 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
         avgTimeTakenEval = acumTimeTakenEval / numEvals;
         remaining = timer.remainingTimeMillis();
         heuristicValue = value;
-        System.out.println("Here we go" + value);
         return value;
     }
 
@@ -196,6 +195,7 @@ public class Agent extends AbstractHeuristicPlayer implements Voice {
     @Override
     public Opinion askOpinion(StateObservation stateObs, ElapsedCpuTimer elapsedTimer, int analysisTime) {
         Types.ACTIONS action = this.act(stateObs, elapsedTimer);
+        System.out.println(this.getHeuristicName());
         return new Opinion(action, this.heuristicValue);
     }
 }

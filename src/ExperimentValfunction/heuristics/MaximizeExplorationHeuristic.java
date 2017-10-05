@@ -49,7 +49,7 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
      * When the class is instantiated it is needed to initialise
      * the exploration matrix
      */
-    public MaximizeExplorationHeuristic(StateObservation stateObs){
+    public MaximizeExplorationHeuristic(StateObservation stateObs) {
         block_size = stateObs.getBlockSize();
         Dimension grid_dimension = stateObs.getWorldDimension();
 
@@ -66,20 +66,21 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
         initHeuristicAccumulation();
     }
 
-    private int getMapSize(){
+    private int getMapSize() {
         return grid_width * grid_height;
     }
 
     /**
      * Checks if the provided position is out of bounds the map
+     *
      * @param position
      * @return
      */
-    private boolean isOutOfBounds(Vector2d position){
-        int x = (int)position.x / block_size;
-        int y = (int)position.y / block_size;
+    private boolean isOutOfBounds(Vector2d position) {
+        int x = (int) position.x / block_size;
+        int y = (int) position.y / block_size;
 
-        if ((x < 0) || (x >= grid_width) || (y < 0) || (y >= grid_height)){
+        if ((x < 0) || (x >= grid_width) || (y < 0) || (y >= grid_height)) {
             return true;
         }
 
@@ -91,15 +92,16 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
      * The position is provided as a Vector2d object so it is needed to
      * calculate the valid coordinates to be considered for the matrix
      * It would be used the block_size int set when initialised
+     *
      * @param position The position as a Vector2d object
      */
-    private void markNewPositionAsVisited(Vector2d position){
-        if (isOutOfBounds(position)){
+    private void markNewPositionAsVisited(Vector2d position) {
+        if (isOutOfBounds(position)) {
             return;
         }
 
-        int x = (int)position.x / block_size;
-        int y = (int)position.y / block_size;
+        int x = (int) position.x / block_size;
+        int y = (int) position.y / block_size;
 
         //System.out.println("Marking ("+x+" , "+y+") as VISITED");
 
@@ -109,16 +111,17 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
     /**
      * Checks if the position has already been visited. As it is provided as Vector2d objects,
      * it is needed to convert it to valid coordinates to be considered for the matrix
+     *
      * @param position The position to be checked, as a Vector2d objects
      * @return true or false depending if the position has already been visited or not
      */
-    private boolean hasBeenBefore(Vector2d position){
-        if (isOutOfBounds(position)){
+    private boolean hasBeenBefore(Vector2d position) {
+        if (isOutOfBounds(position)) {
             return false;
         }
 
-        int x = (int)position.x / block_size;
-        int y = (int)position.y / block_size;
+        int x = (int) position.x / block_size;
+        int y = (int) position.y / block_size;
 
         //System.out.println("Been before to ("+x+" , "+y+")? "+exploration_matrix[x][y]);
 
@@ -127,15 +130,16 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
 
     /**
      * Returns the percentage of the map explored in total
+     *
      * @return
      */
-    private double getNSpotsExplored(){
+    private double getNSpotsExplored() {
         double explored = 0;
 
         for (int i = 0; i < exploration_matrix.length; i++) {
             for (int j = 0; j < exploration_matrix[i].length; j++) {
                 if (exploration_matrix[i][j]) {
-                    explored ++;
+                    explored++;
                 }
             }
         }
@@ -146,6 +150,7 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
     /**
      * Evaluates the current state taking into consideration the exploration_matrix, which contains
      * the positions already visited by the avatar. It is prioritize visiting those positions the agent has not been before
+     *
      * @param stateObs
      * @return
      */
@@ -153,30 +158,32 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
         boolean gameOver = stateObs.isGameOver();
         Types.WINNER win = stateObs.getGameWinner();
 
+        System.out.println("MaximizeExploration called!");
+
         // If it is game over and it has lost, it's bad
-        if(gameOver && win == Types.WINNER.PLAYER_LOSES){
+        if (gameOver && win == Types.WINNER.PLAYER_LOSES) {
             return HUGE_NEGATIVE;
         }
 
         // This heuristic has been updated to always reward winning
-        if(gameOver && win == Types.WINNER.PLAYER_WINS) {
+        if (gameOver && win == Types.WINNER.PLAYER_WINS) {
             return HUGE_POSITIVE;
         }
 
         Vector2d currentPosition = stateObs.getAvatarPosition();
 
-        if (isOutOfBounds(currentPosition)){
+        if (isOutOfBounds(currentPosition)) {
             // If the new position is out of bounds then dont go there
             return HUGE_NEGATIVE;
         }
 
-        if (!hasBeenBefore(currentPosition)){
+        if (!hasBeenBefore(currentPosition)) {
             // If it hasnt been before, it is rewarded
             return 100;
         }
 
         // If it has been before, it is penalised
-        if (currentPosition.equals(last_position)){
+        if (currentPosition.equals(last_position)) {
             // As it is tried to reward exploration, it is penalised more if it is the last position visited
             //System.out.println("Last position visited");
             return -50;
@@ -188,6 +195,7 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
     /**
      * For this heuristic, it is needed to update the exploration_matrix to
      * mark the current position of the avatar as visited and be taken into consideration in the future
+     *
      * @param stateObs
      */
     public void updateHeuristicBasedOnCurrentState(StateObservation stateObs) {
@@ -215,12 +223,12 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
         int navigation_size = games_lvl_navigation_sizes[gameId];
 
         try {
-            if(fileName != null && !fileName.equals("")) {
+            if (fileName != null && !fileName.equals("")) {
                 writer = new BufferedWriter(new FileWriter(new File(fileName), true));
                 writer.write(gameId + " " + recordIds[1] + " " + randomSeed +
                         " " + (played.getWinner() == Types.WINNER.PLAYER_WINS ? 1 : 0) +
                         " " + played.getScore() + " " + played.getGameTick() +
-                        " " + getMapSize() + " " + explored + " " + navigation_size + " " + explored/navigation_size + " " + last_discovered_tick + "\n");
+                        " " + getMapSize() + " " + explored + " " + navigation_size + " " + explored / navigation_size + " " + last_discovered_tick + "\n");
 
                 //printExplorationMatrix();
 
@@ -239,9 +247,9 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
             for (int j = 0; j < exploration_matrix[i].length; j++) {
                 if (exploration_matrix[i][j]) {
                     g.setColor(rectColor);
-                    g.fillRect(i*block_size, j*block_size, block_size, block_size);
+                    g.fillRect(i * block_size, j * block_size, block_size, block_size);
                     g.setColor(Types.WHITE);
-                    g.drawRect(i*block_size, j*block_size, block_size, block_size);
+                    g.drawRect(i * block_size, j * block_size, block_size, block_size);
                 }
             }
         }
@@ -249,13 +257,14 @@ public class MaximizeExplorationHeuristic extends StateHeuristic {
 
     /**
      * DEBUGGING method
+     *
      * @throws IOException
      */
     private void printExplorationMatrix() throws IOException {
         for (int i = 0; i < exploration_matrix.length; i++) {
             for (int j = 0; j < exploration_matrix[i].length; j++) {
-                if (exploration_matrix[i][j]){
-                    if (writer != null){
+                if (exploration_matrix[i][j]) {
+                    if (writer != null) {
                         writer.write(" X ");
                     } else {
                         System.out.print(" X ");

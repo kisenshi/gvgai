@@ -6,9 +6,7 @@ import core.game.StateObservation;
 import ontology.Types;
 import tools.ElapsedCpuTimer;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * The central arbitrator which houses the {@link Voice}s and makes the final decision on what action to take.
@@ -21,10 +19,12 @@ public class CentralArbitrator {
     private List<Voice> voices;
     private List<Opinion> opinions;
     private Random randomGenerator = new Random();
+    private List<Types.ACTIONS> actions;
 
     public CentralArbitrator() {
         this.voices = new ArrayList<>();
         this.opinions = new ArrayList<>();
+        this.actions = new ArrayList<>();
     }
 
     public void addVoice(Voice voice) {
@@ -37,17 +37,14 @@ public class CentralArbitrator {
             elapsedTimer.setMaxTimeMillis(ANALYSIS_TIME);
             this.opinions.add(voice.askOpinion(stateObs, elapsedTimer, ANALYSIS_TIME));
         }
-        for (Opinion opinion : opinions) {
-            System.out.println(opinion.getEstimatedValue());
-        }
         return selectHighestValueOpinion().getAction();
 //        return selectRandomOpinion().getAction();
+//        return selectDemocraticOption();
     }
 
     private Opinion selectHighestValueOpinion() {
         List<Opinion> bestActions = new ArrayList<>();
         double bestValue = -Double.MAX_VALUE;
-        int bestVoice = -1;
         Opinion bestOpinion = null;
         for (int i = 0; i < opinions.size(); i++) {
             double value = opinions.get(i).getEstimatedValue();
@@ -55,7 +52,6 @@ public class CentralArbitrator {
                 bestActions.clear();
                 bestValue = value;
                 bestOpinion = opinions.get(i);
-                bestVoice = i;
                 bestActions.add(opinions.get(i));
             } else if (value == bestValue) {
                 bestActions.add(opinions.get(i));
@@ -68,8 +64,31 @@ public class CentralArbitrator {
         return bestOpinion;
     }
 
+    private Opinion selectDemocraticOption() {
+        List<Opinion> bestActions = new ArrayList<>();
+        Map<Types.ACTIONS, Integer> actionFrequencies = new HashMap<>();
+        Map.Entry<Types.ACTIONS, Integer> maxEntry = null;
+
+        for (Opinion opinion : this.opinions) {
+            Types.ACTIONS action = opinion.getAction();
+            actionFrequencies.put(action, Collections.frequency(actions, action));
+        }
+
+        for (Map.Entry<Types.ACTIONS, Integer> entry : actionFrequencies.entrySet()) {
+            if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0) {
+                maxEntry = entry;
+            }
+        }
+
+        return new Opinion(maxEntry.getKey(), 0);
+    }
+
     private Opinion selectRandomOpinion() {
         int opinion = randomGenerator.nextInt(opinions.size());
         return opinions.get(opinion);
+    }
+
+    public void setAvailableActions(ArrayList<Types.ACTIONS> availableActions) {
+        this.actions.addAll(availableActions);
     }
 }

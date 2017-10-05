@@ -1,7 +1,8 @@
 package ExperimentValfunction.heuristics;
 
-import core.game.*;
 import core.game.Event;
+import core.game.Game;
+import core.game.StateObservation;
 import ontology.Types;
 import tools.Vector2d;
 
@@ -10,7 +11,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created by Cristina on 27/03/2017.
@@ -22,7 +23,7 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
     /**
      * When the class is instantiated it is needed to initialise the data
      */
-    public KnowledgeDiscoveryHeuristic(StateObservation stateObs){
+    public KnowledgeDiscoveryHeuristic(StateObservation stateObs) {
         super(stateObs);
 
         // Acknowledge is initialised
@@ -41,38 +42,38 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * updateSpriteAcknowledge
      * Checks the observations of all different categories (NPC, Immovable, Movable, Resources, Portals)
      * to add every sprite available to the the general sprite acknowledge list
-     * */
+     */
     @Override
-    protected boolean updateSpriteAcknowledge(StateObservation stateObs){
+    protected boolean updateSpriteAcknowledge(StateObservation stateObs) {
         boolean ack_updated = false;
 
         // NPC sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getNPCPositions(), sprites_acknowledge)){
+        if (addObservationToAcknowledgeSprites(stateObs.getNPCPositions(), sprites_acknowledge)) {
             ack_updated = true;
         }
         // Fixed sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getImmovablePositions(), sprites_acknowledge)){
+        if (addObservationToAcknowledgeSprites(stateObs.getImmovablePositions(), sprites_acknowledge)) {
             ack_updated = true;
         }
         // Movable sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getMovablePositions(), sprites_acknowledge)){
+        if (addObservationToAcknowledgeSprites(stateObs.getMovablePositions(), sprites_acknowledge)) {
             ack_updated = true;
         }
         // Resources sprites
-       if (addObservationToAcknowledgeSprites(stateObs.getResourcesPositions(), sprites_acknowledge)){
-           ack_updated = true;
-       }
+        if (addObservationToAcknowledgeSprites(stateObs.getResourcesPositions(), sprites_acknowledge)) {
+            ack_updated = true;
+        }
         // Portal sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getPortalsPositions(), sprites_acknowledge)){
+        if (addObservationToAcknowledgeSprites(stateObs.getPortalsPositions(), sprites_acknowledge)) {
             ack_updated = true;
         }
 
         // From avatar sprites
-        if (addObservationToAcknowledgeSprites(stateObs.getFromAvatarSpritesPositions(), sprites_from_avatar_acknowledge)){
+        if (addObservationToAcknowledgeSprites(stateObs.getFromAvatarSpritesPositions(), sprites_from_avatar_acknowledge)) {
             ack_updated = true;
         }
 
-        if (ack_updated){
+        if (ack_updated) {
             last_spriteAcknowledge_tick = current_gametick;
         }
 
@@ -83,9 +84,10 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * getNSpritesAcknowledge
      * Returns the number of sprites acknowledge (NOT considering those related with the avatar!)
      * The sprites have been stored in the sprites_acknowledge list during the game
+     *
      * @return number of non-avatar-related sprites acknowledge
      */
-    private int getNSpritesAcknowledge(){
+    private int getNSpritesAcknowledge() {
         return sprites_acknowledge.size();
     }
 
@@ -93,9 +95,10 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * getNSpritesFromAvatarAcknowledge
      * Returns the number of sprites created by the avatar acknowledge
      * The sprites have been stored in the sprites_from_avatar_acknowledge list during the game
+     *
      * @return number of sprites created by the avatar acknowledge
      */
-    private int getNSpritesFromAvatarAcknowledge(){
+    private int getNSpritesFromAvatarAcknowledge() {
         return sprites_from_avatar_acknowledge.size();
     }
 
@@ -103,9 +106,10 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * getTotalNSpritesAcknowledge
      * Returns the total number of sprites acknowledge.
      * The total number of sprites acknowledge consider both the ones generated and not from the avatar
+     *
      * @return number of total sprites acknowledge
      */
-    private int getTotalNSpritesAcknowledge(){
+    private int getTotalNSpritesAcknowledge() {
         return getNSpritesAcknowledge() + getNSpritesFromAvatarAcknowledge();
     }
 
@@ -118,10 +122,10 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * Checks if one of the last events considered should be included to the 'curiosity' collision
      * The curiosity stores collisions with sprites in different positions of the map
      */
-    private boolean isNewCollisionCuriosity(ArrayList<Event> last_gametick_events, int avatar_stype){
-        for (int i=0; i<last_gametick_events.size(); i++){
+    private boolean isNewCollisionCuriosity(ArrayList<Event> last_gametick_events, int avatar_stype) {
+        for (int i = 0; i < last_gametick_events.size(); i++) {
             Event last_event = last_gametick_events.get(i);
-            if (interaction_history.isNewCollitionCuriosity(last_event, avatar_stype)){
+            if (interaction_history.isNewCollitionCuriosity(last_event, avatar_stype)) {
                 return true;
             }
         }
@@ -135,9 +139,9 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
      * The action curiosity stores the sprites from avatar collisions with other sprites in different positions of the map
      */
     private boolean isNewActionCuriosity(ArrayList<Event> last_gametick_events, int avatar_stype) {
-        for (int i=0; i<last_gametick_events.size(); i++){
+        for (int i = 0; i < last_gametick_events.size(); i++) {
             Event last_event = last_gametick_events.get(i);
-            if (interaction_history.isNewActionCuriosity(last_event, sprites_from_avatar_acknowledge)){
+            if (interaction_history.isNewActionCuriosity(last_event, sprites_from_avatar_acknowledge)) {
                 return true;
             }
         }
@@ -154,18 +158,18 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
         boolean ack_update = updateSpriteAcknowledge(stateObs);
 
         // If it is game over and it has lost, it's bad
-        if(gameOver && win == Types.WINNER.PLAYER_LOSES){
+        if (gameOver && win == Types.WINNER.PLAYER_LOSES) {
             return HUGE_NEGATIVE;
         }
 
         // This heuristic has been updated to always reward winning
-        if(gameOver && win == Types.WINNER.PLAYER_WINS) {
+        if (gameOver && win == Types.WINNER.PLAYER_WINS) {
             return HUGE_POSITIVE;
         }
 
         Vector2d currentPosition = stateObs.getAvatarPosition();
 
-        if (isOutOfBounds(currentPosition)){
+        if (isOutOfBounds(currentPosition)) {
             // If the new position is out of bounds then dont go there
             return HUGE_NEGATIVE;
         }
@@ -178,22 +182,22 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
         * */
 
         // New sprite has appeared, this is GOOD
-        if (ack_update){
-            return (HUGE_POSITIVE/2);
+        if (ack_update) {
+            return (HUGE_POSITIVE / 2);
         }
 
         ArrayList<Event> last_gametick_events = getLastGametickEvents(stateObs, last_stateObs);
 
-        if (!last_gametick_events.isEmpty()){
-            if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType())){
+        if (!last_gametick_events.isEmpty()) {
+            if (isNewStypeInteraction(last_gametick_events, last_stateObs.getAvatarType())) {
                 return 1000;
             }
 
-            if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType())){
+            if (isNewCollisionCuriosity(last_gametick_events, last_stateObs.getAvatarType())) {
                 return 50;
             }
 
-            if (isNewActionCuriosity(last_gametick_events, last_stateObs.getAvatarType())){
+            if (isNewActionCuriosity(last_gametick_events, last_stateObs.getAvatarType())) {
                 return 25;
             }
 
@@ -217,12 +221,12 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
         int gameId = recordIds[0];
 
         try {
-            if(fileName != null && !fileName.equals("")) {
+            if (fileName != null && !fileName.equals("")) {
                 writer = new BufferedWriter(new FileWriter(new File(fileName), true));
                 writer.write(gameId + " " + recordIds[1] + " " + randomSeed +
                         " " + (played.getWinner() == Types.WINNER.PLAYER_WINS ? 1 : 0) +
                         " " + played.getScore() + " " + played.getGameTick() +
-                        " " + getNSpritesAcknowledge() + " " + getNSpritesFromAvatarAcknowledge() + " " + getTotalNSpritesAcknowledge()+ " " + last_spriteAcknowledge_tick +
+                        " " + getNSpritesAcknowledge() + " " + getNSpritesFromAvatarAcknowledge() + " " + getTotalNSpritesAcknowledge() + " " + last_spriteAcknowledge_tick +
                         " " + interaction_history.getNStypesCollidedWith() + " " + interaction_history.getNStypesActionedOnto() + " " + interaction_history.getNInteraction() +
                         " " + interaction_history.getLastNewCollitionTick() + " " + interaction_history.getLastNewActionontoTick() + " " + interaction_history.getLastNewInteractonTick() +
                         " " + interaction_history.getNCuriosity() + " " + interaction_history.getLastCuriosityTick() +
@@ -239,27 +243,28 @@ public class KnowledgeDiscoveryHeuristic extends KnowledgeHeuristic {
     }
 
     @Override
-    public void drawInScreen(Graphics2D g) {}
+    public void drawInScreen(Graphics2D g) {
+    }
 
-    protected void printStats(StateObservation stateObs){
-        System.out.println("--- GAME FINISHED at "+stateObs.getGameTick() + " ----------------- ");
-        System.out.println("Last tick acknowledge: "+last_spriteAcknowledge_tick);
-        System.out.println("Ack :"+sprites_acknowledge);
-        System.out.println("Ack Sprites from: "+sprites_from_avatar_acknowledge);
-        System.out.println("sprites ack: "+getNSpritesAcknowledge());
-        System.out.println("from-avatar ack: "+getNSpritesFromAvatarAcknowledge());
-        System.out.println("Total ack: "+getTotalNSpritesAcknowledge());
-        System.out.println("Last new collision tick: "+interaction_history.getLastNewCollitionTick());
-        System.out.println("Last new action-onto tick: "+interaction_history.getLastNewActionontoTick());
-        System.out.println("Last new interaction tick: "+interaction_history.getLastNewInteractonTick());
-        System.out.println("Collided with: "+interaction_history.getStypesCollidedWith());
-        System.out.println("Actioned onto: "+interaction_history.getStypesActionedOnto());
-        System.out.println("Last curiosity tick: "+interaction_history.getLastCuriosityTick());
-        System.out.println("Curiosity: "+interaction_history.getCuriosityMap());
-        System.out.println("Curiosity: "+interaction_history.getNCuriosity());
-        System.out.println("last Curiosity action tick: "+interaction_history.getLastCuriosityActionTick());
-        System.out.println("Curiosity action: "+interaction_history.getCuriosityActionMap());
-        System.out.println("Curiosity action: "+interaction_history.getNCuriosityAction());
+    protected void printStats(StateObservation stateObs) {
+        System.out.println("--- GAME FINISHED at " + stateObs.getGameTick() + " ----------------- ");
+        System.out.println("Last tick acknowledge: " + last_spriteAcknowledge_tick);
+        System.out.println("Ack :" + sprites_acknowledge);
+        System.out.println("Ack Sprites from: " + sprites_from_avatar_acknowledge);
+        System.out.println("sprites ack: " + getNSpritesAcknowledge());
+        System.out.println("from-avatar ack: " + getNSpritesFromAvatarAcknowledge());
+        System.out.println("Total ack: " + getTotalNSpritesAcknowledge());
+        System.out.println("Last new collision tick: " + interaction_history.getLastNewCollitionTick());
+        System.out.println("Last new action-onto tick: " + interaction_history.getLastNewActionontoTick());
+        System.out.println("Last new interaction tick: " + interaction_history.getLastNewInteractonTick());
+        System.out.println("Collided with: " + interaction_history.getStypesCollidedWith());
+        System.out.println("Actioned onto: " + interaction_history.getStypesActionedOnto());
+        System.out.println("Last curiosity tick: " + interaction_history.getLastCuriosityTick());
+        System.out.println("Curiosity: " + interaction_history.getCuriosityMap());
+        System.out.println("Curiosity: " + interaction_history.getNCuriosity());
+        System.out.println("last Curiosity action tick: " + interaction_history.getLastCuriosityActionTick());
+        System.out.println("Curiosity action: " + interaction_history.getCuriosityActionMap());
+        System.out.println("Curiosity action: " + interaction_history.getNCuriosityAction());
         System.out.println("---------------------------------------------------------------------");
     }
 }
