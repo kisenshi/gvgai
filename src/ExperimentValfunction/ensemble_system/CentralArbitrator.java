@@ -71,7 +71,7 @@ public class CentralArbitrator {
 
         for (Opinion opinion : this.opinions) {
             Types.ACTIONS action = opinion.getAction();
-            actionFrequencies.put(action, Collections.frequency(actions, action));
+            actionFrequencies.put(action, actionFrequencies.get(action) + 1);
         }
 
         for (Map.Entry<Types.ACTIONS, Integer> entry : actionFrequencies.entrySet()) {
