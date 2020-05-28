@@ -29,7 +29,7 @@ def fix_json(x):
 
 def load_results(dirname):
 	files = os.listdir(dirname)
-	js = [ load_json(dirname + "\\" + a) for a in files ]
+	js = [ load_json(dirname + "/" + a) for a in files ]
 	for j in js:
 		fix_json(j)
 	return js
@@ -119,9 +119,13 @@ def unzip(tups):
 		b.append(y)
 	return (a, b)
 
-
-
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+#matplotlib.use("TkAgg")
+
+#print "Backend: ", matplotlib.rcParams['backend']
+
 import numpy as np
 from collections import Counter
 from collections import defaultdict
@@ -167,4 +171,9 @@ plt.grid(True)
 
 plt.interactive(True)
 plt.show()
+#pdf_plot=plt.plot().get_figure() 
+#plt.show()
+plt.savefig('testfile.png')
+
+#print "DONE"
 
